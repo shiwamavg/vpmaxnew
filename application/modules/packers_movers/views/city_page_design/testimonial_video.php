@@ -24,7 +24,7 @@ if (empty($videos)) {
     $CI->db->limit(10);
     $videos = $CI->db->get()->result_array();
 }
-
+// print_r($videos); // Debugging line to check the fetched videos
 // Only display the section if we have at least one video
 if (!empty($videos)):
     ?>
@@ -53,7 +53,7 @@ if (!empty($videos)):
                             <div class="vpmax-video-wrapper">
                                 <iframe src="<?= htmlspecialchars($vid['video_url']) ?>"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen loading="lazy">
+                                    allowfullscreen loading="lazy" title='<?=$vid['title']?>'></iframe>
                                 </iframe>
                             </div>
                             <?php if (!empty($vid['city'])): ?>

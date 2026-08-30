@@ -73,13 +73,13 @@
               <div class="d-flex position-relative">
                 <img loading="lazy" src="<?= base_url() ?>assets/images/reviews/arshad.webp"
                   class="rounded-circle border border-dark border-2 position-relative google-avatar google-avatar-1"
-                  alt="Google Avatar" loading="lazy">
+                  alt="Google Avatar">
                 <img loading="lazy" src="<?= base_url() ?>assets/images/reviews/2.webp"
                   class="rounded-circle border border-dark border-2 position-relative google-avatar google-avatar-2"
-                  alt="Google Avatar" loading="lazy">
+                  alt="Google Avatar">
                 <img loading="lazy" src="<?= base_url() ?>assets/images/reviews/1.webp"
                   class="rounded-circle border border-dark border-2 position-relative google-avatar google-avatar-3"
-                  alt="Google Avatar" loading="lazy">
+                  alt="Google Avatar">
               </div>
               <div>
                 <div class="text-white fw-bold lh-1 google-count-val">

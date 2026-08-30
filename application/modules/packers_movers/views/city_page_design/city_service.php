@@ -29,7 +29,7 @@ $services = [
 ];
 ?>
 
-<link rel="stylesheet" href="<?= base_url('assets/css/packers_movers_modules.css') ?>?v=<?= time() ?>">
+
 
 <div class="container py-2 mt-2 mb-2">
     <div class="row g-2 g-md-3 justify-content-center">

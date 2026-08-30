@@ -7,7 +7,7 @@
         </div>
         <div class="col-lg-12 pt-2 pb-2">
             <img loading="lazy" src="<?= base_url() ?>assets/images/city_page/vp_max_team_and_truck.webp"
-                alt="VP Max team and Truck" class="w-100" loading="lazy">
+                alt="VP Max team and Truck" class="w-100">
         </div>
 
     </div>

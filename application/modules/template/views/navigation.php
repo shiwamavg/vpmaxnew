@@ -114,7 +114,7 @@
   $org_schema = [
     "@context" => "https://schema.org",
     "@type" => "Organization",
-    "name" => $company3 . " Packers and Movers",
+    "name" => $company3 ,
     "url" => site_url(),
     "logo" => base_url() . "assets/images/logo/logo.webp",
     "contactPoint" => [
@@ -133,12 +133,11 @@
 
   <!-- Main Sticky Header -->
   <header class="main-header" id="mainHeader">
-    <div class="container py-1 d-flex align-items-center justify-content-between">
+    <div class="container d-flex align-items-center justify-content-between">
       <!-- Brand Logo -->
       <a href="<?= site_url() ?>" class="brand-wrap">
         <img loading="eager" src="<?= base_url() ?>assets/images/logo/logo.webp"
-          alt="<?= $company3 ?> Packers and Movers" class="brand-logo" fetchpriority="high" loading="eager"
-          decoding="async">
+          alt="<?= $company3 ?>" class="brand-logo" fetchpriority="high" decoding="async">
       </a>
 
       <!-- Header Action Buttons -->
@@ -186,7 +185,7 @@
         <div class="col-lg mega-col text-center border-end d-none d-lg-block">
           <div>
             <img loading="lazy" src="<?= base_url() ?>assets/images/logo/logo.webp"
-              alt="<?= $company3 ?> Packers and Movers" class="mega-brand-img">
+              alt="<?= $company3 ?>" class="mega-brand-img">
 
             <div class="mb-4">
               <h5 class="mega-contact-heading">Contact</h5>

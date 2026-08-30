@@ -4,28 +4,28 @@ $credentials = [
     [
         'title' => 'ISO 9001:2015',
         'desc' => 'Certificate No: E21421615228, for Courier Services, Packers & Movers, Transportation and Storage of Goods.',
-        'image' => 'iso.webp',
+        'image' => 'iso.png',
         'icon' => 'bi-file-earmark-text',
         'highlight' => true
     ],
     [
         'title' => "$ratingValue Star Ratings",
         'desc' => "We have been rated $ratingValue stars by our valuable clients ($ratingCount+) in multiple platforms like Google, Facebook etc.",
-        'image' => '5star.webp',
+        'image' => '5star.png',
         'icon' => 'bi-star',
         'highlight' => false
     ],
     [
         'title' => 'Registered Trademark',
         'desc' => 'Our Logo is registered under the Trade Marks Act 1999.',
-        'image' => 'trademark.webp',
+        'image' => 'trademark.png',
         'icon' => 'bi-shield-check',
         'highlight' => false
     ],
     [
         'title' => '23+ Years of Trust',
         'desc' => 'Since 2003, we are serving across the country as one of the best Packers and Movers company.',
-        'image' => 'since2003.webp',
+        'image' => 'since2003.png',
         'icon' => 'bi-people-fill',
         'highlight' => false
     ]

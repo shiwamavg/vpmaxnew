@@ -3,7 +3,7 @@
 
 $certificates = [
     [
-        'image' => 'udyam.webp',
+        'image' => 'udyam.png',
         'icon' => 'bi-file-earmark-text',
         'color' => '#0d6efd',
         'bg_color' => 'rgba(13, 110, 253, 0.1)',
@@ -27,7 +27,7 @@ $certificates = [
         'desc' => 'Government Registered & GSTIN Approved Company.'
     ],
     [
-        'image' => 'receipt.webp',
+        'image' => 'receipt.png',
         'icon' => 'bi-receipt-cutoff',
         'color' => '#0d6efd',
         'bg_color' => 'rgba(13, 110, 253, 0.1)',

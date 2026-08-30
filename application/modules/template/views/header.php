@@ -155,4 +155,10 @@
     }
   </script>
   <script src="<?= base_url('assets/js/jquery-3.7.1.min.js') ?>"></script>
+  <style>
+.text-danger {color: rgb(176 5 21) !important;}
+.phone-helpline-label,.text-dark {color:#000}
+.brand-logo {max-height: 100px;}
+ 
+  </style>
 </head>

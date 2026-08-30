@@ -5,7 +5,7 @@
             <?php
             $faqs = [
               ["q" => "How early should I book shifting services in $city?",
-               "a" => "Booking at least 5–7 days earlier is recommended, especially for month-end dates and weekends when demand is highest."],
+               "a" => "Booking at least 5-7 days earlier is recommended, especially for month-end dates and weekends when demand is highest."],
               ["q" => "Do you provide packing materials?",
                "a" => "Yes. Cartons, wrapping sheets, bubble rolls, and protective materials are included based on service type."],
               ["q" => "Can I move only a few household items?",

@@ -1,16 +1,7 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
-
-<!-- ======================================================
-     CITY PAGE SIDEBAR
-     Available vars: $city, $state, $company3, $experience,
-                     $startYear, $phone, $phone1, $phonehtml,
-                     $phonehtml1, $whatsapphtml, $cities, $st
-  ====================================================== -->
-
 <aside class="pm-city-sidebar">
 
-  <!-- CTA Contact Card -->
-  <div class="pm-city-sidebar-widget pm-city-cta-card">
+<div class="pm-city-sidebar-widget pm-city-cta-card">
     <!-- Decorative BG icon -->
     <i class="bi bi-headset pm-city-cta-bg-icon"></i>
 
@@ -161,7 +152,4 @@
     </div>
   </div>
 
-</aside><!-- /city-sidebar -->
-
-
-
+</aside>
