@@ -25,6 +25,11 @@
   <meta property="og:image" content="<?= $img ?>"/>
   <meta property="og:url" content="<?= @$url ?>"/>
   <meta property="og:description" content="<?= @$description ?>"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="<?= @$title ?>"/>
+  <meta name="twitter:description" content="<?= @$description ?>"/>
+  <meta name="twitter:image" content="<?= $img ?>"/>
+  <meta name="twitter:domain" content="<?= $company3 ?>"/>
   <meta name="robots" content="index, follow"/>
   <meta property="al:web:url" content="<?= $url ?>">
   <meta name="theme-color" content="<?= $themeColor ?>">
