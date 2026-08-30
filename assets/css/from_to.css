@@ -1,0 +1,14 @@
+/* FAQ and City Info Styles for From-To Pages */
+.faq-section { margin-top: 40px; }
+.faq-title { color: #0d6efd; font-weight: 600; margin-bottom: 20px; }
+.faq-item { border-bottom: 1px solid #ddd; }
+.faq-question { width: 100%; text-align: left; background: none; border: none; padding: 15px; font-size: 16px; font-weight: 500; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+.faq-answer { color: black; max-height: 0; overflow: hidden; transition: max-height 0.4s ease; padding: 0 15px; }
+.faq-question:hover { color: #0d6efd; }
+.faq-icon { font-size: 20px; font-weight: bold; transition: transform 0.3s ease; }
+.faq-item.active .faq-answer { max-height: 500px; padding: 15px; }
+.faq-item.active .faq-icon { transform: rotate(180deg); }
+.city-info ul { list-style: none; padding-left: 0; margin: 15px 0 25px; }
+.city-info ul li { position: relative; padding-left: 28px; margin-bottom: 10px; font-size: 15px; line-height: 1.6; color: #333; }
+.city-info ul li::before { content: "✔"; position: absolute; left: 0; top: 0; color: #0d6efd; font-weight: 600; }
+.common-heading { font-weight: 600; color: #0d6efd; margin: 35px 0 15px; line-height: 1.4; font-size: 20px; }

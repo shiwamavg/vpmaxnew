@@ -1,0 +1,4 @@
+user-agent: *
+disallow: /error/
+
+sitemap: https://vpmaxpackersandmovers.com/sitemap.xml

@@ -1,0 +1,76 @@
+/* Tracking Page Styles */
+.premium-tracking-deco-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #031b4e, #ff7a16);
+}
+
+.premium-tracking-title {
+    color: #031b4e;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.premium-tracking-form {
+    max-width: 650px;
+}
+
+.premium-tracking-icon {
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ff7a16;
+    font-size: 1.1rem;
+}
+
+.premium-tracking-input {
+    padding-left: 55px;
+    border-radius: 50px;
+    border: 2px solid #f1f5f9;
+    box-shadow: none;
+    font-size: 16px;
+    height: 54px;
+    background-color: #f8fafc;
+}
+
+.premium-tracking-input:focus {
+    border-color: #ff7a16;
+    box-shadow: 0 0 0 0.25rem rgba(255, 122, 22, 0.25);
+}
+
+.premium-tracking-btn {
+    border-radius: 50px;
+    background-color: #ff7a16;
+    color: white;
+    font-weight: 700;
+    border: none;
+    transition: all 0.3s;
+    height: 54px;
+    min-width: 150px;
+}
+
+.premium-tracking-btn:hover {
+    background-color: #e66a0c;
+    color: white;
+}
+
+.premium-clear-btn {
+    width: 54px;
+    height: 54px;
+    border: 2px solid #f1f5f9;
+    color: #64748b;
+    transition: all 0.3s;
+    flex-shrink: 0;
+}
+
+.premium-clear-btn:hover {
+    background-color: #e2e8f0;
+    border-color: #e2e8f0;
+}
+
+.contact-tracking-details-card {
+    display: none;
+}
