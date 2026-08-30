@@ -98,8 +98,8 @@ $route["wardha"] = "packers_movers/state_services/wardha";
 $route["mumbai"] = "packers_movers/state_services/mumbai";
 $route["gurugram"] = "packers_movers/state_services/gurugram";
 $route["bhandara"] = "packers_movers/state_services/bhandara";
-$route["(:any).htm"] = "home/error";
-$route['translate_uri_dashes'] = FALSE;
+
+$route['generate-sitemap'] = 'template/sitemap/write_file';
 
 
 $route['branch-address'] = 'contacts/branch_address';
@@ -110,4 +110,9 @@ $route['avoid-fraud-packers-and-movers'] = 'about/fraud';
 $route['packing-material'] = 'about/packing_material';
 
 $route['moving-guide'] = 'about/moving_guide';
+
+$route["(:any).htm"] = "home/error";
+$route['translate_uri_dashes'] = FALSE;
+
+
 

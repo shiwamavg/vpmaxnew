@@ -8,24 +8,24 @@ $services = [
         'image' => 'international-shifting-services.webp',
         'icon' => 'bi-globe'
     ],
-    [
-        'title' => 'Car Transport',
-        'url' => 'car-transport-in-' . $ctlink,
-        'image' => 'car-transportation-services.webp',
-        'icon' => 'bi-car-front-fill'
-    ],
-    [
-        'title' => 'Bike Transport',
-        'url' => 'bike-transport-in-' . $ctlink,
-        'image' => 'bike-transportation-services.webp',
-        'icon' => 'bi-bicycle'
-    ],
-    [
-        'title' => 'IBA Approved Packers',
-        'url' => 'iba-approved-packers-in-' . $ctlink,
-        'image' => 'domestic-shifting-services.webp',
-        'icon' => 'bi-shield-check'
-    ]
+    // [
+    //     'title' => 'Car Transport',
+    //     'url' => 'car-transport-in-' . $ctlink,
+    //     'image' => 'car-transportation-services.webp',
+    //     'icon' => 'bi-car-front-fill'
+    // ],
+    // [
+    //     'title' => 'Bike Transport',
+    //     'url' => 'bike-transport-in-' . $ctlink,
+    //     'image' => 'bike-transportation-services.webp',
+    //     'icon' => 'bi-bicycle'
+    // ],
+    // [
+    //     'title' => 'IBA Approved Packers',
+    //     'url' => 'iba-approved-packers-in-' . $ctlink,
+    //     'image' => 'domestic-shifting-services.webp',
+    //     'icon' => 'bi-shield-check'
+    // ]
 ];
 ?>
 

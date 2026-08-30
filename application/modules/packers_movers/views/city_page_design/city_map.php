@@ -95,7 +95,7 @@ if (!$city_found) {
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.8126575171887!2d80.3967944!3d23.82526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398161c4ddfc0861%3A0x1f259d5582feea11!2sVP%20Max%20Packers%20And%20Movers!5e0!3m2!1sen!2sin!4v1765783098545!5m2!1sen!2sin"
                     width="100%" height="500" title="Gogle map VP Max Packers and Movers Katni" allowfullscreen=""
                     loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <?php } elseif (strtolower($state) == 'madhya pradesh' && strtolower($city) == 'chhatarpur') { ?>
+            <?php } elseif (strtolower(@$state) == 'madhya pradesh' || strtolower($city) == 'chhatarpur') { ?>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.5267558824394!2d79.672427!3d24.948186799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3982bf8f30aca249%3A0x7881be833cdb149e!2sVP%20Max%20Packers%20And%20Movers!5e0!3m2!1sen!2sin!4v1765783362944!5m2!1sen!2sin"
                     width="100%" height="500" title="Gogle map VP Max Packers and Movers Chhatarpur Madhya Pradesh"
@@ -125,7 +125,7 @@ if (!$city_found) {
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2493.53446719355!2d77.09861507695811!3d28.4462390498712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1901dd6441af%3A0xa1fa2560a375c9de!2sVP%20Max%20Packers%20And%20Movers!5e0!3m2!1sen!2sin!4v1765789977099!5m2!1sen!2sin"
                     width="100%" height="500" title="Gogle map VP Max Packers and Movers Sector 53" allowfullscreen=""
                     loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <?php } elseif (strtolower($state) == 'delhi' && strtolower($city) == 'chhatarpur') { ?>
+            <?php } elseif (strtolower(@$state) == 'delhi' || strtolower($city) == 'chhatarpur') { ?>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.3070063902255!2d77.1856549!3d28.500409599999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1f608fdcb6f9%3A0xe06ef73f0733ec42!2sVP%20Max%20Packers%20And%20Movers!5e0!3m2!1sen!2sin!4v1765790935548!5m2!1sen!2sin"
                     width="100%" height="500" title="Gogle map VP Max Packers and Movers Chhatarpur Delhi"
@@ -203,7 +203,7 @@ if (!$city_found) {
             //     }
             // }
 
-            if ($related_branch) { ?>
+            if (@$related_branch) { ?>
                 <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100 bg-white">
                     <div class="card-body p-3 p-lg-4 d-flex flex-column">
                         <?php if ($state) {
@@ -265,7 +265,7 @@ if (!$city_found) {
             <?php } else { ?>
                 <div class="card border-0 shadow-sm rounded-4 bg-white p-3 d-flex flex-column gap-3">
 
-                    <?php if ($state) {
+                    <?php if (@$state) {
                         $state_img = strtolower(str_replace(" ", "-", $state)) . ".webp";
                         $img_src = file_exists(FCPATH . "assets/images/state/" . $state_img) ? base_url("assets/images/state/" . $state_img) : base_url("assets/images/about/vp_max_truck.webp");
                         ?>
