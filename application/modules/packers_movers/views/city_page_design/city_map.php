@@ -235,7 +235,7 @@ if (!$city_found) {
                         <div class="mb-3 d-flex align-items-start">
                             <i class="bi bi-building text-muted fs-6 me-2 mt-1"></i>
                             <div>
-                                <span class="d-block fw-bold text-dark mb-0 fs-6">Office Address</span>
+                                <span class="d-block fw-bold text-dark mb-0 fs-6"><?=$city?> Office Address</span>
                                 <span class="text-muted small lh-sm"><?= $related_branch['address'] ?></span>
                             </div>
                         </div>

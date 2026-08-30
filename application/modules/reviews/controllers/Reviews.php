@@ -168,7 +168,7 @@ class Reviews extends MX_Controller
                 'r_title' => $this->input->post('city'), // We use r_title to store city
                 'r_desc' => $this->input->post('review'),
                 'stars' => (int) $this->input->post('rating'),
-                'status' => 1, // Auto approve (direct show)
+                'status' => 0, // dont Auto approve (spam posting)
                 'b_id' => 0,
                 'r_img' => $r_img_val,
                 'views' => 0,

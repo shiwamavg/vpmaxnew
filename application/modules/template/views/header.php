@@ -29,7 +29,7 @@
   <meta name="twitter:title" content="<?= @$title ?>"/>
   <meta name="twitter:description" content="<?= @$description ?>"/>
   <meta name="twitter:image" content="<?= $img ?>"/>
-  <meta name="twitter:domain" content="<?= $company3 ?>"/>
+  <meta name="twitter:domain" content="<?= $url ?>"/>
   <meta name="robots" content="index, follow"/>
   <meta property="al:web:url" content="<?= $url ?>">
   <meta name="theme-color" content="<?= $themeColor ?>">

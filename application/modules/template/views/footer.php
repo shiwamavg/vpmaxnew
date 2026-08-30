@@ -174,8 +174,14 @@ $this->load->view('home/city_list');
             <div class="footer-contact-item mt-3">
                 <div class="footer-contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
                 <div class="footer-contact-text">
+                  
+                  <?php if(@$related_branch['address']): ?>
+                  <span><?= $city ?> Address</span>
+                  <p><?= $related_branch['address'] ?></p>
+                  <?php else: ?>
                   <span>Corporate Office Address</span>
                   <p><?= $address3 ?></p>
+                  <?php endif; ?>
                 </div>
               </div>
             </div>

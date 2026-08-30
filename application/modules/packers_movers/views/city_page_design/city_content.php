@@ -1,4 +1,6 @@
 <?php
+$stateYear="2003";
+$experience = date('Y') - $stateYear;
 $htmlcontent = '';
 $htmlcontent1 = '';
 $htmlcontent2 = '';
@@ -1787,19 +1789,33 @@ elseif (strtolower($state) == "delhi") {
 } else {
 
   $htmlcontent = "
-   <h2 class='fw-bold mb-3 text-primary'> $company3 in $city</h2>
-        <p>Finding <strong>Packers and Movers in $city</strong> who truly understand the stress of shifting is not always simple. Every family has its own rhythm, every office has its own setup, and every move demands a different level of care. VP Max Packers and Movers in <strong><a href='" . site_url(strtolower(str_replace(' ', '-', $city) . "-packers-movers-" . (strpos($state, ' ') !== false ? str_replace(' ', '-', $state) : $state))) . "' class='text-dnager text-primary text-decoration-underline'>$city</a></strong> has steadily earned a name as a reliable, experienced, and professional packers and movers company, especially for customers who want safe handling, fair pricing, and a team that behaves responsibly from start to finish.</p>
-        <p>Whether you're searching for movers and packers in $city, Movers near me $city, Packers and movers near me $city, or even <strong>international movers from $city</strong>, our packing moving company is one of the few companies that provides a complete end-to-end moving solution under one roof.</p>
-        <p>This page guides you through their services, local expertise, packing standards, benefits, and the unique strengths that help us stand out among <strong>$city best moving companies</strong>.</p>
-        <p>VP Max Packers and Movers in $city force specialized quilting and moving services, offer
-                    excellent relocation results as well transportation, caravan, effects, disassembly, budge, unit
-                    product, companion service, loading, unloading, quilting, and discharging. Despite the time, you
-                    will decide anytime and provide your order.</p>
-                <p>Our platoon can return to your house the following day and ensure the date for relocation and
-                    transport in an exceedingly given time. We all know the way to make your stirring accessible.
-                    Packers and Movers in $city deliver provident relocation services throughout. Services we
-                    offer area unit shifting, bike stirring, and different effects likewise.</p>"
-  ;
+        <h2 class='fw-bold mb-3 text-primary'>Best Moving Company in $city</h2>
+        <p>Since $stateYear, VP Max is serving the packing and moving industry and has a wide network of transportation and relocation services across India.</p>
+        <p>Throught this $experience+ years in moving industry, we pioneer in home shifting, office relocation, vehicle transportation, and international moving services.</p>
+        <p>We are one of the most trusted and verified packers and movers in $city, with a strong reputation for safe handling, transparent pricing, and professional service. We provide genuine rates and shifting experience so that you never regret hiring us.</p>
+        <p>In $city, there are many unverified/scam movers and packers who offer cheap rates but fail to deliver on promises. VP Max Packers and Movers is well establish company in $city with professional staffs and workers those are the foundation of our quality works. We choose the best approach for each move.</p>
+        <p>Even if you don't hire us, we provide free moving quotes and relocation tips to help you plan your move better and take right decision before getting scammed.</p>
+";
+$htmlcontent1 = "
+        <h2 class='fs-4 fw-bold'>Why Families Choose VP Max Packers and Movers in $city for Safe Packing Support</h2>
+        <p>Our customer base is mostly referral customers, word of mouth recommendations to choose us in $city. We are one of the prime choice among all moving companies in $city. During this $experience+ years of journey, we have built a strong reputation for reliability and customer satisfaction.</p>
+        <p class='fs-5 fw-bold'>VP Max Packers and Movers focuses heavily on organised relocation execution.</p>
+        <ul class='fs-6 ps-5 mb-3'>
+            <li>Since $stateYear, Packing and Moving in $city</li>
+            <li>IBA approved Bills and GST invoicing</li>
+            <li>Skilled loading staff trained for household and office relocation</li>
+            <li>GPS-enabled transport vehicles for shipment monitoring</li>
+            <li>GST billing and verified company documentation</li>
+            <li>Multi-layer packing support for electronics and fragile furniture</li>
+            <li>Dedicated relocation coordinators during active shifting process</li>
+            <li>Timely pickup and unloading planning across $city routes</li>
+            <li>Support for local shifting, interstate transport and commercial relocation</li>
+        </ul>
+
+        
+        <p>Need urgent relocation assistance in $city? Call <a href='$phonehtml' class='text-primary'>$phone </a> to book your $city move now. Early booking helps secure better truck availability and smoother scheduling.</p>";
+
+/* commented by shiwam
   $htmlcontent1 = "
         <h3 class='fs-4 fw-bold'>Why VP Max Packers and Movers Is Trusted Across $city</h3>
         <p>Most individuals search for Trustworthy movers and packs in the $city area, Local movers in $city, Reasonable Movers in the $city area or even Low-cost Movers in the $city area. However, pricing is not the only concern, as consumers are also looking for a dependable, safe, and accountable mover. With our success, we prove to have built our reputation around the habits of punctuality when we go to work, clean packing products, respectful behavior, transparent billing, and care in handling all items in the moving process.</p>
@@ -1991,5 +2007,10 @@ elseif (strtolower($state) == "delhi") {
           </div>
     </div>
   </section>
-";
+";*/
+$htmlcontent2 = "";
+$htmlcontent3 = "";
+$htmlcontent4 = "";
+$htmlcontent5 = "";
+$htmlcontent6 = "";
 }

@@ -83,11 +83,11 @@ class MX_Controller
         $this->comp['companystate'] = "Madhya Pradesh";
         $this->comp['themeColor'] = "#0a4ebd";
 
-        $this->comp['experience'] = "23+";
+        
         $this->comp['startYear'] = "2003";
-
+        $this->comp['experience'] = $this->comp['startYear'] . " - " . date('Y');
         $this->comp['happyClients'] = "4,850+";
-        $this->comp['yearsExperience'] = "23+";
+        $this->comp['yearsExperience'] = $this->comp['experience'] . "+";
         $this->comp['secureShifting'] = "100%";
         $this->comp['statesCovered'] = "28+";
 

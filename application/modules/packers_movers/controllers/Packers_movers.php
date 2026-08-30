@@ -38,10 +38,10 @@ class Packers_movers extends MX_Controller
     function get_title($city, $state)
     {
         $seo = array(
-            // "Siliguri" => array(
-            //     "title" => "",
-            //     "desc" => ""
-            // ),
+            "Sagar" => array(
+                "title" => "Packers and Movers in Sagar, MP | Best Moving Company - VP Max",
+                "desc" => "Looking for trusted packers and movers in Sagar? VP Max offers safe home/office shifting, packing, loading & transport in Sagar, MP. Get free quotes today!"
+            ),
         );
         foreach ($seo as $k => $s) {
             if ($k == $city) {
@@ -147,7 +147,7 @@ class Packers_movers extends MX_Controller
                 ['city' => 'Tikamgarh', 'contact_person' => 'Pk Singh', 'address' => 'Kile Ka Maidan Shop No. 11 State Bank Near Anand Lodge Tikamgarh MP 472001', 'phone' => '9993983460'],
                 ['city' => 'Satna', 'contact_person' => '', 'address' => 'Shop No. 542, Sangram Colony, Satna, Madhya Pradesh 485001', 'phone' => '09109083460'],
                 ['city' => 'Bina', 'contact_person' => 'PK Singh', 'address' => 'Shop No. 5 Malkhedi Railway Station Rd, Chitrakoot, Bina, Madhya Pradesh 470113', 'phone' => '9109083460'],
-                ['city' => 'Sagar', 'contact_person' => 'Pramod Kumar', 'address' => 'Ground Floor, Shop 2, JL Institute Of Study Center, Tilak Ganj, Ward 14, Sagar, Madhya Pradesh 47002', 'phone' => '9630263460'],
+                ['city' => 'Sagar', 'contact_person' => 'Pramod Kumar', 'address' => 'Ground Floor, Shop 2, JL Institute Of Study Center, Tilak Ganj, Ward 14, Sagar, Madhya Pradesh 470002', 'phone' => '9630263460'],
                 ['city' => 'Narsinghpur', 'contact_person' => 'PK Singh', 'address' => 'Shop No. 5, Bariya Chouraha Main Road Rani Pipariya, Narsinghpur, Madhya Pradesh 487110', 'phone' => '09109083460'],
                 ['city' => 'Rewa', 'contact_person' => 'JP Sir', 'address' => 'Shop No. 41, Ground Floor Vidya Nagar Colony, Rewa, Madhya Pradesh 486001', 'phone' => '09752383460'],
                 ['city' => 'Satna', 'contact_person' => '', 'address' => 'Office No. 022, Rajendra Nagar Rd, Rajendra Nagar, Satna, Madhya Pradesh 485001', 'phone' => '9752383460'],
@@ -171,7 +171,7 @@ class Packers_movers extends MX_Controller
                 ['city' => 'Chhatarpur', 'contact_person' => '', 'address' => 'Shop No-44, D-87, Chhatarpur Enclave Phase 2, Chattarpur Enclave, Chhatarpur, New Delhi, Delhi 110074', 'phone' => '09034951515'],
                 ['city' => 'Manesar', 'contact_person' => '', 'address' => 'Shop No 52, opposite Bal Bharti School, Sector 1, Manesar, Gurugram, Haryana 122052', 'phone' => '9870104515'],
                 ['city' => 'Bhubaneswar', 'contact_person' => '', 'address' => 'Shop No. 441, Prasanti Vihar Rd, Prasanti Vihar, Patia, Bhubaneswar, Odisha 751024', 'phone' => '09993603460'],
-                ['city' => 'Sagar', 'contact_person' => 'Pramod Kumar', 'address' => 'Ground Floor, Shop 2, JL Institute Of Study Center, Tilak Ganj, Ward 14, Sagar, Madhya Pradesh 47002', 'phone' => '9630263460'],
+                ['city' => 'Sagar', 'contact_person' => 'Pramod Kumar', 'address' => 'Ground Floor, Shop 2, JL Institute Of Study Center, Tilak Ganj, Ward 14, Sagar, Madhya Pradesh 470002', 'phone' => '9630263460'],
                 ['city' => 'Ujjain', 'contact_person' => 'SK Singh', 'address' => 'Office No. 066, Dewas Rd, Rishi Nagar, Ujjain, Madhya Pradesh 456010', 'phone' => '9685873460'],
                 ['city' => 'Gurugram', 'contact_person' => 'KD Singh', 'address' => 'Plot No. 5, Gali Number 1, near CRPF Camp Chowk, Shiv Vihar, Sector 12, Gurugram, Haryana 122001', 'phone' => '9870104515'],
             ];

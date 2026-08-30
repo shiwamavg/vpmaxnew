@@ -1,12 +1,13 @@
 <?php include 'city_content.php' ?>
 <div class="container">
     <div class="row">
+        
+        <div class="col-lg-12 mt-2">
+            <?php echo $htmlcontent ?>
+        </div>
         <div class="col-lg-12 pt-2 pb-2">
             <img loading="lazy" src="<?= base_url() ?>assets/images/city_page/vp_max_team_and_truck.webp"
                 alt="VP Max team and Truck" class="w-100" loading="lazy">
-        </div>
-        <div class="col-lg-12 mt-2">
-            <?php echo $htmlcontent ?>
         </div>
 
     </div>
@@ -17,10 +18,10 @@
 include 'company_details.php';
 include 'city_map.php';
 $this->load->view('template/important_link');
-$this->load->view('reviews/review_widget');
+//$this->load->view('reviews/review_widget');
 $this->load->view('home/credentials');
 $this->load->view('home/certificate');
-$this->load->view('home/working_process');
+//$this->load->view('home/working_process');
 $this->load->view('home/chart_table');
 $states_28 = [
     'andhra-pradesh',
@@ -77,6 +78,7 @@ if ( strtolower($city) == "ujjain" || strtolower($city) == "dewas" || strtolower
         <div class="col-lg-12 mt-2">
             <?php echo $htmlcontent2 ?>
         </div>
+<?php if(@$htmlcontent3): ?>
    <div class="container mt-4">
     <div class="row align-items-center g-4">
         <div class="col-lg-6 col-md-6">
@@ -101,17 +103,22 @@ if ( strtolower($city) == "ujjain" || strtolower($city) == "dewas" || strtolower
 <style>
 .video-wrapper{position:relative;width:100%;max-width:500px;height:520px;margin:0 auto;overflow:hidden;border-radius:12px}.video-wrapper iframe{width:100%;height:100%;border:0}@media (max-width:991px){.video-wrapper{max-width:450px;height:500px}}@media (max-width:575px){.video-wrapper{max-width:100%;height:480px}}
 </style>
+<?php endif; ?>
+        <?php if(@$htmlcontent4): ?>
         <div class="col-lg-12 mt-4">
             <?php echo $htmlcontent4 ?>
         </div>
-        <?php /* commented by shiwam
-        <div class=" commented by shiwamcol-lg-12 mt-2">
+        <?php endif; ?>
+        <?php if(@$htmlcontent5): ?>
+        <div class="col-lg-12 mt-2">
             <?php echo $htmlcontent5 ?>
         </div>
+        <?php endif; ?>
+        <?php if(@$htmlcontent6): ?>
         <div class="col-lg-12 mt-2">
             <?php echo $htmlcontent6 ?>
         </div>
-        <?php */ ?>
+        <?php endif; ?>
     </div>
 
 </div>

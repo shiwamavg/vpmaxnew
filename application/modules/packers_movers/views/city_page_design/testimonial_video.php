@@ -1,7 +1,8 @@
 <?php
 // Get the CI instance to query the database
 $CI =& get_instance();
-
+// $CI =& get_instance();
+$CI->load->database();
 // Normalize current city name
 $city_name = isset($city) ? strtolower(trim($city)) : '';
 
@@ -30,7 +31,7 @@ if (!empty($videos)):
 
     <div class="col-lg-12 vpmax-testimonial-video-section">
         <h2 class="vpmax-testimonial-video-title">
-            <?= ucwords(strtolower("Moving process & testimonials " . (isset($city) && !empty($city) ? "in " . $city : ""))) ?>
+            Moving Glimpses
         </h2>
         <p class="text-center text-muted mb-4 vpmax-testimonial-subtitle">See what our customers have to say about our moving
             services.</p>
