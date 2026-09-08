@@ -15,8 +15,8 @@ class Home extends MX_Controller
     }
     function index()
     {
-        $data['title'] = "VP Max Packers and Movers";
-        $data['description'] = "We provide safe, fast & affordable home and office shifting across India origin from Indore. Call " . $this->comp['phone'] . " for a free quote today!";
+        $data['title'] = "VP Max Packers and Movers - Packing & Moving Company";
+        $data['description'] = "We provide safe, fast & affordable home and office shifting services across India. Call " . $this->comp['phone'] . " for a free quote today!";
 
         $data['module'] = "home";
         $data['view_file'] = "home";
@@ -137,6 +137,22 @@ class Home extends MX_Controller
         if (isset($redirects[$segment])) {
             redirect($redirects[$segment], 'location', 301);
         }
+    }
+    function car_redirect($city){
+        redirect("car-transport-in-$city", 'location', 301);
+    }
+
+    function bike_redirect($city){
+        redirect("bike-transport-in-$city", 'location', 301);
+    }
+    function domestic_redirect($city){
+        redirect("home-shifting-in-$city", 'location', 301);
+    }
+    function pet_redirect($city){
+        redirect("home-shifting-in-$city", 'location', 301);
+    }
+    function single_item_redirect($city){
+        redirect("home-shifting-in-$city", 'location', 301);
     }
 
     public function sitemap()

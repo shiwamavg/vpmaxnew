@@ -309,13 +309,19 @@
             renderSuggestions(list, prefix);
           },
           'json'
-        ).fail(() => {
-          box.html(`
+        ).fail(function (xhr, status, error) {
+    console.log("AJAX Error");
+    console.log("Status:", xhr.status);
+    console.log("Status Text:", status);
+    console.log("Error:", error);
+    console.log("Response:", xhr.responseText);
+
+    box.html(`
         <div class="list-group-item text-danger">
-          Failed to load suggestions
+            Failed to load suggestions
         </div>
-      `);
-        });
+    `).show();
+});
       }, 300);
     });
 

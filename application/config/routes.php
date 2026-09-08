@@ -39,6 +39,17 @@ $route["bike-transport-in-(:any)"] = "city_services/bike_transport/$1";
 $route["international-service-in-(:any)"] = "city_services/international_service/$1";
 $route["iba-approved-packers-in-(:any)"] = "city_services/iba_approved_packers/$1";
 
+$route['car-transportation-in-(:any)'] = "home/car_redirect/$1";
+$route['bike-relocation-service-in-(:any)'] = "home/bike_redirect/$1";
+$route['domestic-shifting-service-in-(:any)'] = "home/domestic_redirect/$1";
+$route['pet-transport-service-in-(:any)'] = "home/pet_redirect/$1";
+$route['single-item-transport-service-in-(:any)'] = "home/single_item_redirect/$1";
+
+
+// $route['bike-relocation-service-in-(:any)'] = function ($city) {
+//     redirect("bike-transport-in-$city", '301');
+// };
+
 // Services Routes
 $route["household-shifting"] = "services/homeShifting";
 $route["office-shifting"] = "services/office";

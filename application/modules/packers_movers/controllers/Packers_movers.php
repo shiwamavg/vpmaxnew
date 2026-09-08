@@ -112,6 +112,7 @@ class Packers_movers extends MX_Controller
             $data['phonehtml1'] = "tel:+91$phn";
             $data['phone2'] = $phn;
             $data['phonehtml2'] = "tel:+91$phn";
+            $data['address1'] = $branches['address'];
         }
         echo Modules::run('template/layout2', $data);
     }

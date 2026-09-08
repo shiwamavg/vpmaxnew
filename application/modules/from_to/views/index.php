@@ -161,7 +161,7 @@
 <?php $this->load->view('packers_movers/city_page_design/company_details.php'); ?>
 
 <?php $this->load->view('packers_movers/city_page_design/city_map'); ?>
-<?php include 'city_service.php';
+<?php //include 'city_service.php';
 $this->load->view('reviews/review_widget');
 $this->load->view('home/credentials');
 $this->load->view('home/certificate');
