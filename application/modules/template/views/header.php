@@ -5,6 +5,7 @@
   <title><?= $title ?></title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <?php
+  $this->load->helper('url');
   if (!@$description) {
     $description = "$company3 India offers reliable and efficient moving and storage solutions, ensuring your belongings are transported safely and securely to your new destination.";
   }
@@ -30,7 +31,23 @@
   <meta name="twitter:description" content="<?= @$description ?>"/>
   <meta name="twitter:image" content="<?= $img ?>"/>
   <meta name="twitter:domain" content="<?= $url ?>"/>
+  <meta name="twitter:site" content="@vpmaxpackers"/>
+  <?php
+$locality_parent_slugs = [
+                'bhopal', 'chandigarh', 'dewas', 'ghaziabad', 'gurugram', 'indore',
+                'jabalpur', 'mumbai', 'nagpur', 'pune', 'raipur', 'sagar', 'ujjain', 'wardha'
+            ];
+            ?>
+
+  <?php
+    $currentPath = trim(parse_url($url, PHP_URL_PATH), '/');
+    $currentSlug = strtolower($currentPath);
+    if (in_array($currentSlug, $locality_parent_slugs, true)) {
+  ?>
+  <meta name="robots" content="noindex, follow">
+  <?php } else { ?>
   <meta name="robots" content="index, follow"/>
+  <?php } ?>
   <meta property="al:web:url" content="<?= $url ?>">
   <meta name="theme-color" content="<?= $themeColor ?>">
   <meta name="mobile-web-app-capable" content="yes">

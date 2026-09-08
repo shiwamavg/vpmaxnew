@@ -151,9 +151,9 @@ function toggleHelpful(btn, baseCount) {
     }
 }
 </script>
-
+<?php /* commented by shiwam
 <!-- SEO Schema for LocalBusiness and Reviews -->
-<?php
+
 if (!empty($recent_reviews)) {
     $schema_reviews = [];
     foreach ($recent_reviews as $rev) {
@@ -190,4 +190,5 @@ if (!empty($recent_reviews)) {
     echo json_encode($schema, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . "\n";
     echo '</script>';
 }
+    */
 ?>

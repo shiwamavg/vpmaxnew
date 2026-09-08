@@ -62,8 +62,8 @@ $locations = [
             <?php
             // City hubs use their root URL; their localities use /{city}/{locality}.
             $locality_parent_slugs = [
-                'bhopal', 'chandigarh', 'dewas', 'ghaziabad', 'gurugram', 'indore',
-                'jabalpur', 'mumbai', 'nagpur', 'pune', 'raipur', 'sagar', 'ujjain', 'wardha'
+                // 'bhopal', 'chandigarh', 'dewas', 'ghaziabad', 'gurugram', 'indore',
+                // 'jabalpur', 'mumbai', 'nagpur', 'pune', 'raipur', 'sagar', 'ujjain', 'wardha'
             ];
             ?>
             <?php foreach ($locations as $location):
