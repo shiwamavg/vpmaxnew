@@ -438,7 +438,7 @@ if (strtolower($city) == "indore") {
             <p class='text-secondary mb-3 fs-6 lh-lg'>October to February is usually considered the best period for house shifting in Gwalior because weather conditions stay manageable and transport movement becomes smoother across city routes.</p>
             <p class='text-secondary mb-3 fs-6 lh-lg'>Summer relocation becomes tiring during afternoon loading because high temperatures affect labour speed and transport timing. Monsoon shifting also creates delays in some areas because slippery roads and rain interruptions slow unloading activities.</p>
             <p class='text-secondary mb-4 fs-6 lh-lg'>Early morning shifting generally works better in Gwalior because daytime congestion increases heavily around commercial zones and busy residential stretches later in the day.</p>
-            <div class='alert alert-danger border-danger-subtle d-flex align-items-center gap-3 p-3 mb-0 rounded-3'>
+            <div class='alert border-danger-subtle d-flex align-items-center gap-3 p-3 mb-0 rounded-3'>
             <i class='bi bi-telephone-fill text-primary fs-5 flex-shrink-0'></i>  
             <p class='fw-bold text-dark m-0 fs-6'>Call <a href='$phonehtml' class='text-primary text-decoration-underline'> $phone</a> and speak with our team today, ask for a free pre move survey and receive a clear quote designed as per your moving requirements.</p>
             </div>
@@ -662,7 +662,7 @@ if (strtolower($city) == "indore") {
             <p class='text-secondary mb-3 fs-6 lh-lg'>October to February is usually considered the best period for house shifting in Raipur because weather conditions stay manageable and transport movement becomes smoother across city routes.</p>
             <p class='text-secondary mb-3 fs-6 lh-lg'>Summer relocation becomes tiring during afternoon loading because high temperatures affect labour speed and transport timing. Monsoon shifting also creates delays in some areas because slippery roads and rain interruptions slow unloading activities.</p>
             <p class='text-secondary mb-4 fs-6 lh-lg'>Early morning shifting generally works better in Raipur because daytime congestion increases heavily around commercial zones and busy residential stretches later in the day.</p>
-            <div class='alert alert-danger border-danger-subtle d-flex align-items-center gap-3 p-3 mb-0 rounded-3'>
+            <div class='alert border-danger-subtle d-flex align-items-center gap-3 p-3 mb-0 rounded-3'>
             <i class='bi bi-telephone-fill text-primary fs-5 flex-shrink-0'></i>  
             <p class='fw-bold text-dark m-0 fs-6'>Call <a href='$phonehtml' class='text-primary text-decoration-underline'>$phone</a> to book your Raipur move today, also get a free moving quote as per your requirement.</p>
             </div>
@@ -1795,7 +1795,7 @@ elseif (strtolower($state) == "delhi") {
             <p class='text-secondary mb-3 fs-6 lh-lg'>October to February is usually considered the best period for house shifting in Bhopal because weather conditions stay manageable and transport movement becomes smoother across city routes.</p>
             <p class='text-secondary mb-3 fs-6 lh-lg'>Summer relocation becomes tiring during afternoon loading because high temperatures affect labour speed and transport timing. Monsoon shifting also creates delays in some areas because slippery roads and rain interruptions slow unloading activities.</p>
             <p class='text-secondary mb-4 fs-6 lh-lg'>Early morning shifting generally works better in Bhopal because daytime congestion increases heavily around commercial zones and busy residential stretches later in the day.</p>
-            <div class='alert alert-danger border-danger-subtle d-flex align-items-center gap-3 p-3 mb-0 rounded-3'>
+            <div class='alert border-danger-subtle d-flex align-items-center gap-3 p-3 mb-0 rounded-3'>
             <i class='bi bi-telephone-fill text-primary fs-5 flex-shrink-0'></i>  
             <p class='fw-bold text-dark m-0 fs-6'>Call <a href='$phonehtml' class='text-primary text-decoration-underline'>$phone</a> to book your Bhopal move today, also get a free moving quote as per your requirement.</p>
             </div>

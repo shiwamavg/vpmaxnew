@@ -40,6 +40,41 @@ class Sitemap extends MX_Controller {
         return $items;
     }
 
+    private function locality_parent_slugs() {
+        return [
+            'bhopal', 'chandigarh', 'dewas', 'ghaziabad', 'gurugram', 'indore',
+            'jabalpur', 'mumbai', 'nagpur', 'pune', 'raipur', 'sagar', 'ujjain', 'wardha'
+        ];
+    }
+
+    private function load_city_localities($parent_slug) {
+        $path = APPPATH . 'modules/packers_movers/views/data/' . $parent_slug . '.php';
+        if (!is_file($path)) {
+            return [];
+        }
+
+        $cities = [];
+        include $path;
+
+        if (empty($cities) || !is_array($cities)) {
+            return [];
+        }
+
+        $items = [];
+        foreach ($cities as $city) {
+            if (empty($city['nm'])) {
+                continue;
+            }
+
+            $items[] = [
+                'city' => $this->slugify($city['nm']),
+                'parent' => $parent_slug
+            ];
+        }
+
+        return $items;
+    }
+
     private function imported_city_list() {
         $states = [
             'madhya-pradesh' => 'madhya-pradesh',
@@ -54,6 +89,10 @@ class Sitemap extends MX_Controller {
         $cities = [];
         foreach ($states as $file => $state_slug) {
             $cities = array_merge($cities, $this->load_state_cities($file, $state_slug));
+        }
+
+        foreach ($this->locality_parent_slugs() as $parent_slug) {
+            $cities = array_merge($cities, $this->load_city_localities($parent_slug));
         }
 
         return $cities;
@@ -181,8 +220,10 @@ class Sitemap extends MX_Controller {
         $seen_urls = [];
         foreach ($cities as $city) {
             // Packers movers pages
-            $city['city']= str_replace(' ', '-', strtolower($city['city']));
-            $city_url = $base_url . '/' . $city['city'] . '-packers-movers-' . $city['state'];
+            $city['city'] = str_replace(' ', '-', strtolower($city['city']));
+            $city_url = !empty($city['parent'])
+                ? $base_url . '/' . $city['parent'] . '/' . $city['city']
+                : $base_url . '/' . $city['city'] . '-packers-movers-' . $city['state'];
             if (empty($seen_urls[$city_url])) {
                 $urls[] = [
                     'loc' => $city_url,

@@ -43,3 +43,4 @@
         </ul>
     </div>
 </div>
+<style>.important-link-item i::after {display: none;}</style>

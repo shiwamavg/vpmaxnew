@@ -59,9 +59,18 @@ $locations = [
         </div>
 
         <div class="row g-3">
+            <?php
+            // City hubs use their root URL; their localities use /{city}/{locality}.
+            $locality_parent_slugs = [
+                'bhopal', 'chandigarh', 'dewas', 'ghaziabad', 'gurugram', 'indore',
+                'jabalpur', 'mumbai', 'nagpur', 'pune', 'raipur', 'sagar', 'ujjain', 'wardha'
+            ];
+            ?>
             <?php foreach ($locations as $location):
                 $citySlug = strtolower(str_replace(' ', '-', $location['city']));
-                $link = $citySlug . "-packers-movers-" . $location['state'];
+                $link = in_array($citySlug, $locality_parent_slugs, true)
+                    ? $citySlug
+                    : $citySlug . "-packers-movers-" . $location['state'];
                 ?>
                 <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3">
                     <ul class="location-list mb-0">

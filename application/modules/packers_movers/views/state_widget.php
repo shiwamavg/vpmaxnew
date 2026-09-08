@@ -21,7 +21,7 @@ $states = [
     ['name' => 'Raipur', 'image' => 'raipur.webp', 'slug' => 'raipur'],
     ['name' => 'Odisha', 'image' => 'odisha.webp', 'slug' => 'odisha'],
     ['name' => 'Rajasthan', 'image' => 'rajasthan.webp', 'slug' => 'rajasthan'],
-    ['name' => 'Gujrat', 'image' => 'gujrat.webp', 'slug' => 'gujrat'],
+    ['name' => 'Gujarat', 'image' => 'gujarat.webp', 'slug' => 'gujarat'],
     ['name' => 'Chhattisgarh', 'image' => 'chhattisgarh.webp', 'slug' => 'chhattisgarh'],
     ['name' => 'Bihar', 'image' => 'bihar.webp', 'slug' => 'bihar'],
     ['name' => 'Indore', 'image' => 'indore.webp', 'slug' => 'indore'],

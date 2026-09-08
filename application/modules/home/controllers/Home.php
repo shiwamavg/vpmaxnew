@@ -72,7 +72,7 @@ class Home extends MX_Controller
             'packers-and-movers-in-hisar-haryana.php' => 'hisar-packers-movers-haryana',
             'packers-and-movers-in-rewari-haryana.php' => 'rewari-packers-movers-haryana',
             'packers-and-movers-in-panipat.php' => 'panipat-packers-movers-haryana',
-            'packers-and-movers-in-ashok-vihar-phase-2.php' => '"ashok-vihar-phase-2-packers-movers-delhi',
+            'packers-and-movers-in-ashok-vihar-phase-2.php' => 'ashok-vihar-phase-2-packers-movers-delhi',
             'packers-and-movers-in-sector-49-gurgaon.php' => 'sector-49-gurgaon-packers-movers-haryana',
             'packers-and-movers-in-sector-15-gurgaon.php' => 'sector-15-gurgaon-packers-movers-haryana',
             'packers-and-movers-in-sohna.php' => 'sohna-packers-movers-haryana',

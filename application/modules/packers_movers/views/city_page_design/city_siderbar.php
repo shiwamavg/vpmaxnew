@@ -139,8 +139,15 @@
         if ($count >= 10) break;
         $link      = urlencode(strtolower(str_replace(" ", "-", $ct['nm'])));
         $statename = urlencode(strtolower(str_replace(" ", "-", $st)));
+        $locality_parent_slugs = [
+          'bhopal', 'chandigarh', 'dewas', 'ghaziabad', 'gurugram', 'indore',
+          'jabalpur', 'mumbai', 'nagpur', 'pune', 'raipur', 'sagar', 'ujjain', 'wardha'
+        ];
+        $city_url = in_array($statename, $locality_parent_slugs, true)
+          ? "$statename/$link"
+          : "$link-packers-movers-$statename";
       ?>
-      <a href="<?= site_url("$link-packers-movers-$statename") ?>"
+      <a href="<?= site_url($city_url) ?>"
          class="pm-city-tag"
          id="relatedCity-<?= $count ?>">
         <i class="bi bi-arrow-right-short"></i><?= $ct['nm'] ?>

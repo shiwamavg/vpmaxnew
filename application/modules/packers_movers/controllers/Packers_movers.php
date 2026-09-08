@@ -27,8 +27,8 @@ class Packers_movers extends MX_Controller
         $state = ucwords(str_replace("-", " ", $state));
         $data = array(
             "state" => $state,
-            "title" => $this->comp['company3'] . " in $state",
-            "description" => $this->comp['company3'] . " in $state",
+            "title" => $this->comp['company3'] . " branches in $state",
+            "description" => "City list of VP Max packers and movers in $state. Check your nearest branch for affordable shifting services.",
             "keywords" => "$state " . $this->comp['company3'] . " in $state",
             "module" => "packers_movers",
             "view_file" => "city_list",
@@ -87,8 +87,23 @@ class Packers_movers extends MX_Controller
         $state = ucwords(str_replace("-", " ", $state));
         $city = str_replace("_", " ", $city);
         $city = urldecode(ucwords(str_replace("-", " ", $city)));
+        $state_slug = strtolower(str_replace(' ', '-', $state));
+        $city_slug = strtolower(str_replace(' ', '-', $city));
+        $locality_parent_slugs = [
+            'bhopal', 'chandigarh', 'dewas', 'ghaziabad', 'gurugram', 'indore',
+            'jabalpur', 'mumbai', 'nagpur', 'pune', 'raipur', 'sagar', 'ujjain', 'wardha'
+        ];
+        $canonical_path = $state_slug . '/' . $city_slug;
+
+        // Redirect legacy locality URLs to the parent-city URL structure.
+        if (in_array($state_slug, $locality_parent_slugs, true)
+            && trim($this->uri->uri_string(), '/') !== $canonical_path) {
+            redirect($canonical_path, 'location', 301);
+            return;
+        }
+
         $seo = $this->get_title($city, $state);
-        $statelink = str_replace(" ", "-", strtolower($state));
+        $statelink = $state_slug;
         $coordinates = $this->get_city_coordinates($state, $city);
         
         $data = array(

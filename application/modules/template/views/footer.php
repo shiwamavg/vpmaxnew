@@ -262,8 +262,8 @@ $this->load->view('home/city_list');
 </footer>
 
 <?php if ($this->uri->segment(1) !== 'tracking' && $this->uri->segment(1) !== 'track-consignment'): ?>
-  <a href="<?= site_url('tracking') ?>" class="floating-track-btn d-none d-lg-block" aria-label="Track Consignment">Track
-    Consignment</a>
+  <a href="<?= site_url('tracking') ?>" class="floating-track-btn d-none d-lg-block" aria-label="Track Consignment/Shipment">Track
+    Shipment</a>
 <?php endif; ?>
 
 <div class="floating-actions">

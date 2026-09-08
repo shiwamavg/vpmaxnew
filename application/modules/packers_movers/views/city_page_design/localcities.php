@@ -41,7 +41,14 @@ if (file_exists($data_file)) {
                 if ($count >= 50) break;
                 
                 $link = urlencode(strtolower(str_replace(" ", "-", $ct['nm'])));
-                $new_link = $link . "-packers-movers-" . strtolower(str_replace(" ", "-", $cty));
+                $parent_slug = strtolower(str_replace(" ", "-", $cty));
+                $locality_parent_slugs = [
+                    'bhopal', 'chandigarh', 'dewas', 'ghaziabad', 'gurugram', 'indore',
+                    'jabalpur', 'mumbai', 'nagpur', 'pune', 'raipur', 'sagar', 'ujjain', 'wardha'
+                ];
+                $new_link = in_array($parent_slug, $locality_parent_slugs, true)
+                    ? $parent_slug . '/' . $link
+                    : $link . "-packers-movers-" . $parent_slug;
             ?>
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 local-city-item">
                     <ul class="location-list mb-0">

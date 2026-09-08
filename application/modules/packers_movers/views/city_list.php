@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="<?= base_url("assets/css/packers_movers_modules.css") ?>">
 <?php
 $st = strtolower(str_replace(" ", "-", $state));
 include "data/$st.php";
@@ -7,7 +6,7 @@ $state = ucwords($state);
 
 <!-- Breadcrumbs Section -->
 <?php $this->load->view('about/dynamic_breadcrumbs', [
-    'bc_h1' => 'Packers and Movers in ' . ucwords($state),
+    'bc_h1' =>  ucwords($state)." branches",
     'bc_desc' => '',
     'breadcrumbs' => [
         ['name' => 'Our Location', 'url' => site_url('our-location')],
@@ -19,14 +18,23 @@ $state = ucwords($state);
 <div class="pm-list-service-page">
     <div class="container pm-list-feature-section">
         <div class="row">
+            <p><?= $description ?></p>
             <?php
             $st = str_replace(" ", "-", $state);
+            // These datasets contain localities within a city, not state-level cities.
+            $locality_parent_slugs = [
+                'bhopal', 'chandigarh', 'dewas', 'ghaziabad', 'gurugram', 'indore',
+                'jabalpur', 'mumbai', 'nagpur', 'pune', 'raipur', 'sagar', 'ujjain', 'wardha'
+            ];
             foreach ($cities as $ct):
                 $link = urlencode(strtolower(str_replace(" ", "-", $ct['nm'])));
                 $statename = urlencode(strtolower(str_replace(" ", "-", $st)));
+                $city_url = in_array($statename, $locality_parent_slugs, true)
+                    ? "$statename/$link"
+                    : "$link-packers-movers-$statename";
                 ?>
                 <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                    <a href="<?= site_url("$link-packers-movers-$statename") ?>"
+                    <a href="<?= site_url($city_url) ?>"
                         class="pm-list-city-card-link d-block h-100 text-decoration-none">
                         <div class="pm-list-city-card card border-0 shadow h-100">
                             <div class="card-body pm-list-card-body">
