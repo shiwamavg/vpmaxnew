@@ -2,15 +2,15 @@
 <?php
 $current_method = $this->router->fetch_method();
 $sidebar_services = [
-    'homeShifting' => ['url' => 'household-shifting', 'title' => '1. Household Shifting'],
-    'office' => ['url' => 'office-shifting', 'title' => '2. Office Shifting'],
-    'local' => ['url' => 'local-shifting', 'title' => '3. Local Shifting'],
-    'domestic' => ['url' => 'domestic-shifting', 'title' => '4. Domestic Shifting'],
-    'international' => ['url' => 'international-shifting', 'title' => '5. International Shifting'],
-    'car' => ['url' => 'car-transportation-service', 'title' => '6. Car Transportation'],
-    'bike' => ['url' => 'bike-transportation-service', 'title' => '7. Bike Transportation'],
-    'loadingUnloading' => ['url' => 'loading-and-unloading', 'title' => '8. Loading & Unloading'],
-    'warehouse' => ['url' => 'warehouse-and-storage-services', 'title' => '9. Warehouse Services']
+    'homeShifting' => ['url' => 'household-shifting', 'title' => 'Household Shifting'],
+    'office' => ['url' => 'office-shifting', 'title' => 'Office Shifting'],
+    'local' => ['url' => 'local-shifting', 'title' => 'Local Shifting'],
+    'domestic' => ['url' => 'domestic-shifting', 'title' => 'Domestic Shifting'],
+    'international' => ['url' => 'international-shifting', 'title' => 'International Shifting'],
+    'car' => ['url' => 'car-transportation-service', 'title' => 'Car Transportation'],
+    'bike' => ['url' => 'bike-transportation-service', 'title' => 'Bike Transportation'],
+    'loadingUnloading' => ['url' => 'loading-and-unloading', 'title' => 'Loading & Unloading'],
+    'warehouse' => ['url' => 'warehouse-and-storage-services', 'title' => 'Warehouse Services']
 ];
 ?>
 <div class="sticky-top" style="top: 120px; z-index: 1;">

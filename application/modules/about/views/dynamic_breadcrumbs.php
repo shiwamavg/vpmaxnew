@@ -1,6 +1,9 @@
 <?php if (!defined('BASEPATH'))
     exit('No direct script access allowed');
-
+/*
+*** SHIWAM ***
+NOt Required breadcrumb schema for all pages..only city pages will have breadcrumb schema
+*********
 // Build Schema for Breadcrumbs
 $schema_items = [];
 $schema_items[] = [
@@ -33,7 +36,8 @@ if (isset($breadcrumbs) && is_array($breadcrumbs) && !empty($breadcrumbs)) {
     $schema_items[] = [
         '@type' => 'ListItem',
         'position' => $position,
-        'name' => $bc_current
+        'name' => $bc_current,
+        'item' => site_url(uri_string())  // Current page URL
     ];
 }
 
@@ -47,8 +51,7 @@ $schema_json = [
 <script type="application/ld+json">
 <?= json_encode($schema_json, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) ?>
 </script>
-
-<!-- Breadcrumbs Section -->
+<?php */ ?>
 <section class="dynamic-bc-section">
     <div class="container">
         <nav class="dyn-bc-nav" aria-label="breadcrumb">
@@ -72,6 +75,5 @@ $schema_json = [
         <?php if (isset($bc_desc) && !empty($bc_desc)): ?>
             <p class="dyn-bc-desc"><?= $bc_desc ?></p>
         <?php endif; ?>
-
     </div>
 </section>

@@ -18,7 +18,7 @@
         <div class="row">
             <div class="col-lg-8">
                 <div class="service-content">
-                    <img loading="lazy" src="<?= base_url('assets/images/services/household-shifting-services.webp') ?>"
+                    <img loading="lazy" src="<?= base_url('assets/images/home-shifting.webp') ?>"
                         alt="Household Shifting Services" class="img-fluid rounded mb-4 shadow-sm w-100">
 
                     <p>Relocating households isn't tough owing to the distance; it's tough because of all that each

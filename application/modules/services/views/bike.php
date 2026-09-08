@@ -7,7 +7,6 @@
     'bc_desc' => 'Reliable Bike Transportation Services by ' . $this->comp['company3'],
     'bc_h2' => 'Reliable Bike Transportation Services',
     'breadcrumbs' => [
-        ['name' => 'Services'],
         ['name' => 'Bike Transportation']
     ]
 ]);
@@ -61,7 +60,14 @@
                     <p>Those searching for the <strong>Top Bike Transportation Services</strong> appreciate getting the
                         clear picture of how their bike is going to be delivered even before it leaves your pickup
                         location.</p>
-
+<div class="row">
+                        <div class="col-md-6 mb-3">
+                            <img loading="lazy" src="<?= base_url('assets/images/bike-packing.webp') ?>" alt="Bike packing" class="img-fluid rounded mb-4 shadow-sm w-100">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <img loading="lazy" src="<?= base_url('assets/images/bike-shifting.webp') ?>" alt="bike shifting" class="img-fluid rounded mb-4 shadow-sm w-100">
+                        </div>
+                    </div>
                     <h3>Experience Matters in Small Details</h3>
                     <p>Professionalism does not depend on the advertisement. It depends on preparation.</p>
 

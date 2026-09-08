@@ -18,7 +18,7 @@
         <div class="row">
             <div class="col-lg-8">
                 <div class="service-content">
-                    <img loading="lazy" src="<?= base_url('assets/images/services/local-shifting-services.webp') ?>"
+                    <img loading="lazy" src="<?= base_url('assets/images/local-shifting.webp') ?>"
                         alt="Local Shifting Services" class="img-fluid rounded mb-4 shadow-sm w-100">
 
                     <p>Not all long distance moves require a truck ride hundreds of kilometers away. There could be a

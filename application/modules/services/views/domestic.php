@@ -1,13 +1,10 @@
-<?php if (!defined('BASEPATH'))
-    exit('No direct script access allowed'); ?>
-
-<!-- Breadcrumbs Section -->
-<?php $this->load->view('about/dynamic_breadcrumbs', [
+<?php if (!defined('BASEPATH')) exit('No direct script access allowed'); 
+    
+    $this->load->view('about/dynamic_breadcrumbs', [
     'bc_h1' => 'Domestic Shifting Services',
     'bc_desc' => 'Secure Domestic Shifting Services by ' . $this->comp['company3'],
     'bc_h2' => 'Secure Domestic Shifting Services',
     'breadcrumbs' => [
-        ['name' => 'Services'],
         ['name' => 'Domestic Shifting']
     ]
 ]);
@@ -18,7 +15,7 @@
         <div class="row">
             <div class="col-lg-8">
                 <div class="service-content">
-                    <img loading="lazy" src="<?= base_url('assets/images/services/domestic-shifting-services.webp') ?>"
+                    <img loading="lazy" src="<?= base_url('assets/images/truck-upside.webp') ?>"
                         alt="Domestic Shifting Services" class="img-fluid rounded mb-4 shadow-sm w-100">
 
                     <p>There is nothing that can be more exciting than a new home relocation, however, with moving,

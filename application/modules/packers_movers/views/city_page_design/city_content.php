@@ -10,7 +10,7 @@ $htmlcontent4 = '';
 if (strtolower($city) == "indore") {
   $htmlcontent = "
    <h2 class='fw-bold mb-3 text-primary'> $company3 in $city</h2>
-        <p><strong>Packers and Movers in Indore</strong> who understand city's traffic, apartment rules and shifting challenges instead of just transporting are here. See, <strong><a href='" . site_url(strtolower(str_replace(' ', '-', $city) . "-packers-movers-" . (strpos($state, ' ') !== false ? str_replace(' ', '-', $state) : $state))) . "' class='text-dnager text-primary text-decoration-underline'>$city</a></strong> has expanded widely. Areas such as <em>Vijay Nagar, Nipania, Mahalaxmi Nagar, Rau, Bengali Square, Super Corridor</em> and you name it, all needs well planning and teamwork for moves across.</p>
+        <p><strong>Packers and Movers in Indore</strong> who understand city's traffic, apartment rules and shifting challenges instead of just transporting here. See, <strong><a href='" . site_url(strtolower(str_replace(' ', '-', $city) . "-packers-movers-" . (strpos($state, ' ') !== false ? str_replace(' ', '-', $state) : $state))) . "' class='text-dnager text-primary text-decoration-underline'>$city</a></strong> has expanded widely. Areas such as <em>Vijay Nagar, Nipania, Mahalaxmi Nagar, Rau, Bengali Square, Super Corridor</em> and you name it, all needs well planning and teamwork for moves across.</p>
         <p>We at VP Max have been helping Indorians shift safely <b>since 2003</b> with their house moves, office shifts, their vehicle transportation and also with interstate moving across India.</p>
         <p>This page guides you through their services, local expertise, packing standards, benefits, and the unique strengths that help us stand out among <strong>$city best moving companies</strong>.</p>
        "
@@ -199,7 +199,7 @@ if (strtolower($city) == "indore") {
             <p class='text-secondary mb-3 fs-6 lh-lg'>October to February is usually considered the best period for house shifting in Indore because weather conditions stay manageable and transport movement becomes smoother across city routes.</p>
             <p class='text-secondary mb-3 fs-6 lh-lg'>Summer relocation becomes tiring during afternoon loading because high temperatures affect labour speed and transport timing. Monsoon shifting also creates delays in some areas because slippery roads and rain interruptions slow unloading activities.</p>
             <p class='text-secondary mb-4 fs-6 lh-lg'>Early morning shifting generally works better in Indore because daytime congestion increases heavily around commercial zones and busy residential stretches later in the day.</p>
-            <div class='alert alert-danger border-danger-subtle d-flex align-items-center gap-3 p-3 mb-0 rounded-3'>
+            <div class='alert border-danger-subtle d-flex align-items-center gap-3 p-3 mb-0 rounded-3'>
             <i class='bi bi-telephone-fill text-primary fs-5 flex-shrink-0'></i>  
             <p class='fw-bold text-dark m-0 fs-6'>Call <a href='$phonehtml' class='text-primary text-decoration-underline'>$phone</a> and speak with our team today, ask for a free pre move survey and receive a clear quote designed as per your moving requirements.</p>
             </div>
@@ -210,12 +210,31 @@ if (strtolower($city) == "indore") {
 ";
 } elseif (strtolower($city) == "gwalior") {
   $htmlcontent = "
-   <h2 class='fw-bold mb-3 text-primary'> $company3 in $city</h2>
-        <p><strong>Packers and Movers in <a href='" . site_url(strtolower(str_replace(' ', '-', $city) . "-packers-movers-" . (strpos($state, ' ') !== false ? str_replace(' ', '-', $state) : $state))) . "' class='text-dnager text-primary text-decoration-underline'>$city</a> </strong>local shifting costs <em>Rs.5,500–Rs.30,500</em> and intercity moves costs <em>Rs.14,000–Rs.90,000+</em>, depending on distance, house valuables size and truck type. We use 14 ft, 17 ft and 22 ft closed-body vehicles with premium corrugated cartons, bubble wrap, foam sheets, stretch film and custom wooden crates for fragile belongings.</p>
-        <pA bungalow near <b>City Centre</b>, an apartment in Mahalgaon or an office shifting close to Jiwaji University all require different planning and vehicle arrangements.
-      We at VP Max have been serving customers from <em>2003 with ISO certified processes, IBA approved services</em>, verified staff and professional moving plan. </p>
-       "
-  ;
+<p><strong>VP Max Packers and Movers in Gwalior</strong> charges <strong>Rs.7,000-Rs.11,000</strong> for <strong>1BHK local shifting</strong>, <strong>Rs.9,000-Rs.15,000</strong> for <strong>2BHK shifting</strong> inside the city, <strong>Rs.15,000-Rs.18,000</strong> for <strong>3BHK moving</strong> and <strong>Rs.25,000-Rs.30,000</strong> for <strong>4 or 5BHK shifting</strong> respectively. For <strong>Villa or Bungalow moves</strong> across <strong>Madhya Pradesh from Gwalior</strong>, our costs start at <strong>Rs.25,000-Rs.40,000+</strong>.</p>
+
+<p>With <strong>23+ years of experience</strong>, we are <strong>ISO 9001:2015 certified</strong> with <strong>GSTIN 23JINPP1499G1ZN</strong> and <strong>UDYAM MP-23-0231128 certificate</strong>, along with a <strong>4.8-star overall rating</strong>. We provide <strong>house shifting, office relocation, car transportation, bike transportation</strong> and complete <strong>relocation services in Gwalior</strong>.</p>
+
+<h2>Packing and Moving Services in Gwalior</h2>
+
+<p>We use <strong>14 ft, 17 ft and 22 ft closed-body vehicles</strong> with premium <strong>corrugated cartons, bubble wrap, foam sheets, stretch film</strong> and <strong>custom wooden crates</strong> for safely <strong>packing and moving fragile belongings in Gwalior</strong>.</p>
+
+<h2>Areas We Serve in Gwalior</h2>
+
+<p>We help singles, families and businesses move around <strong>City Centre, Mahalgaon, Thatipur, Govindpuri, Morar, Lashkar, Satna and Maihar</strong>. We also serve <strong>Phool Bagh, Gola Ka Mandir, Vinay Nagar, DD Nagar, Sirol, University Road, Hazira and Kampoo</strong> inside and around <strong>Gwalior</strong>.</p>
+
+<p>Our nearby service areas include <strong>Morena, Dabra, Datia, Bhind and Shivpuri</strong>, where we provide reliable <strong>packers and movers services</strong>.</p>
+
+<h2>Local Moving Challenges in Gwalior</h2>
+
+<p>We have handled busy commercial movements in <strong>Maharaj Bada</strong>, educational institutions near <strong>Jiwaji University</strong> and peak-hour traffic congestion on <strong>AG Office Road</strong>. These local conditions can influence loading and delivery timings, so we plan each move according to the specific challenges of <strong>Gwalior</strong> to provide better scheduling and smoother relocation.</p>
+
+<h2>Long-Distance Moving from Gwalior</h2>
+
+<p>We also help customers with <strong>long-distance relocations from Gwalior</strong> to major cities including <strong>Indore, Mumbai, Bengaluru and Hyderabad</strong>, as well as other locations across <strong>India</strong>.</p>
+
+<p>Call <strong>9752383460</strong> for a <strong>free moving quote</strong> for your relocation across <strong>Gwalior</strong> and <strong>Madhya Pradesh</strong>.</p>
+";
+/*
   $htmlcontent1 = "
         <h2 class='text-primary'>Why Gwalior Residents Trust Our Moving Services</h2>
         
@@ -427,7 +446,7 @@ if (strtolower($city) == "indore") {
       </div>
     </div>
   </section>
-";
+";*/
 
 } elseif (strtolower($city) == "raipur") {
   $htmlcontent = "
@@ -1105,7 +1124,7 @@ if (strtolower($city) == "indore") {
 elseif (strtolower($state) == "delhi") {
   $htmlcontent = "
    <h2 class='fw-bold mb-3 text-primary'> $company3 in $city</h2>
-        <p><strong>VP Max Packers and Movers in $city</strong> offers local house shifting at an estimated cost of Rs. 5,500–Rs. 30,500, while intercity moves generally cost Rs. 14,000–Rs. 90,000+, depending on inventory, distance, packing requirements and vehicle size. VP Max is an <strong>IBA Approved, ISO 9001:2015 Certified and Government Authorized</strong> moving company with <strong>23+ years of experience</strong>, offering domestic and international moving services with professional relocation teams across India.</p>
+        <p><strong>VP Max Packers and Movers in $city</strong> offers local house shifting at an estimated cost of Rs. 5,500-Rs. 30,500, while intercity moves generally cost Rs. 14,000-Rs. 90,000+, depending on inventory, distance, packing requirements and vehicle size. VP Max is an <strong>IBA Approved, ISO 9001:2015 Certified and Government Authorized</strong> moving company with <strong>23+ years of experience</strong>, offering domestic and international moving services with professional relocation teams across India.</p>
         <p>Moving to a new home or office should feel exciting, not stressful. If you're looking for movers in $city, comparing reviews and checking prices, VP Max Packers and Movers offers a relocation experience built around planning, safety and transparency.</p>
         <p>Every move begins with understanding your requirements, not just counting boxes. Whether you're relocating a small apartment, a large villa, a corporate office or transporting your car or bike, our experienced relocation coordinators prepare a customized moving plan. Our trained packing teams use premium-quality packing materials, experienced loaders handle every item carefully, and dedicated transport vehicles ensure safe delivery across Delhi and anywhere in India.</p>
         "
@@ -1327,7 +1346,7 @@ elseif (strtolower($state) == "delhi") {
 
  $htmlcontent = "
    <h2 class='fw-bold mb-3 text-primary'> Packers and Movers in $city for Safe, Affordable & Reliable Relocation</h2>
-        <p><strong>VP Max Packers and Movers in $city</strong> provides local and long-distance relocation services for families, professionals, offices and vehicle owners. Charges for <em>local shifting ranges Rs.7,000–Rs.30,000</em> and long distance house moves ranges <em>Rs.12,000–Rs.90,000+</em>, depending on home size, distance, packing, manpower, vehicle requirements.</p>
+        <p><strong>VP Max Packers and Movers in $city</strong> provides local and long-distance relocation services for families, professionals, offices and vehicle owners. Charges for <em>local shifting ranges Rs.7,000-Rs.30,000</em> and long distance house moves ranges <em>Rs.12,000-Rs.90,000+</em>, depending on home size, distance, packing, manpower, vehicle requirements.</p>
         <p>With <em>23 plus years of experience since 2003</em>, <b>ISO 9001:2015 certification</b>, GST registration, UDYAM certification, 4.8+ ratings and 49,850 plus published reviews, we combine organized planning with trained moving support. </p>
         <p>Call <a href='$phonehtml'> $phone</a> for a free moving quote.</p>
         <h2 class='mt-2 text-primary fw-bold'>Why Customers Choose VP Max Packers and Movers in $city</h2>

@@ -18,9 +18,6 @@
         <div class="row">
             <div class="col-lg-8">
                 <div class="service-content">
-                    <img loading="lazy" src="<?= base_url('assets/images/services/warehouse-storage-services.webp') ?>"
-                        alt="Warehouse and Storage Services" class="img-fluid rounded mb-4 shadow-sm w-100">
-
                     <p>Finding extra space is not hard. Making sure that it is secure, organized, and there when you
                         need it is the true test.</p>
 
@@ -34,6 +31,9 @@
                     <p>With <b><?= $this->comp['company3'] ?></b> Warehouse and Storage Services, you will get a
                         dependable storage solution for both residential and commercial belongings. This space can be
                         used for short-term or long-term storage, and thus you will have a flexible storage choice.</p>
+
+                    <img loading="lazy" src="<?= base_url('assets/images/packed.webp') ?>"
+                        alt="Warehouse and Storage Services" class="img-fluid rounded mb-4 shadow-sm w-100">
 
                     <h3>Storage Space to Accommodate Your Plan Changes</h3>
                     <p>Relocation plans are unpredictable.</p>

@@ -18,7 +18,7 @@
         <div class="row">
             <div class="col-lg-8">
                 <div class="service-content">
-                    <img loading="lazy" src="<?= base_url('assets/images/services/loading-unloading-services.webp') ?>"
+                    <img loading="lazy" src="<?= base_url('assets/images/truck-men.webp') ?>"
                         alt="Loading and Unloading Services" class="img-fluid rounded mb-4 shadow-sm w-100">
 
                     <p>The safest move does not happen on the road. It begins from the moment of picking up the first

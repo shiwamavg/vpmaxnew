@@ -17,7 +17,7 @@
         <div class="row">
             <div class="col-lg-8">
                 <div class="service-content">
-                    <img loading="lazy" src="<?= base_url('assets/images/services/car-transportation-services.webp') ?>" alt="Car Transportation Services" class="img-fluid rounded mb-4 shadow-sm w-100">
+                    <img loading="lazy" src="<?= base_url('assets/images/car-shifting.webp') ?>" alt="Car Transportation Services" class="img-fluid rounded mb-4 shadow-sm w-100">
                     
                     <p>The transportation of your car over a long distance cannot be done regularly. This is precisely why you should opt for professional <strong>Car Transportation Services</strong>. Your vehicle is an asset, and its manner of transportation can make a huge difference. At <b><?= $this->comp['company3'] ?></b>, we have the best Vehicle Relocation Solutions not only for individuals and families but also for car dealerships and corporate customers all over India.</p>
 
@@ -37,6 +37,14 @@
                         <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Updates about the shipment in real time</li>
                         <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Documentation services</li>
                     </ul>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <img loading="lazy" src="<?= base_url('assets/images/car-container.webp') ?>" alt="Car shifting container" class="img-fluid rounded mb-4 shadow-sm w-100">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <img loading="lazy" src="<?= base_url('assets/images/car-tesla-shifting.webp') ?>" alt="Car shifting tesla" class="img-fluid rounded mb-4 shadow-sm w-100">
+                        </div>
+                    </div>
 
                     <p>When customers search for the <strong>Best Car Transportation Services</strong>, the most common question is whether there is any provision for ensuring vehicle safety. We conduct a thorough inspection of your vehicle before loading, document its condition, and use secure loading practices to ensure minimum movement during transportation.</p>
 
