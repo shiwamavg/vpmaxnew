@@ -163,6 +163,7 @@ $this->load->view('home/city_list');
                   <p><?= $mail ?></p>
                 </div>
               </a>
+              <?php /* commented by shiwam..due to indore address..it can create confusion for users..so we will show only city address in footer..
               <div class="footer-contact-item">
                 <div class="footer-contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
                 <div class="footer-contact-text">
@@ -170,20 +171,23 @@ $this->load->view('home/city_list');
                   <p><?= $address ?></p>
                 </div>
               </div>
+              */?>
             </div>
             <div class="footer-contact-item mt-3">
-                <div class="footer-contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
-                <div class="footer-contact-text">
+                
                   
                   <?php if(@$related_branch['address']): ?>
+                  <div class="footer-contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                <div class="footer-contact-text">
                   <span><?= $city ?> Address</span>
                   <p><?= $related_branch['address'] ?></p>
-                  <?php else: ?>
+                  </div>
+              </div>
+                  <?php /* else: ?>
                   <span>Corporate Office Address</span>
                   <p><?= $address3 ?></p>
-                  <?php endif; ?>
-                </div>
-              </div>
+                  <?php */ endif; ?>
+                
             </div>
 
             <div class="footer-payments mt-4 pt-3 border-top" style="border-color: rgba(255,255,255,0.1) !important;">
