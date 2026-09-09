@@ -16,10 +16,10 @@
 
           <div class="hero-text-box ms-0">
             <h1 class="hero-title" itemprop="name">
-              ISO Certified Government Approved <span class="hero-title-highlight">Packers and Movers</span>
+              ISO Certified IBA Approved <span class="hero-title-highlight">Packers and Movers</span>
             </h1>
             <p class="hero-lead mt-3" itemprop="description">
-              ISO Certified & Government Authorised Packers and Movers offering safe, affordable, and reliable home, office, and vehicle relocation services.
+              ISO Certified & IBA Authorised Packers and Movers offering safe, affordable, and reliable home, office, and vehicle relocation services.
             </p>
           </div>
 
