@@ -154,7 +154,7 @@
         </div>
         <div class="col-lg-6 text-center mt-4 mt-lg-0">
             <img loading="lazy" src="<?= base_url() ?>assets/images/services/bike-transportation-services.webp"
-                alt="Bike Relocation Service in <?= $city ?>" loading="lazy" class="img-fluid rounded shadow">
+                alt="Bike Relocation Service in <?= $city ?>" class="img-fluid rounded shadow">
         </div>
     </div>
 </div>
@@ -162,8 +162,8 @@
 <?php $this->load->view('packers_movers/city_page_design/city_map'); ?>
 <?php $this->load->view('packers_movers/city_page_design/company_details.php'); ?>
 <?php include 'city_service.php';
-$this->load->view('reviews/review_widget');
-$this->load->view('home/credentials');
+//$this->load->view('reviews/review_widget');
+//$this->load->view('home/credentials');
 $this->load->view('home/certificate');
 ?>
 
@@ -202,7 +202,7 @@ $this->load->view('home/certificate');
                 for. This dedication to honesty and transparency makes our moving company one of the best bike
                 transportation services in <?= $city ?>.</p>
         </div>
-
+<?php /*
         <div class="col-lg-12 mt-5">
             <h3 class="text-center fw-bold text-danger mb-4">Our Process</h3>
             <p class="text-center text-muted mb-5">We follow a streamlined, efficient, and professional process for your
@@ -245,7 +245,7 @@ $this->load->view('home/certificate');
                 </div>
             </div>
         </div>
-
+<?php */?>
         <div class="col-lg-12 mt-5">
             <div class="table-responsive">
                 <h4 class="text-center mb-3">Bike Shifting Rate Chart Based on Different Transport Modes</h4>
@@ -281,7 +281,7 @@ $this->load->view('home/certificate');
                 </table>
             </div>
         </div>
-
+<?php /*
         <div class="col-lg-12 mt-5">
             <h3 class="fw-bold red-color">What affects bike transport costs</h3>
             <p>These are the main elements that influence the price of bike transportation services in <?= $city ?>:</p>
@@ -355,7 +355,7 @@ $this->load->view('home/certificate');
                 Max Packers and Movers to provide more than just your bike; we give you peace of mind, dependability,
                 and outstanding service every single time.</p>
         </div>
-
+<? php */?>
         <div class="col-lg-12 mt-5">
             <h3 class="fw-bold mb-4" style="color:#ee553b;">Frequently Asked Questions (FAQs)</h3>
             <?php

@@ -18,7 +18,7 @@ class City_services extends MX_Controller
         $city = $this->format_city($city_slug);
         $data['city'] = $city;
         $data['ctlink'] = $city_slug;
-        $data['title'] = "Best Home Shifting Services in $city | " . $this->comp['company3'];
+        $data['title'] = "Home Shifting in $city - " . $this->comp['company3'];
         $data['description'] = "Get reliable, safe, and professional home shifting services in $city from " . $this->comp['company3'] . ". Smooth door-to-door household relocation at affordable rates.";
         $data['module'] = "city_services";
         $data['view_file'] = "home";
@@ -30,7 +30,7 @@ class City_services extends MX_Controller
         $city = $this->format_city($city_slug);
         $data['city'] = $city;
         $data['ctlink'] = $city_slug;
-        $data['title'] = "Professional Office Relocation Services in $city | " . $this->comp['company3'];
+        $data['title'] = "Office Relocation Services in $city - " . $this->comp['company3'];
         $data['description'] = "Smooth and secure office shifting services in $city by " . $this->comp['company3'] . ". Minimize downtime with our experienced office relocation experts.";
         $data['module'] = "city_services";
         $data['view_file'] = "office";
@@ -42,7 +42,7 @@ class City_services extends MX_Controller
         $city = $this->format_city($city_slug);
         $data['city'] = $city;
         $data['ctlink'] = $city_slug;
-        $data['title'] = "Safe Car Transportation Services in $city | " . $this->comp['company3'];
+        $data['title'] = "Car Transport Services in $city - " . $this->comp['company3'];
         $data['description'] = "Secure car carrier and transportation services in $city by " . $this->comp['company3'] . ". On-time and damage-free vehicle delivery across India.";
         $data['module'] = "city_services";
         $data['view_file'] = "car_transport";
@@ -54,7 +54,7 @@ class City_services extends MX_Controller
         $city = $this->format_city($city_slug);
         $data['city'] = $city;
         $data['ctlink'] = $city_slug;
-        $data['title'] = "Reliable Bike Transportation Services in $city | " . $this->comp['company3'];
+        $data['title'] = "Bike Transport Services in $city - " . $this->comp['company3'];
         $data['description'] = "Hire trusted two-wheeler and bike shifting services in $city from " . $this->comp['company3'] . ". We ensure scratch-free and timely delivery.";
         $data['module'] = "city_services";
         $data['view_file'] = "bike_transport";
