@@ -172,7 +172,7 @@
         <div class="col-lg-7">
 
             <h2 class="fw-bold mb-3 red-color">
-                Trusted Home Shifting Services in <?= $city ?>
+                 Home Shifting Services in <?= $city ?>
             </h2>
 
             <p class="text-muted">
@@ -312,7 +312,7 @@
 
 </div>
 
-
+<?php /*  shiwam
 <div class="container mt-5 mb-5">
 
     <div class="row align-items-center">
@@ -344,6 +344,9 @@
     </div>
 
 </div>
+
+
+
 
 
 <div class="container mt-5 mb-5">
@@ -438,7 +441,7 @@
     </div>
 
 </div>
-
+*/ ?>
 <div class="container mt-5 mb-5">
 
     <div class="row">

@@ -18,7 +18,7 @@
 
                     <div class="hero-text-box ms-0">
                         <h1 class="hero-title" itemprop="name">
-                            Car Transportation Services in <?= isset($city) ? $city : 'Indore' ?>
+                            Car Transport in <?= isset($city) ? $city : 'Indore' ?>
                         </h1>
                         <p class="hero-lead mt-3" itemprop="description">
                             Looking for trusted car relocation services from <?= isset($city) ? $city : 'Indore' ?>? Get
@@ -139,7 +139,7 @@
                 alt="Car Transportation Services in <?= $city ?>" loading="lazy" class="img-fluid rounded shadow">
         </div>
         <div class="col-lg-12">
-            <h2 class="fw-bold mb-3 red-color">Car transportation Services in <?= $city ?></h2>
+            
             <p>Moving your vehicle safely from cities or states entails more than a transport truck — it takes
                 confidence, experience, and professionalism. <strong>VP Max Packers and Movers</strong> is one of the
                 best car moving services in <?= $city ?>, covering complete peace of mind through our trustworthy, safe,
@@ -157,9 +157,9 @@
 </div>
 
 <?php $this->load->view('packers_movers/city_page_design/city_map'); ?>
-<?php $this->load->view('packers_movers/city_page_design/company_details.php'); ?>
-<?php include 'city_service.php';
-$this->load->view('reviews/review_widget');
+<?php //$this->load->view('packers_movers/city_page_design/company_details.php'); ?>
+<?php //include 'city_service.php';
+//$this->load->view('reviews/review_widget');
 $this->load->view('home/credentials');
 $this->load->view('home/certificate');
 ?>
@@ -198,6 +198,7 @@ $this->load->view('home/certificate');
                 that suits your pocket.</p>
         </div>
 
+        <?php /*?>
         <div class="col-lg-12 mt-5">
             <h3 class="text-center fw-bold text-danger mb-4">Our Process</h3>
             <p class="text-center text-muted mb-5">We follow a streamlined, efficient, and professional process for your
@@ -241,6 +242,9 @@ $this->load->view('home/certificate');
             </div>
         </div>
 
+        <?php */?>
+
+
         <div class="col-lg-12 mt-5">
             <div class="table-responsive">
                 <h4 class="text-center mb-3">Car Shifting Rate Chart Based on Distance</h4>
@@ -277,6 +281,8 @@ $this->load->view('home/certificate');
             </div>
         </div>
 
+
+        <?php /*?>
         <div class="col-lg-12 mt-5">
             <h3 class="fw-bold red-color"><?= $city ?> Packers Movers Price per Km – Transparent & Reasonable Charges
             </h3>
@@ -357,7 +363,7 @@ $this->load->view('home/certificate');
                 Transportation Services in <?= $city ?> — and that's where VP Max Packers and Movers come in — because
                 your car is worth nothing but the best.</p>
         </div>
-
+<?php */?>
         <div class="col-lg-12 mt-5">
             <h3 class="fw-bold mb-4" style="color:#ee553b;">Frequently Asked Questions (FAQs)</h3>
             <?php
@@ -401,7 +407,7 @@ $this->load->view('home/certificate');
                     </div>
                 <?php endforeach; ?>
             </div>
-
+<?php /*?>
             <!-- SEO Friendly FAQ Schema -->
             <script type="application/ld+json">
             {
@@ -425,6 +431,7 @@ $this->load->view('home/certificate');
               ]
             }
             </script>
+            <?php */ ?>
         </div>
 
     </div>

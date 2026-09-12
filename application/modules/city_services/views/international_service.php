@@ -176,13 +176,14 @@
 <?php $this->load->view('packers_movers/city_page_design/city_map'); ?>
 <?php $this->load->view('packers_movers/city_page_design/company_details.php'); ?>
 <?php include 'city_service.php';
-$this->load->view('reviews/review_widget');
-$this->load->view('home/credentials');
+//$this->load->view('reviews/review_widget');
+//$this->load->view('home/credentials');
 $this->load->view('home/certificate');
 ?>
 
 <div class="container mt-3 mb-3">
     <div class="row">
+        <?php /* ?>
         <div class="col-lg-12">
             <h3>Why Choose Our Movers Company for Abroad Shifting?</h3>
             <p>When it comes to global relocation every single detail is important — from the way fragile objects are
@@ -214,6 +215,7 @@ $this->load->view('home/certificate');
             <p>Our company provides a full range of global moving services designed to make your relocation efficient
                 and hassle-free.</p>
         </div>
+        */?>
         <div class="col-lg-12 international-shifting-charge-table">
             <h3 class="mt-4 mb-3">Approximate International Relocation Charges from <?= $city ?></h3>
             <div class="table-responsive mb-4">
@@ -271,6 +273,7 @@ $this->load->view('home/certificate');
                 </table>
             </div>
         </div>
+        <?php /* ?>
         <div class="col-lg-12">
             <h3>International Household Shifting</h3>
             <p>Relocating your residence overseas involves more than just the logistics: it’s an emotional journey. We
@@ -342,6 +345,7 @@ $this->load->view('home/certificate');
 
             <p><strong>VP Max Packers and Movers – Because Your World Deserves a Smooth Move.</strong></p>
         </div>
+        */ ?>
         <div class="col-lg-12 international-faq mt-5">
             <h3 class="mb-4">Frequently Asked Questions</h3>
             <?php
@@ -391,7 +395,7 @@ $this->load->view('home/certificate');
                     </div>
                 <?php endforeach; ?>
             </div>
-
+<?php /* ?>
             <!-- SEO Friendly FAQ Schema -->
             <script type="application/ld+json">
             {
@@ -415,6 +419,7 @@ $this->load->view('home/certificate');
               ]
             }
             </script>
+            */ ?>
         </div>
     </div>
 </div>

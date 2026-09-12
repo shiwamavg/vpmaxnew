@@ -162,16 +162,16 @@
 <?php $this->load->view('packers_movers/city_page_design/city_map'); ?>
 <?php $this->load->view('packers_movers/city_page_design/company_details.php'); ?>
 <?php include 'city_service.php';
-$this->load->view('reviews/review_widget');
-$this->load->view('home/credentials');
+//$this->load->view('reviews/review_widget');
+//$this->load->view('home/credentials');
 $this->load->view('home/certificate');
 ?>
 
 <div class="container mt-5 mb-5">
     <div class="row">
         <div class="col-lg-12">
-            <h3 class="fw-bold mb-3 red-color">Why choose VP Max Packers and Movers for your <?= $city ?> move?</h3>
-            <p>People looking for <strong>Best IBA Approved Packers and Movers <?= $city ?></strong> generally compare
+            <h3 class="fw-bold mb-3 red-color">Why choose IBA Approved Packers and Movers in <?= $city ?>?</h3>
+            <p>People looking for <strong>Best </strong> generally compare
                 trust first, pricing second.</p>
             <ul class="ms-4 mb-3">
                 <li>IBA Approved and ISO Certified relocation support</li>
@@ -187,7 +187,7 @@ $this->load->view('home/certificate');
                 happened before packing started.</p>
             <p>That preparation changes everything.</p>
         </div>
-
+<?php /*
         <div class="col-lg-12 mt-5">
             <h3 class="text-center fw-bold text-danger mb-4">Our Process</h3>
             <p class="text-center text-muted mb-5">We follow a streamlined, efficient, and professional process for your
@@ -290,7 +290,7 @@ $this->load->view('home/certificate');
                 </table>
             </div>
         </div>
-
+*/?>
         <div class="col-lg-12 mt-5">
             <div class="row align-items-center">
                 <div class="col-lg-6 text-center mb-4 mb-lg-0">
@@ -357,7 +357,7 @@ $this->load->view('home/certificate');
                 </div>
             </div>
         </div>
-
+<?php /* not related to IBA questions...--shiwam
         <div class="col-lg-12 mt-5">
             <h3 class="fw-bold mb-4 text-center" style="color:#ee553b;">Frequently asked questions about shifting in
                 <?= $city ?>
@@ -437,6 +437,7 @@ $this->load->view('home/certificate');
             }
             </script>
         </div>
+        */?>
 
         <div class="col-lg-12 mt-4 text-center">
             <p>Moving in <?= $city ?>? Get a free, no-obligation quote in 60 seconds. Call <a
