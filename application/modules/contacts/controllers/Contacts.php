@@ -37,6 +37,15 @@ class Contacts extends MX_Controller
             echo "<div class='alert alert-danger'>" . validation_errors() . "</div>";
         }
     }
+    // function test()
+    // {
+    //     // echo 4233;die();
+    //     $this->load->model('contacts_mdl');
+    //     $check = $this->contacts_mdl->test();
+    //     if ($check == true) {
+    //         echo "1";
+    //     }
+    // }
 
     function contact()
     {

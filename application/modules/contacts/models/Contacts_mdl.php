@@ -9,16 +9,16 @@ class Contacts_mdl extends CI_Model
         $this->load->database();
         $this->config = array(
             'protocol' => 'smtp',
-            'smtp_host' => 'ns11.groveus.org',
+            'smtp_host' => 'smtp.gmail.com',
             'smtp_port' => 587,
+            'smtp_auth' => true,
             'smtp_user' => 'info@vpmaxpackersandmovers.com',
-            'smtp_pass' => '2tW6:Rr1v;rG8@',
+            'smtp_pass' => 'jyqfuhdhnjysypuj',
             'mailtype' => 'html',
-            'charset' => 'iso-8859-1'
+            'charset' => 'iso-8859-1',
+            'smtp_crypto' => 'tls'
         );
     }
-
-
     public function bookings()
     {
         $this->load->library('email', $this->config);
