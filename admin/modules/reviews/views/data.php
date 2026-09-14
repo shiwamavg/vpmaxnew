@@ -25,7 +25,7 @@
 						<th>Posted on</th>
 						<th>Status</th>
 						<th style="width:100px">Timestamp</th>
-						<th style="width:140px">Action</th>
+            <th style="width:210px">Action</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -48,6 +48,7 @@
 						</td>
 						<td>{{y.tm}}</td>
 						<td>
+              <button class="btn btn-xs" ng-class="y.st=='1' ? 'btn-warning' : 'btn-success'" style="margin-top:6px;" ng-click="toggleStatus(y)">{{y.st=='1' ? 'Hide' : 'Show'}}</button>
 						  <button class="btn btn-xs btn-primary" style="margin-top:6px;" ng-click="openEdit(y)">Reply</button>
 						  <button class="btn btn-xs btn-danger" style="margin-top:6px;" ng-click="deleteReview(y.r_id)">Delete</button>
 						</td>
@@ -98,6 +99,10 @@
         <div class="form-group">
           <label>Type</label>
           <input type="text" class="form-control" ng-model="editForm.r_type" placeholder="e.g. Customer">
+        </div>
+        <div class="form-group">
+          <label>Posted Date and Time</label>
+          <input type="datetime-local" class="form-control" ng-model="editForm.posted_date">
         </div>
         <div class="form-group">
           <label>Status</label>

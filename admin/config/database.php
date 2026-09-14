@@ -1,13 +1,14 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
+
 $active_group = 'default';
 $query_builder = TRUE;
 
 $db['default'] = array(
-    'dsn'   => 'sqlite:' . APPPATH . 'database.sqlite',
+    'dsn'   => 'sqlite:' . FCPATH . 'application/database.sqlite',
     'hostname' => '',
     'username' => 'root',
     'password' => '',
-    'database' => FCPATH . 'database.sqlite',
+    'database' => FCPATH . 'application/database.sqlite',
     'dbdriver' => 'pdo',
     'dbprefix' => '',
     'pconnect' => FALSE,

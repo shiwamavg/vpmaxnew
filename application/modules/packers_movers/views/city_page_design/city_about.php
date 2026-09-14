@@ -17,10 +17,6 @@
 <?php
 include 'company_details.php';
 include 'city_map.php';
-$this->load->view('template/important_link');
-//$this->load->view('reviews/review_widget');
-$this->load->view('home/credentials');
-$this->load->view('home/certificate');
 //$this->load->view('home/working_process');
 $this->load->view('home/chart_table');
 $states_28 = [
@@ -59,16 +55,7 @@ if (in_array($st, $states_28)) {
     include 'city_service.php';
 }
 ?>
-<?php 
-// indore removed from this local array by shiwam
-if ( strtolower($city) == "ujjain" || strtolower($city) == "dewas" || strtolower($city) == "sagar" || strtolower($city) == "jabalpur" || strtolower($city) == "pune" || strtolower($city) == "nagpur" || strtolower($city) == "wardha") {
-    include 'localcities.php';
-} ?>
-<?php if (strtolower($city) == 'indore' || strtolower($city) == 'bhopal') { ?>
-    <div>
-        <?php include 'city_from_to_links.php'; ?>
-    </div>
-<?php } ?>
+
 <div class="container">
     <div class="row">
         <?php include 'testimonial_video.php' ?>
@@ -121,4 +108,19 @@ if ( strtolower($city) == "ujjain" || strtolower($city) == "dewas" || strtolower
         <?php endif; ?>
     </div>
 
+    
+<?php $this->load->view('template/important_link');
+//$this->load->view('reviews/review_widget');
+$this->load->view('home/credentials');
+$this->load->view('home/certificate');?>
+<?php 
+// indore removed from this local array by shiwam
+if ( strtolower($city) == "ujjain" || strtolower($city) == "dewas" || strtolower($city) == "sagar" || strtolower($city) == "jabalpur" || strtolower($city) == "pune" || strtolower($city) == "nagpur" || strtolower($city) == "wardha") {
+    include 'localcities.php';
+} ?>
+<?php if (strtolower($city) == 'indore' || strtolower($city) == 'bhopal') { ?>
+    <div>
+        <?php include 'city_from_to_links.php'; ?>
+    </div>
+<?php } ?>
 </div>

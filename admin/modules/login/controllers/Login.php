@@ -18,6 +18,8 @@ class Login extends MX_Controller
 	}
 	function check()
 	{
+		$this->load->database();
+		$this->ensure_admin_profile_table();
 		$this->load->library('form_validation');
 	
 		$this->form_validation->set_rules('user','Username','trim|required');
@@ -43,6 +45,23 @@ class Login extends MX_Controller
 		{
 			$this->index();
 		}
+	}
+
+	private function ensure_admin_profile_table()
+	{
+		if ($this->db->table_exists('admin_profile')) {
+			return;
+		}
+
+		$this->load->dbforge();
+		$this->dbforge->add_field(array(
+			'id' => array('type' => 'INT', 'constraint' => 11, 'unsigned' => TRUE, 'auto_increment' => TRUE),
+			'name' => array('type' => 'VARCHAR', 'constraint' => 150),
+			'username' => array('type' => 'VARCHAR', 'constraint' => 100),
+			'password' => array('type' => 'VARCHAR', 'constraint' => 255)
+		));
+		$this->dbforge->add_key('id', TRUE);
+		$this->dbforge->create_table('admin_profile', TRUE);
 	}
 	
 	

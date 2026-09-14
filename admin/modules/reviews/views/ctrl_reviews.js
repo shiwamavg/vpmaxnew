@@ -12,6 +12,15 @@ app.controller('ctrl_reviews',function($scope,$http){
 			messages("success", "Success!","Review Updated Successfully", 3000);
 		})
 	}
+	$scope.toggleStatus=function(review){
+		var nextStatus = review.st == '1' ? '0' : '1';
+		$http.get("reviews/save?id="+review.r_id+"&status="+nextStatus).success(function(data){
+			if (data !== "0") {
+				review.st = nextStatus;
+				messages("success", "Success!", nextStatus == '1' ? "Review is now visible" : "Review is now hidden", 3000);
+			}
+		})
+	}
 	$scope.openEdit=function(r){
 		$scope.editForm={
 			r_id: r.r_id,
@@ -22,13 +31,17 @@ app.controller('ctrl_reviews',function($scope,$http){
 			r_desc: r.cmt,
 			r_type: r.ty,
 			admin_reply: r.ar,
-			status: r.st
+			status: r.st,
+			posted_date: r.pd ? new Date(r.pd.replace(' ', 'T')) : null
 		};
 		$("#reviewEditModal").modal("show");
 	}
 	$scope.saveEdit=function(){
 		var fd = new FormData();
 		angular.forEach($scope.editForm, function(val, key){
+			if (key == 'posted_date' && angular.isDate(val)) {
+				val = val.getFullYear() + '-' + ('0' + (val.getMonth() + 1)).slice(-2) + '-' + ('0' + val.getDate()).slice(-2) + 'T' + ('0' + val.getHours()).slice(-2) + ':' + ('0' + val.getMinutes()).slice(-2);
+			}
 			fd.append(key, val);
 		});
 		$http.post("reviews/update_data", fd, {

@@ -6,11 +6,13 @@ class Reviews extends MX_Controller
         parent::__construct();
         $this->load->library('session');
         $this->load->helper('url');
+        $this->load->database();
     }
 
     function index()
     {
         $this->load->database();
+        $this->ensure_reviews_table();
         $this->load->library('pagination');
         
         $star_filter = $this->input->get('star');
@@ -61,14 +63,59 @@ class Reviews extends MX_Controller
         }
         
         $query = $this->db->get('reviews', $config['per_page'], $offset);
-        
+
+        // Build overall rating distribution & average across all active reviews
+        $rating_dist = array(5 => 0, 4 => 0, 3 => 0, 2 => 0, 1 => 0);
+        $rating_sum = 0;
+        if ($total_rows > 0) {
+            $this->db->where('status', 1);
+            foreach ($this->db->get('reviews')->result() as $rr) {
+                $s = (int) $rr->stars;
+                if (isset($rating_dist[$s])) $rating_dist[$s]++;
+                $rating_sum += $s;
+            }
+        }
+        $average_rating = $total_rows > 0 ? round($rating_sum / $total_rows, 1) : 0;
+
         $data['reviews'] = $query;
+        $data['total_reviews'] = $total_rows;
+        $data['star_filter'] = $star_filter;
+        $data['rating_dist'] = $rating_dist;
+        $data['average_rating'] = $average_rating;
+        $data['disable_org_schema'] = TRUE;
         $data['pagination'] = $this->pagination->create_links();
         $data['title'] ="Customer Reviews & Ratings |" . $this->comp['company3'];
         $data['description'] ="Detailed feedback and ratings from our satisfied clients. Read real reviews about our freight forwarding services at" . $this->comp['company3'] .".";
         $data['module'] ="reviews";
         $data['view_file'] ="reviews";
         echo Modules::run('template/layout2', $data);
+    }
+
+    private function ensure_reviews_table()
+    {
+        if ($this->db->table_exists('reviews')) {
+            return;
+        }
+
+        $this->load->dbforge();
+        $this->dbforge->add_field(array(
+            'r_id' => array('type' => 'INT', 'constraint' => 11, 'unsigned' => TRUE, 'auto_increment' => TRUE),
+            'name' => array('type' => 'VARCHAR', 'constraint' => 150),
+            'email' => array('type' => 'VARCHAR', 'constraint' => 190),
+            'r_title' => array('type' => 'VARCHAR', 'constraint' => 190, 'null' => TRUE),
+            'r_desc' => array('type' => 'TEXT'),
+            'stars' => array('type' => 'INT', 'constraint' => 1, 'default' => 5),
+            'status' => array('type' => 'INT', 'constraint' => 1, 'default' => 0),
+            'b_id' => array('type' => 'INT', 'constraint' => 11, 'default' => 0),
+            'r_img' => array('type' => 'TEXT', 'null' => TRUE),
+            'views' => array('type' => 'INT', 'constraint' => 11, 'default' => 0),
+            'posted_date' => array('type' => 'DATETIME'),
+            'r_type' => array('type' => 'VARCHAR', 'constraint' => 100, 'null' => TRUE),
+            'admin_reply' => array('type' => 'TEXT', 'null' => TRUE),
+            'timestamp' => array('type' => 'DATETIME', 'null' => TRUE)
+        ));
+        $this->dbforge->add_key('r_id', TRUE);
+        $this->dbforge->create_table('reviews', TRUE);
     }
 
     function submit() {
@@ -181,4 +228,37 @@ class Reviews extends MX_Controller
             redirect('reviews');
         }
     }
+    function view($id)
+    {
+        if (@$id) {
+
+            $data['reviews'] = $this->view_reviews($id);
+            if ($data['reviews']->num_rows() > 0) {
+                $rev = $data['reviews']->result();
+                $newview = $rev[0]->views + 7;
+                $this->db->where('r_id', $id)->update("reviews", array("views" => $newview));
+
+
+                $data['title'] = $rev[0]->r_title;
+                $data['description'] = $rev[0]->r_desc;
+                $data['keywords'] = "Om Packers Complaints, Om Packers Reviews, Om Packers Suggestions, Om Packers feebacks";
+                $data['module'] = "reviews";
+                $data['view_file'] = "single_review";
+                $data['disable_org_schema'] = TRUE;
+                echo Modules::run('template/layout2', $data);
+            } else {
+                echo "Invalid Link";
+            }
+        }
+    }
+// For getting review data for frontend 
+    function view_reviews($id = '')
+    {
+        if (@$id)
+            $where['r_id'] = $id;
+
+        $where['status'] = 1;
+        return $this->db->order_by('r_id', 'desc')->where($where)->get('reviews');
+    }
+
 }

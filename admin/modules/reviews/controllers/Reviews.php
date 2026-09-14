@@ -7,7 +7,36 @@ class Reviews extends MX_Controller
     {
         parent::__construct();
         if (!$this->session->userdata('username')) { redirect('login'); }
+        $this->load->database();
+        $this->ensure_reviews_table();
         $this->load->model('mdl_reviews');
+    }
+
+    private function ensure_reviews_table()
+    {
+        if ($this->db->table_exists('reviews')) {
+            return;
+        }
+
+        $this->load->dbforge();
+        $this->dbforge->add_field(array(
+            'r_id' => array('type' => 'INT', 'constraint' => 11, 'unsigned' => TRUE, 'auto_increment' => TRUE),
+            'name' => array('type' => 'VARCHAR', 'constraint' => 150),
+            'email' => array('type' => 'VARCHAR', 'constraint' => 190),
+            'r_title' => array('type' => 'VARCHAR', 'constraint' => 190, 'null' => TRUE),
+            'r_desc' => array('type' => 'TEXT'),
+            'stars' => array('type' => 'INT', 'constraint' => 1, 'default' => 5),
+            'status' => array('type' => 'INT', 'constraint' => 1, 'default' => 0),
+            'b_id' => array('type' => 'INT', 'constraint' => 11, 'default' => 0),
+            'r_img' => array('type' => 'TEXT', 'null' => TRUE),
+            'views' => array('type' => 'INT', 'constraint' => 11, 'default' => 0),
+            'posted_date' => array('type' => 'DATETIME'),
+            'r_type' => array('type' => 'VARCHAR', 'constraint' => 100, 'null' => TRUE),
+            'admin_reply' => array('type' => 'TEXT', 'null' => TRUE),
+            'timestamp' => array('type' => 'DATETIME', 'null' => TRUE)
+        ));
+        $this->dbforge->add_key('r_id', TRUE);
+        $this->dbforge->create_table('reviews', TRUE);
     }
     function index()
     {
@@ -40,6 +69,9 @@ class Reviews extends MX_Controller
         if ($this->input->post('r_type') !== null) $data['r_type'] = $this->input->post('r_type');
         if ($this->input->post('admin_reply') !== null) $data['admin_reply'] = $this->input->post('admin_reply');
         if ($this->input->post('status') !== null) $data['status'] = $this->input->post('status');
+        if ($this->input->post('posted_date') !== null) {
+            $data['posted_date'] = str_replace('T', ' ', $this->input->post('posted_date'));
+        }
 
         if (empty($data)) {
             echo "invalid Request";

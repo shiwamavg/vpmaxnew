@@ -42,7 +42,7 @@ $locality_parent_slugs = [
   <?php
     $currentPath = trim(parse_url($url, PHP_URL_PATH), '/');
     $currentSlug = strtolower($currentPath);
-    if (in_array($currentSlug, $locality_parent_slugs, true)) {
+    if (in_array($currentSlug, $locality_parent_slugs, true) || ($this->uri->segment(1) === "reviews" && $this->uri->segment(2) === "view")) {
   ?>
   <meta name="robots" content="noindex, follow">
   <?php } else { ?>
@@ -70,6 +70,7 @@ $locality_parent_slugs = [
       "logo": "https://vpmaxpackersandmovers.com/assets/images/logo/logo.webp"
     }
   </script>
+  <?php if (empty($disable_org_schema)): ?>
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -149,6 +150,7 @@ $locality_parent_slugs = [
     "image" : "<?=$img?>"  }
 }
   </script>
+  <?php endif; ?>
   <link rel="stylesheet" href="<?= base_url("assets/css/style.css?v=2.3") ?>">
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17596273791">
   </script>
