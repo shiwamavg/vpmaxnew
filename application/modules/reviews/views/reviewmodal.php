@@ -77,38 +77,5 @@
     </div>
 </div>
  <script type="text/javascript">
-    $(function() {
-        $('#submitbtn').click(function(event) {
-            event.preventDefault(); // Prevent the default form submission
-
-            var formData = new FormData($('#reviewsform')[0]); // Create a FormData object with the form's data
-
-            $.ajax({
-                type:"POST",
-                url:"<?php echo site_url('reviews/review') ?>",
-                data: formData,
-                contentType: false, // Important for sending multipart/form-data
-                processData: false, // Prevent jQuery from automatically transforming the data into a query string
-                beforeSend: function() {
-                    $('#result').html('<p class="text-danger">Please wait...</p>');
-                },
-                success: function(data) {
-                    $('#result').empty();
-                    if (data.err === 0) {
-                        $('#result').html("<div class='alert alert-success'><p class='text-success m-0'>Success! Thank you for your review! We appreciate your feedback and will use it to improve our services..</p></div>");
-                        $("#reviewsform").trigger('reset');
-                    } else {
-                        $('#result').html("<div class='alert alert-danger'>" + data.msg +"</div>");
-                    }
-                },
-                error: function(xhr, status, error) {
-                    console.error(xhr.responseText); // Log the error to the console
-                    $('#result').html('<div class="alert alert-danger">An error occurred while posting your review. Please try again later.</div>');
-                }
-            });
-        });
-    });
+$(function(){$('#submitbtn').click(function(event){event.preventDefault();var formData=new FormData($('#reviewsform')[0]);$.ajax({type:"POST",url:"<?php echo site_url('reviews/review') ?>",data:formData,contentType:!1,processData:!1,beforeSend:function(){$('#result').html('<p class="text-danger">Please wait...</p>')},success:function(data){$('#result').empty();if(data.err===0){$('#result').html("<div class='alert alert-success'><p class='text-success m-0'>Success! Thank you for your review! We appreciate your feedback and will use it to improve our services..</p></div>");$("#reviewsform").trigger('reset')}else{$('#result').html("<div class='alert alert-danger'>"+data.msg+"</div>")}},error:function(xhr,status,error){console.error(xhr.responseText);$('#result').html('<div class="alert alert-danger">An error occurred while posting your review. Please try again later.</div>')}})})})
  </script>
-
- 
-
