@@ -147,6 +147,96 @@ class Packers_movers extends MX_Controller
         }
         echo Modules::run('template/layout2', $data);
     }
+
+    function local_city($parent_city, $locality)
+    {
+        $this->load->helper('text');
+
+        $parent_city = $this->format_location_name($parent_city);
+        $locality = $this->format_location_name($locality);
+        $parent_slug = strtolower(str_replace(' ', '-', $parent_city));
+        $locality_slug = strtolower(str_replace(' ', '-', $locality));
+        $primary_states = array(
+            'bhopal' => 'madhya-pradesh',
+            'chandigarh' => 'chandigarh',
+            'dewas' => 'madhya-pradesh',
+            'ghaziabad' => 'uttar-pradesh',
+            'gurugram' => 'haryana',
+            'indore' => 'madhya-pradesh',
+            'jabalpur' => 'madhya-pradesh',
+            'mumbai' => 'maharashtra',
+            'nagpur' => 'maharashtra',
+            'pune' => 'maharashtra',
+            'raipur' => 'chhattisgarh',
+            'sagar' => 'madhya-pradesh',
+            'ujjain' => 'madhya-pradesh',
+            'wardha' => 'maharashtra'
+        );
+        $areas = $this->get_local_city_areas($parent_slug);
+
+        if (empty($areas) || !$this->locality_exists($areas, $locality)) {
+            show_404();
+            return;
+        }
+
+        $branch = $this->get_branches($parent_city);
+        $title = "Packers Movers in $locality, $parent_city";
+        $description = "Reliable packers and movers in $locality, $parent_city for home shifting, office relocation, car transport, and local moves. VP Max Packers and Movers $parent_city";
+        $data = array(
+            'city' => $parent_city,
+            'locality' => $locality,
+            'locality_slug' => $locality_slug,
+            'parent_slug' => $parent_slug,
+            'state' => isset($primary_states[$parent_slug])
+                ? ucwords(str_replace('-', ' ', $primary_states[$parent_slug]))
+                : '',
+            'primary_city_url' => isset($primary_states[$parent_slug])
+                ? site_url($parent_slug . '-packers-movers-' . $primary_states[$parent_slug])
+                : site_url($parent_slug),
+            'areas' => $areas,
+            'related_branch' => $branch,
+            'title' => $title,
+            'description' => $description,
+            'keywords' => "packers and movers in $locality, movers in $locality, local shifting in $locality $parent_city",
+            'module' => 'packers_movers',
+            'view_file' => 'local_city'
+        );
+
+        if ($branch) {
+            $data['phone'] = $branch['phone'];
+            $data['phonehtml'] = 'tel:+91' . preg_replace('/[^0-9+]/', '', $branch['phone']);
+            $data['address1'] = $branch['address'];
+        }
+
+        echo Modules::run('template/layout2', $data);
+    }
+
+    private function format_location_name($value)
+    {
+        return urldecode(ucwords(str_replace('-', ' ', str_replace('_', ' ', trim($value)))));
+    }
+
+    private function get_local_city_areas($parent_slug)
+    {
+        $data_file = APPPATH . 'modules/packers_movers/views/data/' . $parent_slug . '.php';
+        if (!is_file($data_file)) {
+            return array();
+        }
+
+        $cities = array();
+        include $data_file;
+        return is_array($cities) ? $cities : array();
+    }
+
+    private function locality_exists($areas, $locality)
+    {
+        foreach ($areas as $area) {
+            if (!empty($area['nm']) && strcasecmp($area['nm'], $locality) === 0) {
+                return true;
+            }
+        }
+        return false;
+    }
     function get_branches($city){
         $branches = [
                 ['city' => 'Ghaziabad', 'contact_person' => 'Mr Pankaj Sir', 'address' => 'Office No. 088, Gaur City 1 Rd, Gaur City 1, Sector 4, Ghaziabad, Uttar Pradesh 201009', 'phone' => '9870104515'],

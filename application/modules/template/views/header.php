@@ -151,33 +151,12 @@ $locality_parent_slugs = [
 }
   </script>
   <?php endif; ?>
-  <link rel="stylesheet" href="<?= base_url("assets/css/style.css?v=2.3") ?>">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17596273791">
-  </script>
-  <script>
-    window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments) } gtag("js", new Date), gtag("config", "AW-17596273791"); function gtag_report_conversion(n) { return gtag("event", "conversion", { send_to: "AW-17596273791/cTQrCIS-tNQbEP-ox8ZB", value: 1, currency: "INR", event_callback: function () { void 0 !== n && (window.location = n) } }), !1 }
-  </script>
-  <script> 
-    function gtag_report_conversion(url) {
-      var callback = function () {
-        if (typeof (url) != 'undefined') {
-          window.location = url;
-        }
-      };
-      gtag('event', 'conversion', {
-        'send_to': 'AW-17596273791/cTQrCIS-tNQbEP-ox8ZB',
-        'value': 1.0,
-        'currency': 'INR',
-        'event_callback': callback
-      });
-      return false;
-    }
-  </script>
+  <link rel="stylesheet" href="<?= base_url("assets/css/style.css?v=2.4") ?>">
+  
   <script src="<?= base_url('assets/js/jquery-3.7.1.min.js') ?>"></script>
   <style>
 .text-danger {color: rgb(176 5 21) !important;}
 .phone-helpline-label,.text-dark {color:#000}
-.brand-logo {max-height: 100px;}
- 
+.brand-logo {max-height: 100px;} 
   </style>
 </head>

@@ -232,6 +232,55 @@ $this->load->view('home/city_list');
           </div>
         </div>
       </div>
+      <div class="row mt-4">
+          <div class="col-sm-3 col-6">
+                <div class="pm-cred-card-minimal d-flex align-items-center">
+                    <div class="pm-cred-icon-sm me-3">
+                        <i class="bi bi-receipt"></i>
+                    </div>
+                    <div>
+                        <span class="pm-cred-label-sm">GST NO</span>
+                        <p class="pm-cred-value-sm mb-0">23IJNPP1499G1ZN</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3 col-6">
+                <div class="pm-cred-card-minimal d-flex align-items-center">
+                    <div class="pm-cred-icon-sm me-3">
+                        <i class="bi bi-person-vcard"></i>
+                    </div>
+                    <div>
+                        <span class="pm-cred-label-sm">PAN CARD</span>
+                        <p class="pm-cred-value-sm mb-0">IJNPP1499G</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3 col-6">
+                <div class="pm-cred-card-minimal d-flex align-items-center">
+                    <div class="pm-cred-icon-sm me-3">
+                        <i class="bi bi-building-check"></i>
+                    </div>
+                    <div>
+                        <span class="pm-cred-label-sm">MSME REGISTRATION</span>
+                        <p class="pm-cred-value-sm mb-0">UDYAM-MP-23-0231128</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3 col-6">
+                <div class="pm-cred-card-minimal d-flex align-items-center">
+                    <div class="pm-cred-icon-sm me-3">
+                        <i class="bi bi-award"></i>
+                    </div>
+                    <div>
+                        <span class="pm-cred-label-sm">ISO CERTIFICATION</span>
+                        <p class="pm-cred-value-sm mb-0">ISO 9001:2015 | E21421615228</p>
+                    </div>
+                </div>
+            </div>
+      </div>
       <div class="footer-bottom">
         <div class="footer-bottom-wrap">
           <div class="footer-copy">
@@ -313,21 +362,45 @@ $this->load->view('home/city_list');
     </div>
   </div>
 </div>
-<!-- Google Analytics tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PYR7T18GBZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17596273791">
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments) } gtag("js", new Date), gtag("config", "AW-17596273791"); function gtag_report_conversion(n) { return gtag("event", "conversion", { send_to: "AW-17596273791/cTQrCIS-tNQbEP-ox8ZB", value: 1, currency: "INR", event_callback: function () { void 0 !== n && (window.location = n) } }), !1 }
+  </script>
+  <script> 
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof (url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+        'send_to': 'AW-17596273791/cTQrCIS-tNQbEP-ox8ZB',
+        'value': 1.0,
+        'currency': 'INR',
+        'event_callback': callback
+      });
+      return false;
+    }
+  </script>
 
-  gtag('config', 'G-PYR7T18GBZ');
-</script>
-<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "yiljff7gnt");
-</script>
+<?php if(site_url() === 'https://vpmaxpackersandmovers.com/'): ?>
+  <!-- Google Analytics tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYR7T18GBZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYR7T18GBZ');
+  </script>
+  <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "yiljff7gnt");
+  </script>
+<?php endif; ?>
 </body>
 </html>
