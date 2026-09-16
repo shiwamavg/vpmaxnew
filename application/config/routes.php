@@ -1,7 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'home';
-$route['404_override'] = 'home/error';
 $route['search'] = 'home/search';
 
 // Company Routes
@@ -69,7 +68,7 @@ $route["why-choose-us"] = "about/choose";
 $route["our-location"] = "packers_movers/state";
 $route["packers-movers-(:any)-india"] = "packers_movers/state_services/$1";
 $route["(:any)-packers-movers-(:any)"] = "packers_movers/city/$2/$1";
-$route["(:any)/packers-movers-(:any)"] = "packers_movers/city/$1/$2";
+// $route["(:any)/packers-movers-(:any)"] = "packers_movers/city/$1/$2";
 $route["(bhopal|chandigarh|dewas|ghaziabad|gurugram|indore|jabalpur|mumbai|nagpur|pune|raipur|sagar|ujjain|wardha)/(:any)"] = "packers_movers/city/$1/$2";
 $route["packers-movers-from-(:any)-to-(:any)"] = "from_to/index/$1/$2";
 $route["bihar"] = "packers_movers/state_services/bihar";
@@ -124,6 +123,7 @@ $route['packing-material'] = 'about/packing_material';
 $route['moving-guide'] = 'about/moving_guide';
 
 $route["(:any).htm"] = "home/error";
+$route['404_override'] = 'home/error';
 $route['translate_uri_dashes'] = FALSE;
 
 

@@ -24,10 +24,13 @@ class Gallery extends MX_Controller {
     {
         $data['title'] ="Video Gallery |" . $this->comp['company3'];
         $data['description'] ="Watch our step-by-step cargo handling processes, transport safety standards, and global freight forwarding operations in action at" . $this->comp['company3'] .".";
-        
-        $this->db->where('status', 1);
-        $this->db->order_by('auto_id', 'DESC');
-        $data['videos'] = $this->db->get('video_gallery')->result();
+
+        $data['videos'] = array();
+        if ($this->db->table_exists('video_gallery')) {
+            $this->db->where('status', 1);
+            $this->db->order_by('auto_id', 'DESC');
+            $data['videos'] = $this->db->get('video_gallery')->result();
+        }
         
         $data['module'] ="gallery";
         $data['view_file'] ="video-gallery";

@@ -38,9 +38,25 @@ class Packers_movers extends MX_Controller
     function get_title($city, $state)
     {
         $seo = array(
-            "Sagar" => array(
-                "title" => "Packers and Movers in Sagar, MP | Best Moving Company - VP Max",
-                "desc" => "Looking for trusted packers and movers in Sagar? VP Max offers safe home/office shifting, packing, loading & transport in Sagar, MP. Get free quotes today!"
+            "Sagar" => array(//15th sept -shiwam
+                "title" => "Packers and Movers In Sagar, MP | Best Moving Company Sagar",
+                "desc" => "Trusted packing and moving service in Sagar - VP Max offers safe home/office shifting, packing, loading & transport. Get free quotes today!"
+            ),
+             "Indore" => array(//15th sept -shiwam
+                "title" => "Packers and Movers Indore | VP Max Packers And Movers",
+                "desc" => "Packing and moving service Indore, Ujjain - VP Max is the prime choice for your next relocation. Phase No.1, RH 517, Scheme No. 78, Pink City, Indore, Madhya Pradesh 452010"
+            ),
+             "Bhopal" => array(//15th sept -shiwam
+                "title" => "Packers and Movers Bhopal | Home & Office Shifting Services",
+                "desc" => "Office No. 542, Rajadhani Paras City, Transport Nagar, Kokta, Bhopal, Madhya Pradesh 462022 - Get professional home shifting, transport services at low prices in Kolar road bhopal"
+            ),
+             "Katni" => array(//15th sept -shiwam
+                "title" => "Packers and Movers In Katni | Best Moving Company Katni",
+                "desc" => "VP Max Packers And Movers - Shop No 2, near SBI ATM, Jharra Tikuriya, Katni, Madhya Pradesh 483501. Call 96304-83460 for tension-free relocation"
+            ),
+             "Alampur" => array(//15th sept -shiwam
+                "title" => "Alampur Packers and Movers | Home Shifting services",
+                "desc" => "Trusted packing and moving service in Alampur - VP Max offers safe home/office shifting, packing, loading & transport. Get free quotes today!"
             ),
         );
         foreach ($seo as $k => $s) {
@@ -50,7 +66,7 @@ class Packers_movers extends MX_Controller
         }
         //edit by Arshad 15-11-2024
         return array(
-            'title' => "Packers and Movers in $city | VP Max $state",
+            'title' => "Packers and Movers In $city | VP Max $state",
             "desc" => "We as a packing and moving company in $city assure the best shifting experience with affordable rates and charges, quality service and trusted reviews across all platforms"
         );
     }

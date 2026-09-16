@@ -53,7 +53,7 @@ class MX_Controller
         
         $this->comp['startYear'] = "2003";
         $this->comp['experience'] = $this->comp['startYear'] . " - " . date('Y');
-        $this->comp['happyClients'] = "4,850+";
+        $this->comp['happyClients'] = "4,864+";
         $this->comp['yearsExperience'] = $this->comp['experience'] . "+";
         $this->comp['secureShifting'] = "100%";
         $this->comp['statesCovered'] = "28+";
@@ -62,7 +62,7 @@ class MX_Controller
         $this->comp['mpn'] = "VPMAX50463";
         // Review
         $this->comp['ratingValue'] = "4.9";
-        $this->comp['ratingCount'] = "4850";
+        $this->comp['ratingCount'] = "4864";
         $this->comp['datePublished'] = "2026-07-23";
         $this->comp['reviewBody'] = "VP Max team is the first choice for safe Packing and Moving services with affordable and genuine rates";
         $this->comp['reviewperson'] = "Ravi Shankar";

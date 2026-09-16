@@ -1,4 +1,4 @@
-<!-- FOOTER SECTION -->
+
 <footer class="footer-section mt-5">
   <?php
 $floatingPhoneNumber = preg_replace('/\D+/', '', (string) $phone);
@@ -10,7 +10,7 @@ $floatingWhatsappLink = !empty($whatsapphtml)
 
 $this->load->view('home/city_list');
 ?>
-  <!-- Top Features Strip -->
+  
   <div class="footer-top-features">
     <div class="container">
       <div class="footer-top-grid">
@@ -58,7 +58,6 @@ $this->load->view('home/city_list');
     <div class="container">
       <div class="row g-4 g-xl-5">
 
-        <!-- Column 1: Brand & Quote -->
         <div class="col-lg-4 col-md-6">
           <div class="footer-brand">
             <a href="<?= site_url() ?>" class="footer-brand-logo">
@@ -96,7 +95,6 @@ $this->load->view('home/city_list');
           </div>
         </div>
 
-        <!-- Column 2: Quick Links -->
         <div class="col-lg-2 col-md-3 col-6">
           <div class="footer-widget">
             <span class="h5 d-block mb-3 text-white fw-bold">Quick Links</span>
@@ -116,7 +114,6 @@ $this->load->view('home/city_list');
           </div>
         </div>
 
-        <!-- Column 3: Our Services -->
         <div class="col-lg-3 col-md-3 col-6">
           <div class="footer-widget">
             <span class="h5 d-block mb-3 text-white fw-bold">Our Services</span>
@@ -135,7 +132,6 @@ $this->load->view('home/city_list');
         </div>
 
 
-        <!-- Column 5: Get In Touch -->
         <div class="col-lg-3 col-md-8 col-12">
           <div class="footer-widget">
             <span class="h5 d-block mb-3 text-white fw-bold">Get In Touch</span>
@@ -200,8 +196,6 @@ $this->load->view('home/city_list');
         </div>
 
       </div>
-
-      <!-- Action Banner -->
       <div class="footer-action-banner">
         <div class="action-banner-left">
           <div class="action-banner-icon">
@@ -238,13 +232,11 @@ $this->load->view('home/city_list');
           </div>
         </div>
       </div>
-
-      <!-- Bottom Bar -->
       <div class="footer-bottom">
         <div class="footer-bottom-wrap">
           <div class="footer-copy">
             <i class="bi bi-shield-check"></i>
-            <span>&copy; <?= date('Y') ?> <?= $company3 ?>.<br>All Rights Reserved.</span>
+            <span>&copy; 2003-<?= date('Y')+2 ?> <?= $company3 ?>.<br>All Rights Reserved.</span>
           </div>
           <div class="footer-policy-links">
             <a href="<?= site_url('privacy-policy') ?>">Privacy Policy</a>
@@ -296,13 +288,11 @@ $this->load->view('home/city_list');
   <i class="bi bi-file-earmark-text-fill"></i>
   <span>Get a Quote</span>
 </a>
-<style>
-  .mobile-quote-float-right{position:fixed;right:12px;bottom:88px;z-index:1040;display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:999px;text-decoration:none;font-weight:700;font-size:13px;background:linear-gradient(135deg,#0d6efd 0%,#0a58ca 100%);color:#fff;box-shadow:0 8px 22px rgb(13 110 253 / .35)}.mobile-quote-float-right i{font-size:14px}.mobile-quote-float-right:hover,.mobile-quote-float-right:focus{color:#fff;transform:translateY(-1px)}@media (min-width:992px){.mobile-quote-float-right{display:none!important}}
-</style>
 <?php $this->load->view('contacts/quotemodal'); ?>
 <?php $this->load->view('contacts/review_modal'); ?>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Custom Bootstrap Lightbox Modal -->
+<script src="<?= base_url('assets/js/custom.js') ?>"></script>
+
 <div class="modal fade" id="imageLightboxModal" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content bg-transparent border-0">
@@ -323,33 +313,12 @@ $this->load->view('home/city_list');
     </div>
   </div>
 </div>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const lightboxLinks = document.querySelectorAll('[data-lightbox="image"]');
-    const lightboxModalEl = document.getElementById('imageLightboxModal');
-    if (lightboxModalEl && lightboxLinks.length > 0) {
-      const lightboxImg = document.getElementById('lightboxImage');
-      const lightboxCaption = document.getElementById('lightboxCaption');
-      const modalInstance = new bootstrap.Modal(lightboxModalEl);
-
-      lightboxLinks.forEach(link => {
-        link.addEventListener('click', function (e) {
-          e.preventDefault();
-          lightboxImg.src = this.href;
-          const caption = this.getAttribute('data-caption') || this.getAttribute('title') || '';
-          if (caption) {
-            lightboxCaption.textContent = caption;
-            lightboxCaption.style.display = 'inline-block';
-          } else {
-            lightboxCaption.style.display = 'none';
-          }
-          modalInstance.show();
-        });
-      });
-    }
-  });
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "yiljff7gnt");
 </script>
 </body>
-
 </html>

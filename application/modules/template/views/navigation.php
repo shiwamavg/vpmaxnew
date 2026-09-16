@@ -7,7 +7,7 @@
   $method = strtolower($ci->router->fetch_method());
   $segment1 = $ci->uri->segment(1);
 
-  // Determine active tab
+  
   $active_tab = '';
   if (empty($segment1) || $segment1 === 'home' || $class === 'home') {
     $active_tab = 'home';
@@ -26,13 +26,11 @@
   }
   ?>
 
-  <!-- Slim Top Bar -->
+  
   <div class="top-bar">
     <div class="container">
-      <!-- First Row -->
       <div
         class="top-bar-inner d-flex justify-content-center justify-content-md-between align-items-center py-0 py-md-2 border-bottom hide-border-on-mobile">
-        <!-- Left Side: Contact Info -->
         <div class="top-bar-left d-flex align-items-center flex-wrap gap-2 gap-md-4 text-secondary small">
           <a href="<?= $mailhtml ?>" class="d-none d-md-flex align-items-center text-decoration-none text-dark">
             <i class="bi bi-envelope me-1"></i><span><?= $mail ?></span>
@@ -46,7 +44,6 @@
             <i class="bi bi-geo-alt"></i> <a href="<?= site_url('branch-address') ?>"
               class="text-decoration-none text-dark">Branch Address</a>
           </div>
-          <!-- Mobile only ISO badge -->
           <div class="d-block d-lg-none w-100 text-center">
             <a href="<?= site_url('iso-certification') ?>"
               class="text-decoration-none text-dark px-3 py-2 fw-bold iso-badge-main">
@@ -56,9 +53,8 @@
           </div>
         </div>
 
-        <!-- Right Side: SEO Links & Reviews Badge -->
         <div class="top-bar-right d-none d-lg-flex align-items-center gap-2 gap-xl-4">
-          <!-- SEO Important Links -->
+          
           <nav class="top-seo-nav d-flex align-items-center gap-2 gap-xl-3 fw-medium">
             <a href="<?= site_url('iso-certification') ?>"
               class="text-decoration-none badge bg-success text-white rounded-pill px-2 py-1 ms-1 fw-bold text-center iso-badge-main"
@@ -74,7 +70,6 @@
         </div>
       </div>
 
-      <!-- Second Row: Additional Links -->
       <div class="top-bar-inner d-flex justify-content-center justify-content-md-end align-items-center py-1">
         <div class="top-bar-right d-none d-lg-flex align-items-center gap-2 text-secondary fw-medium">
           <a href="<?= site_url('avoid-fraud-packers-and-movers') ?>" class="text-decoration-none text-dark"
@@ -94,8 +89,7 @@
       </div>
     </div>
   </div>
-
-  <!-- SEO Friendly SiteNavigationElement Schema -->
+  
   <?php
   $nav_schema = [
     "@context" => "https://schema.org",
@@ -131,18 +125,15 @@
   <?= json_encode($org_schema, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES) ?>
   </script>
 
-  <!-- Main Sticky Header -->
+  
   <header class="main-header" id="mainHeader">
     <div class="container d-flex align-items-center justify-content-between">
-      <!-- Brand Logo -->
       <a href="<?= site_url() ?>" class="brand-wrap">
         <img loading="eager" src="<?= base_url() ?>assets/images/logo/logo.webp"
           alt="<?= $company3 ?>" class="brand-logo" fetchpriority="high" decoding="async">
       </a>
 
-      <!-- Header Action Buttons -->
       <div class="d-flex align-items-center gap-3 gap-md-4">
-        <!-- Phone Helpline -->
         <a href="tel:+919630263460"
           class="header-phone d-none d-lg-flex align-items-center gap-2 text-decoration-none me-2">
           <div
@@ -154,14 +145,12 @@
             <span class="d-block fw-bolder text-dark phone-number">9630263460</span>
           </div>
         </a>
-        <!-- Hamburger for Mobile -->
         <button class="hamburger d-flex" id="openMenu" aria-label="Open navigation menu">
           <span></span>
           <span></span>
           <span></span>
         </button>
 
-        <!-- Get a Quote Button -->
         <a href="#" class="btn-quote d-none d-lg-flex align-items-center gap-2" data-bs-toggle="modal"
           data-bs-target="#qteModal">
           <i class="bi bi-file-earmark-text"></i>
@@ -170,8 +159,7 @@
       </div>
     </div>
   </header>
-
-  <!-- Full Screen Mega Menu (overlay menu when clicking hamburger) -->
+  
   <nav class="mega-overlay" id="megaMenu" aria-label="Main navigation">
     <div class="mega-close-wrap">
       <button class="mega-close-btn" id="closeMenu" aria-label="Close navigation menu">
@@ -181,7 +169,7 @@
 
     <div class="mega-inner-container premium-mega-container">
       <div class="row">
-        <!-- Column 1: Brand & Contact (New) -->
+        
         <div class="col-lg mega-col text-center border-end d-none d-lg-block">
           <div>
             <img loading="lazy" src="<?= base_url() ?>assets/images/logo/logo.webp"
@@ -226,7 +214,7 @@
           </div>
         </div>
 
-        <!-- Column 2: The Company -->
+        
         <div class="col-lg mega-col mega-col-styled">
           <span class="mega-col-title d-block active">The Company <i
               class="bi bi-chevron-down d-lg-none float-end"></i></span>
@@ -251,7 +239,7 @@
           </div>
         </div>
 
-        <!-- Column 3: Services -->
+        
         <div class="col-lg mega-col mega-col-styled border-start">
           <span class="mega-col-title d-block">Services <i class="bi bi-chevron-down d-lg-none float-end"></i></span>
 
@@ -272,7 +260,7 @@
           </div>
         </div>
 
-        <!-- Column 4: Important Links -->
+        
         <div class="col-lg mega-col mega-col-styled border-start">
           <span class="mega-col-title d-block">Important Links <i
               class="bi bi-chevron-down d-lg-none float-end"></i></span>
@@ -288,7 +276,7 @@
           </div>
         </div>
 
-        <!-- Column 5: Help & Support -->
+        
         <div class="col-lg mega-col mega-col-styled border-start">
           <span class="mega-col-title d-block">Help & Support <i
               class="bi bi-chevron-down d-lg-none float-end"></i></span>
@@ -308,70 +296,3 @@
       </div>
     </div>
   </nav>
-
-  <script>
-    const openMenu = document.getElementById('openMenu');
-    const closeMenu = document.getElementById('closeMenu');
-    const megaMenu = document.getElementById('megaMenu');
-    const body = document.body;
-    const mainHeader = document.getElementById('mainHeader');
-
-    openMenu.addEventListener('click', () => {
-      megaMenu.classList.add('active');
-      body.classList.add('menu-open');
-    });
-
-    closeMenu.addEventListener('click', () => {
-      megaMenu.classList.remove('active');
-      body.classList.remove('menu-open');
-    });
-
-    // Toggle mobile dropdown accordions
-    document.querySelectorAll('.mobile-dropdown-toggle').forEach(button => {
-      button.addEventListener('click', (e) => {
-        e.preventDefault();
-        const parent = button.closest('.mobile-nav-item');
-
-        // Close other open dropdowns (accordion style)
-        document.querySelectorAll('.mobile-nav-item.mobile-dropdown').forEach(item => {
-          if (item !== parent) {
-            item.classList.remove('active');
-          }
-        });
-
-        parent.classList.toggle('active');
-      });
-    });
-
-    // Mega menu mobile accordion
-    document.querySelectorAll('.mega-col-title').forEach(title => {
-      title.addEventListener('click', () => {
-        if (window.innerWidth <= 991) {
-          title.classList.toggle('active');
-          const content = title.nextElementSibling;
-          if (content && content.classList.contains('mega-col-content')) {
-            content.classList.toggle('show');
-          }
-        }
-      });
-    });
-
-    // Close menu when clicking on backdrop overlay
-    megaMenu.addEventListener('click', (e) => {
-      if (e.target === megaMenu) {
-        megaMenu.classList.remove('active');
-        body.classList.remove('menu-open');
-      }
-    });
-
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') {
-        megaMenu.classList.remove('active');
-        body.classList.remove('menu-open');
-      }
-    });
-
-    window.addEventListener('scroll', () => {
-      mainHeader.classList.toggle('scrolled', window.scrollY > 20);
-    });
-  </script>

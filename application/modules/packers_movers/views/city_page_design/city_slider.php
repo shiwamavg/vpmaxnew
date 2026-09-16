@@ -18,7 +18,7 @@
 
           <div class="hero-text-box ms-0">
             <h1 class="hero-title" itemprop="name">
-              Packers and Movers in <b><?= isset($city) ? $city : 'Indore' ?></b>
+              VP Max <b>Packers and Movers in <?= isset($city) ? $city : 'Indore' ?></b>
             </h1>
             <p class="hero-lead mt-3" itemprop="description"><?=$description?></p>
           </div>

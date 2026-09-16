@@ -91,9 +91,9 @@ class Sitemap extends MX_Controller {
             $cities = array_merge($cities, $this->load_state_cities($file, $state_slug));
         }
 
-        foreach ($this->locality_parent_slugs() as $parent_slug) {
-            $cities = array_merge($cities, $this->load_city_localities($parent_slug));
-        }
+        // foreach ($this->locality_parent_slugs() as $parent_slug) {
+        //     $cities = array_merge($cities, $this->load_city_localities($parent_slug));
+        // }
 
         return $cities;
     }
@@ -117,16 +117,16 @@ class Sitemap extends MX_Controller {
         
         // Cities list from footer.php
         $cities = [
-    ["city" => "Mumbai", "state" => "maharashtra"],
+    // ["city" => "Mumbai", "state" => "maharashtra"],
     ["city" => "Delhi", "state" => "delhi"],
-    ["city" => "Bengaluru", "state" => "karnataka"],
-    ["city" => "Chennai", "state" => "tamil-nadu"],
-    ["city" => "Hyderabad", "state" => "telangana"],
-    ["city" => "Kolkata", "state" => "west-bengal"],
-    ["city" => "Pune", "state" => "maharashtra"],
-    ["city" => "Ahmedabad", "state" => "gujarat"],
+    // ["city" => "Bengaluru", "state" => "karnataka"],
+    // ["city" => "Chennai", "state" => "tamil-nadu"],
+    // ["city" => "Hyderabad", "state" => "telangana"],
+    // ["city" => "Kolkata", "state" => "west-bengal"],
+    // ["city" => "Pune", "state" => "maharashtra"],
+    // ["city" => "Ahmedabad", "state" => "gujarat"],
     ["city" => "Jaipur", "state" => "rajasthan"],
-    ["city" => "Chandigarh", "state" => "chandigarh"],
+    // ["city" => "Chandigarh", "state" => "chandigarh"],
     ["city" => "Gurgaon", "state" => "haryana"],
     ["city" => "Noida", "state" => "uttar-pradesh"],
     ["city" => "Faridabad", "state" => "haryana"],
@@ -135,7 +135,7 @@ class Sitemap extends MX_Controller {
     ["city" => "Kanpur", "state" => "uttar-pradesh"],
     ["city" => "Indore", "state" => "madhya-pradesh"],
     ["city" => "Bhopal", "state" => "madhya-pradesh"],
-    ["city" => "Nagpur", "state" => "maharashtra"],
+    // ["city" => "Nagpur", "state" => "maharashtra"],
     ["city" => "Surat", "state" => "gujarat"],
     ["city" => "Vadodara", "state" => "gujarat"],
     ["city" => "Rajkot", "state" => "gujarat"],
@@ -146,25 +146,25 @@ class Sitemap extends MX_Controller {
     ["city" => "Patiala", "state" => "punjab"],
     ["city" => "Dehradun", "state" => "uttarakhand"],
     ["city" => "Haridwar", "state" => "uttarakhand"],
-    ["city" => "Ranchi", "state" => "jharkhand"],
-    ["city" => "Jamshedpur", "state" => "jharkhand"],
-    ["city" => "Bhubaneswar", "state" => "odisha"],
-    ["city" => "Cuttack", "state" => "odisha"],
-    ["city" => "Patna", "state" => "bihar"],
-    ["city" => "Gaya", "state" => "bihar"],
-    ["city" => "Guwahati", "state" => "assam"],
-    ["city" => "Shillong", "state" => "meghalaya"],
-    ["city" => "Kohima", "state" => "nagaland"],
-    ["city" => "Imphal", "state" => "manipur"],
-    ["city" => "Aizawl", "state" => "mizoram"],
-    ["city" => "Agartala", "state" => "tripura"],
-    ["city" => "Itanagar", "state" => "arunachal-pradesh"],
-    ["city" => "Thiruvananthapuram", "state" => "kerala"],
-    ["city" => "Kochi", "state" => "kerala"],
-    ["city" => "Coimbatore", "state" => "tamil-nadu"],
-    ["city" => "Madurai", "state" => "tamil-nadu"],
-    ["city" => "Trichy", "state" => "tamil-nadu"],
-    ["city" => "Salem", "state" => "tamil-nadu"]
+    // ["city" => "Ranchi", "state" => "jharkhand"],
+    // ["city" => "Jamshedpur", "state" => "jharkhand"],
+    // ["city" => "Bhubaneswar", "state" => "odisha"],
+    // ["city" => "Cuttack", "state" => "odisha"],
+    // ["city" => "Patna", "state" => "bihar"],
+    // ["city" => "Gaya", "state" => "bihar"],
+    // ["city" => "Guwahati", "state" => "assam"],
+    // ["city" => "Shillong", "state" => "meghalaya"],
+    // ["city" => "Kohima", "state" => "nagaland"],
+    // ["city" => "Imphal", "state" => "manipur"],
+    // ["city" => "Aizawl", "state" => "mizoram"],
+    // ["city" => "Agartala", "state" => "tripura"],
+    // ["city" => "Itanagar", "state" => "arunachal-pradesh"],
+    // ["city" => "Thiruvananthapuram", "state" => "kerala"],
+    // ["city" => "Kochi", "state" => "kerala"],
+    // ["city" => "Coimbatore", "state" => "tamil-nadu"],
+    // ["city" => "Madurai", "state" => "tamil-nadu"],
+    // ["city" => "Trichy", "state" => "tamil-nadu"],
+    // ["city" => "Salem", "state" => "tamil-nadu"]
 ];
 
         $cities = array_merge( $this->imported_city_list(),$cities);
@@ -172,9 +172,9 @@ class Sitemap extends MX_Controller {
         $services = [
             // 'home-shifting-in-',
             // 'office-shifting-in-',
-            'car-transport-in-',
-            'bike-transport-in-',
-            'iba-approved-packers-in-',
+            // 'car-transport-in-',
+            // 'bike-transport-in-',
+            // 'iba-approved-packers-in-',
             'international-service-in-',
         ];
         
@@ -183,28 +183,28 @@ class Sitemap extends MX_Controller {
         // Static pages
         $static_pages = [
             ['', '1.0', 'weekly'],
-            // ['about', '0.8', 'monthly'],
-            // ['home-relocation', '0.8', 'monthly'],
-            // ['office-relocation', '0.8', 'monthly'],
-            // ['car-transportation-service', '0.8', 'monthly'],
-            // ['bike-transportation-service', '0.8', 'monthly'],
-            // ['loading-and-unloading', '0.8', 'monthly'],
-            // ['warehousing-service', '0.8', 'monthly'],
-            // ['luggage-delivery', '0.8', 'monthly'],
-            // ['goods-insurance', '0.8', 'monthly'],
-            // ['packing-and-unpacking', '0.8', 'monthly'],
-            // // ['it-relocation', '0.8', 'monthly'],
-            // ['courier-and-cargo', '0.8', 'monthly'],
-            // ['reviews', '0.9', 'weekly'],
-            // ['contacts', '0.7', 'monthly'],
-            // // ['blogs', '0.7', 'weekly'],
-            // ['photo-gallery', '0.6', 'monthly'],
-            // ['our-branches', '0.8', 'monthly'],
-            // ['why-choose-us', '0.7', 'monthly'],
-            // ['mission-and-vision', '0.7', 'monthly'],
-            // ['iba-approved-packers', '0.7', 'monthly'],
-            // ['faq', '0.7', 'monthly'],
-            // ['our-shifting-process', '0.7', 'monthly'],
+            ['about', '0.8', 'monthly'],
+            ['home-relocation', '0.8', 'monthly'],
+            ['office-relocation', '0.8', 'monthly'],
+            ['car-transportation-service', '0.8', 'monthly'],
+            ['bike-transportation-service', '0.8', 'monthly'],
+            ['loading-and-unloading', '0.8', 'monthly'],
+            ['warehousing-service', '0.8', 'monthly'],
+            ['luggage-delivery', '0.8', 'monthly'],
+            ['goods-insurance', '0.8', 'monthly'],
+            ['packing-and-unpacking', '0.8', 'monthly'],
+            ['it-relocation', '0.8', 'monthly'],
+            ['courier-and-cargo', '0.8', 'monthly'],
+            ['reviews', '0.9', 'weekly'],
+            ['contacts', '0.7', 'monthly'],
+            ['blogs', '0.7', 'weekly'],
+            ['photo-gallery', '0.6', 'monthly'],
+            ['our-branches', '0.8', 'monthly'],
+            ['why-choose-us', '0.7', 'monthly'],
+            ['mission-and-vision', '0.7', 'monthly'],
+            ['iba-approved-packers', '0.7', 'monthly'],
+            ['faq', '0.7', 'monthly'],
+            ['our-shifting-process', '0.7', 'monthly'],
         ];
         
         foreach ($static_pages as $page) {
@@ -227,7 +227,7 @@ class Sitemap extends MX_Controller {
             if (empty($seen_urls[$city_url])) {
                 $urls[] = [
                     'loc' => $city_url,
-                    'priority' => '0.8',
+                    'priority' => '0.9',
                     'changefreq' => 'weekly',
                     'lastmod' => date('Y-m-d')
                 ];
@@ -244,7 +244,7 @@ class Sitemap extends MX_Controller {
 
                 $urls[] = [
                     'loc' => $service_url,
-                    'priority' => '0.8',
+                    'priority' => '0.5',
                     'changefreq' => 'weekly',
                     'lastmod' => date('Y-m-d')
                 ];

@@ -6,6 +6,11 @@ $CI->load->database();
 // Normalize current city name
 $city_name = isset($city) ? strtolower(trim($city)) : '';
 
+// Video testimonials are optional for local installations without the gallery schema.
+if (!$CI->db->table_exists('video_gallery')) {
+    return;
+}
+
 // 1. First, try to fetch up to 10 active videos specifically for this city
 $CI->db->select('*');
 $CI->db->from('video_gallery');

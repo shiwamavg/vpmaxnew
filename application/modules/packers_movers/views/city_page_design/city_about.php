@@ -72,7 +72,7 @@ if (in_array($st, $states_28)) {
             <div class="video-wrapper">
                 <iframe
                     src="https://www.youtube.com/embed/G6D60xzSkKM?rel=0"
-                    title="Looking for Trusted Packers and Movers in Indore"
+                    title="Best Packers and Movers in <?=$city?>"
                     width="1080"
                     height="1920"
                     loading="lazy"
