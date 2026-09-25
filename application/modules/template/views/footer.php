@@ -88,7 +88,6 @@ $this->load->view('home/city_list');
                 <a href="<?= $twitterhtml ?>" aria-label="Twitter" target="_blank"><i class="bi bi-twitter-x"></i></a>
                 <a href="<?= $linkedinhtml ?>" aria-label="LinkedIn" target="_blank"><i class="bi bi-linkedin"></i></a>
                 <a href="<?= $youtubehtml ?>" aria-label="YouTube" target="_blank"><i class="bi bi-youtube"></i></a>
-                <a href="<?= $pinteresthtml ?>" aria-label="Pinterest" target="_blank"><i class="bi bi-pinterest"></i></a>
                 <a href="<?= $snapchathtml ?>" aria-label="Snapchat" target="_blank"><i class="bi bi-snapchat"></i></a>
               </div>
             </div>
@@ -107,7 +106,7 @@ $this->load->view('home/city_list');
               <li><a href="<?= site_url('tracking') ?>">Track Consignment</a></li>
               <li><a href="<?= site_url('branch-address') ?>">Branch Address</a></li>
               <li><a href="<?= site_url('our-location') ?>">Our Network</a></li>
-              <li><a href="<?= site_url('payment-mode') ?>">Payment Mode</a></li>
+              <li><a href="<?= site_url('payment-mode') ?>">Online Payment</a></li>
               <li><a href="<?= site_url('contact-us') ?>">Contact Us</a></li>
               <li><a href="<?= site_url('reviews') ?>">Reviews</a></li>
             </ul>
@@ -187,7 +186,13 @@ $this->load->view('home/city_list');
             </div>
 
             <div class="footer-payments mt-4 pt-3 border-top" style="border-color: rgba(255,255,255,0.1) !important;">
-              <span class="h6 text-white d-block mb-3" style="font-size: 15px;">We accept payments by:</span>
+              <span class="h6 text-white d-flex align-items-center gap-2 mb-3" style="font-size: 15px;"><i class="fa-solid fa-shield-halved text-success"></i> Secure payments accepted:</span>
+              <div class="d-flex flex-wrap gap-3 align-items-center mb-3 text-white small">
+                <span><i class="fa-solid fa-mobile-screen-button text-info me-1"></i> UPI</span>
+                <span><i class="fa-solid fa-credit-card text-info me-1"></i> Cards</span>
+                <span><i class="fa-solid fa-building-columns text-info me-1"></i> Net banking</span>
+                <span><i class="fa-solid fa-wallet text-info me-1"></i> Wallets</span>
+              </div>
               <img loading="lazy" src="<?= base_url('assets/images/about/payment_icons.webp') ?>"
                 alt="Accepted Payment Methods" class="img-fluid" style="border-radius: 4px; max-height: 35px;">
             </div>

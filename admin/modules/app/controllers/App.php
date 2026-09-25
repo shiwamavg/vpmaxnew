@@ -32,6 +32,7 @@ class App extends MX_Controller
             $this->load->view('login/ctrl_login.js');
             $this->load->view('dashboard/ctrl_dashboard.js');
             $this->load->view('reviews/ctrl_reviews.js');
+            $this->load->view('payment/ctrl_payment.js');
             $this->load->view('contact/ctrl_contact.js');
             $this->load->view('contact/ctrl_booking.js');
             $this->load->view('newsletter/ctrl_newsletter.js');

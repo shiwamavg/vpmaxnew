@@ -190,6 +190,7 @@
             <p class="mega-presence-bold mb-1">Quality Management System</p>
             <p class="mega-presence-text mx-auto">We adhere to international quality standards, ensuring a seamless,
               safe, and secure relocation experience for all our customers.</p>
+              
           </div>
 
           <hr class="w-75 mx-auto opacity-25">
@@ -206,8 +207,7 @@
                   class="bi bi-youtube"></i></a>
               <a href="<?= $instagramhtml ?? '#' ?>" target="_blank" class="mega-social-icon" aria-label="Instagram"><i
                   class="bi bi-instagram"></i></a>
-                  <a href="<?= $pinteresthtml ?? '#' ?>" aria-label="Pinterest" target="_blank" class="mega-social-icon"><i
-               class="bi bi-pinterest"></i></a>
+                 
               <a href="<?= $snapchathtml ?? '#' ?>" aria-label="Snapchat" target="_blank" class="mega-social-icon"><i
                class="bi bi-snapchat"></i></a>
             </div>
@@ -231,6 +231,7 @@
                 <li><a href="<?= site_url('iso-certification') ?>">ISO Certification</a></li>
                 <li><a href="<?= site_url('privacy-policy') ?>">Privacy Policy</a></li>
                 <li><a href="<?= site_url('terms-and-conditions') ?>">Terms & Conditions</a></li>
+                <li><a href="<?= site_url('payment-mode') ?>">Payment Online</a></li>
                 <li><a href="<?= site_url('refund-policy') ?>">Refund Policy</a></li>
                 <li><a href="<?= site_url('our-location') ?>">Our Locations</a></li>
 
@@ -268,7 +269,7 @@
           <div class="mega-col-content">
             <ul class="mega-list mb-4">
               <li><a href="<?= site_url('tracking') ?>">Track Consignment</a></li>
-              <li><a href="<?= site_url('payment-mode') ?>">Payment Mode</a></li>
+              
               <li><a href="<?= site_url('reviews') ?>">Reviews</a></li>
               <li><a href="<?= site_url('photo-gallery') ?>">Photo Gallery</a></li>
               <li><a href="<?= site_url('video-gallery') ?>">Video Gallery</a></li>

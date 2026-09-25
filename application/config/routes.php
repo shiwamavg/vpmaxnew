@@ -28,6 +28,8 @@ $route['certificates'] = 'about/certificates';
 $route['iso-certification'] = 'about/iso';
 $route['payment-options'] = 'about/payment';
 $route['payment-mode'] = 'about/payment';
+$route['cashfree/create-order'] = 'about/create_cashfree_order';
+$route['cashfree/payment-status'] = 'about/cashfree_payment_status';
 $route['award-gallery'] = 'about/award_gallery';
 $route['our-philosophy'] = 'about/philosophy';
 // City Services Routes

@@ -33,6 +33,11 @@ app.config(function($stateProvider, $urlRouterProvider)
 	        templateUrl: 'reviews',
 	        controller: 'ctrl_reviews'
     	})
+		.state('payment', {
+	        url: '/payment',
+	        templateUrl: 'payment',
+	        controller: 'ctrl_payment'
+		})
     	.state('offers', {
 	        url: '/offers',
 	        templateUrl: 'offers',

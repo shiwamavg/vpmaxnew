@@ -217,6 +217,12 @@
 			</li>
             <?php endif; ?>
 
+            <?php if(is_visible($menu_labels, 'label_payments')): ?>
+			<li><a accesskey="p" href="#/payment" title="Payment Records (Alt+P)"><i class="fa fa-credit-card"></i>
+				<span class="menu-text"><?= get_label($menu_labels, 'label_payments', 'Payments') ?></span></a>
+			</li>
+            <?php endif; ?>
+
             <?php if(is_visible($menu_labels, 'label_gallery')): ?>
 			<li><a accesskey="g" href="#/gallery" title="Photo Gallery (Alt+G)"><i class="fa fa-image"></i>
 				<span class="menu-text"><?= get_label($menu_labels, 'label_gallery', 'Photo Gallery') ?></span></a>

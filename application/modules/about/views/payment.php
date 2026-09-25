@@ -1,88 +1,138 @@
-<?php if (!defined('BASEPATH'))
-    exit('No direct script access allowed'); ?>
+<?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
 
-<!-- Breadcrumbs Section -->
 <?php $this->load->view('about/dynamic_breadcrumbs', [
     'bc_h1' => 'Payment Mode',
-    'bc_desc' => "Secure Payment Methods",
-    'breadcrumbs' => [
-        ['name' => 'Payment Mode']
-    ]
-]);
-?>
+    'bc_desc' => 'Secure Payment Methods',
+    'breadcrumbs' => [['name' => 'Payment Mode']]
+]); ?>
 
-<div class="container py-4">
-        <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-3 mb-4 pb-4 border-b border-light border-bottom">
-        <div>
-            <span class="badge rounded-pill bg-primary bg-opacity-10 text-primary fw-bold px-3 py-2 text-uppercase badge-custom">Secure Payment Gateway</span>
-            <h1 class="h2 fw-extrabold text-dark mt-2 mb-0 fw-bold">Payment <span class="text-cyan">Information</span></h1>
-            <p class="text-muted mb-0 mt-1">Complete your transaction safely using our verified business details.</p>
+<?php
+$payment_schema = [
+    '@context' => 'https://schema.org',
+    '@type' => 'WebPage',
+    'name' => 'Online Payment - ' . $this->comp['company3'],
+    'description' => 'Secure online payment options for ' . $this->comp['company3'] . '.',
+    'url' => site_url('payment-mode'),
+    'mainEntity' => [
+        '@type' => 'Organization',
+        'name' => $this->comp['company3'],
+        'paymentAccepted' => ['UPI', 'Credit Card', 'Debit Card', 'Net Banking', 'Wallets']
+    ]
+];
+?>
+<script type="application/ld+json"><?= json_encode($payment_schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) ?></script>
+
+<div class="container py-4 py-lg-5">
+    <div class="row align-items-end g-3 border-bottom pb-4 mb-4">
+        <div class="col-lg-8">
+            <span class="text-info small fw-bold text-uppercase">Secure payment gateway</span>
+            <h2 class="display-6 fw-bold text-dark mt-2 mb-2">Pay your moving bill</h2>
+            <p class="text-muted mb-0">Use Cashfree for a secure online payment, or choose direct bank transfer below.</p>
         </div>
+        <div class="col-lg-4 text-lg-end">
+            
         </div>
-    <div class="bg-cyan-soft border-start border-4 border-success rounded-3 p-4 mb-5 shadow-sm">
-        <div class="d-flex gap-3 align-items-start">
-            <div class="bg-success text-white p-2 rounded-3 shadow-sm">
-                <i class="fa-solid fa-shield-heart fs-4"></i>
+    </div>
+
+    <div class="alert alert-success d-flex gap-3 align-items-start mb-4" role="status">
+        <i class="fa-solid fa-shield-heart fs-4"></i>
+        <div><h3 class="h6 fw-bold mb-1">Pay After Completion</h3><p class="mb-0">Please pay <strong>only after your move is fully completed</strong> and you are satisfied with the delivery.</p></div>
+    </div>
+
+    <div class="row g-4 align-items-start">
+        <div class="col-lg-6">
+            <div class="card border shadow-sm">
+                <div class="card-header bg-white d-flex align-items-center gap-3 p-4">
+                    <span class="bg-dark text-white rounded p-2"><i class="fa-solid fa-credit-card"></i></span>
+                    <div><h3 class="h5 mb-1 fw-bold">Pay online</h3><p class="small text-muted mb-0">Enter your details to continue to Online Payment.</p></div>
+                </div>
+                <div class="card-body p-4">
+                    <div id="cashfree-payment-error" class="alert alert-danger" style="display:none"></div>
+                    <form id="cashfree-payment-form" class="row g-3">
+                        <div class="col-12">
+                            <label class="form-label fw-bold">Payment reference</label>
+                            <div class="d-flex flex-wrap gap-3">
+                                <label class="form-check"><input class="form-check-input" type="radio" name="paymentFor" value="GR Number" required><span class="form-check-label">GR Number</span></label>
+                                <label class="form-check"><input class="form-check-input" type="radio" name="paymentFor" value="Bill Number"><span class="form-check-label">Bill Number</span></label>
+                                <label class="form-check"><input class="form-check-input" type="radio" name="paymentFor" value="Quotation Number"><span class="form-check-label">Quotation Number</span></label>
+                            </div>
+                        </div>
+                        <div class="col-md-6"><label class="form-label" for="payment-reference">GR/Bill/Quotation number</label><input id="payment-reference" type="text" name="reference_number" maxlength="50" class="form-control" required></div>
+                        <div class="col-md-6"><label class="form-label" for="payment-name">Name</label><input id="payment-name" type="text" name="name" maxlength="100" class="form-control" required></div>
+                        <div class="col-md-4"><label class="form-label" for="payment-email">Email</label><input id="payment-email" type="email" name="email" maxlength="100" class="form-control" required></div>
+                        <div class="col-md-4"><label class="form-label" for="payment-phone">Phone</label><input id="payment-phone" type="tel" name="phone" maxlength="10" pattern="[0-9]{10}" class="form-control" required></div>
+                        <div class="col-md-4"><label class="form-label" for="payment-amount">Amount (INR)</label><input id="payment-amount" type="number" name="amount" min="1" step="0.01" class="form-control" required></div>
+                        <div class="col-12"><label class="form-label" for="payment-remarks">Remarks <span class="text-muted fw-normal">(optional)</span></label><textarea id="payment-remarks" name="remarks" maxlength="500" class="form-control" rows="3"></textarea></div>
+                        <div class="col-12"><button type="submit" id="cashfree-pay-button" class="btn btn-dark px-4"><i class="fa-solid fa-arrow-right me-1"></i> Continue to payment</button></div>
+                    </form>
+                    <div class="border-top mt-4 pt-4">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <i class="fa-solid fa-shield-halved text-success fs-5"></i>
+                            <span class="small fw-bold text-dark">Secure payment options</span>
+                            <span class="badge bg-success-subtle text-success border border-success-subtle">Accepted</span>
+                        </div>
+                        <div class="row row-cols-2 row-cols-md-4 g-2 text-center">
+                            <div class="col"><div class="border rounded p-2 h-100"><i class="fa-solid fa-mobile-screen-button text-primary d-block fs-5 mb-1"></i><small class="text-muted">UPI</small></div></div>
+                            <div class="col"><div class="border rounded p-2 h-100"><i class="fa-solid fa-credit-card text-primary d-block fs-5 mb-1"></i><small class="text-muted">Cards</small></div></div>
+                            <div class="col"><div class="border rounded p-2 h-100"><i class="fa-solid fa-building-columns text-primary d-block fs-5 mb-1"></i><small class="text-muted">Net banking</small></div></div>
+                            <div class="col"><div class="border rounded p-2 h-100"><i class="fa-solid fa-wallet text-primary d-block fs-5 mb-1"></i><small class="text-muted">Wallets</small></div></div>
+                        </div>
+                        <div class="small text-muted mt-3"><i class="fa-solid fa-lock me-1"></i> Protected by <a href="https://www.cashfree.com/" target="_blank" rel="noopener noreferrer">Cashfree</a></div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h3 class="h5 fw-bold text-dark d-flex flex-wrap align-items-center gap-2 mb-1">
-                    Pay After Completion
-                    <span class="badge bg-success text-white text-uppercase" style="font-size: 0.65rem;">Customer First</span>
-                </h3>
-                <p class="text-secondary mb-0 leading-relaxed">Please pay <strong>only after your move is fully completed</strong> and you are satisfied with the delivery. Your satisfaction is our absolute priority.</p>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="card border shadow-sm">
+                <div class="card-header bg-white d-flex align-items-center gap-3 p-4">
+                    <span class="bg-dark text-white rounded p-2"><i class="fa-solid fa-building-columns"></i></span>
+                    <div><h3 class="h5 mb-1 fw-bold">Bank transfer</h3><p class="small text-muted mb-0">Direct transfer details</p></div>
+                </div>
+                <div class="card-body p-4">
+                    <div class="bg-light rounded p-3 text-center mb-4"><img loading="lazy" src="<?= base_url('assets/images/about/qrcode_vpmax.webp') ?>" alt="VP Max Packers and Movers SBI QR Code" class="img-fluid" style="max-width:80%"></div>
+                    <dl class="row small mb-4">
+                        <dt class="col-5 text-muted">Beneficiary</dt><dd class="col-7 text-end fw-bold">VP MAX PACKERS AND MOVERS</dd>
+                        <dt class="col-5 text-muted">Bank</dt><dd class="col-7 text-end fw-bold">State Bank of India</dd>
+                        <dt class="col-5 text-muted">Account type</dt><dd class="col-7 text-end fw-bold">Current Account</dd>
+                        <dt class="col-5 text-muted">Account</dt><dd class="col-7 text-end fw-bold">44473700074</dd>
+                        <dt class="col-5 text-muted">IFSC</dt><dd class="col-7 text-end fw-bold">SBIN0003218</dd>
+                        <dt class="col-5 text-muted">UPI ID</dt><dd class="col-7 text-end fw-bold text-break">vp452010maxpackersandmovers@sbi</dd>
+                    </dl>
+                    <div class="alert alert-warning small mb-0"><i class="fa-solid fa-circle-info me-1"></i> Send the transaction screenshot on WhatsApp to <a href="https://wa.me/9630263460" target="_blank" class="fw-bold">9630263460</a>.</div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="row g-4 mb-5">
-                <div class="col-lg-6">
-            <div class="bg-white rounded-4 p-3 h-100 shadow-sm border border-light d-flex align-items-center justify-content-center">
-                <div class="w-100 text-center">
-                    <img loading="lazy" src="<?= base_url('assets/images/about/qrcode_vpmax.webp') ?>" alt="VP Max Packers and Movers SBI QR Code" class="img-fluid rounded-3 shadow-sm border" style="max-height: 520px; object-fit: contain;">
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-6">
-            <div class="bg-white rounded-4 p-4 p-md-5 h-100 shadow-sm border border-light d-flex flex-column justify-content-between">
-                <div>
-                    <div class="d-flex align-items-center gap-3 mb-4">
-                        <div class="bg-cyan-soft p-2.5 rounded-3 text-dark">
-                            <i class="fa-solid fa-building-columns fs-5"></i>
-                        </div>
-                        <h2 class="h5 fw-bold text-dark mb-0">Direct Bank Transfer Details</h2>
-                    </div>
-                    <div class="border rounded-3 overflow-hidden">
-                        <div class="d-flex justify-content-between align-items-center p-3 border-bottom bg-light bg-opacity-50">
-                            <span class="text-muted small fw-bold text-uppercase">Beneficiary Name</span>
-                            <span class="fw-bold text-dark text-end">VP MAX PACKERS AND MOVERS</span>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center p-3 border-bottom bg-light bg-opacity-50">
-                            <span class="text-muted small fw-bold text-uppercase">Bank Name</span>
-                            <span class="fw-bold text-dark">State Bank of India</span>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center p-3 border-bottom">
-                            <span class="text-muted small fw-bold text-uppercase">Account Type</span>
-                            <span class="badge bg-cyan-soft text-dark fw-bold border border-info">Current Account</span>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center p-3 border-bottom bg-cyan-soft">
-                            <span class="text-dark small fw-bold text-uppercase">Account A/C</span>
-                            <span class="fw-bold text-dark font-monospace fs-5">44473700074</span>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center p-3 border-bottom bg-cyan-soft">
-                            <span class="text-dark small fw-bold text-uppercase">Bank IFSC</span>
-                            <span class="fw-bold text-dark font-monospace fs-5">SBIN0003218</span>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center p-3 bg-primary bg-opacity-10">
-                            <span class="text-primary small fw-bold text-uppercase">Merchant UPI ID</span>
-                            <span class="fw-bold text-dark text-break ps-2">vp452010maxpackersandmovers@sbi</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-4 p-3 bg-primary bg-opacity-10 rounded-3 border border-danger-subtle">
-                    <div class="d-flex gap-2.5">
-                        <span class="text-primary mt-0.5"><i class="fa-solid fa-circle-exclamation"></i></span>
-                        <p class="small text-dark mb-0 leading-relaxed ms-3"><strong>Important:</strong> After successful payment, please send the transaction screenshot on WhatsApp to <a href="https://wa.me/9630263460" target="_blank" class="text-primary fw-bold text-decoration-underline">9630263460</a> for verification.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+</div>
 
+<script src="https://sdk.cashfree.com/js/v3/cashfree.js"></script>
+<script>
+    (function () {
+        var form = document.getElementById('cashfree-payment-form');
+        var button = document.getElementById('cashfree-pay-button');
+        var errorBox = document.getElementById('cashfree-payment-error');
+        var cashfree = Cashfree({ mode: <?= json_encode($cashfree_mode === 'production' ? 'production' : 'sandbox') ?> });
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+            button.disabled = true;
+            button.textContent = 'Processing...';
+            errorBox.style.display = 'none';
+            fetch('<?= site_url('cashfree/create-order') ?>', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'},
+                body: new URLSearchParams(new FormData(form))
+            }).then(function (response) {
+                return response.json().then(function (data) { return {ok: response.ok, data: data}; });
+            }).then(function (result) {
+                if (!result.ok || !result.data.success) throw new Error(result.data.message || 'Unable to start the payment.');
+                return cashfree.checkout({paymentSessionId: result.data.payment_session_id, redirectTarget: '_self'});
+            }).catch(function (error) {
+                errorBox.textContent = error.message;
+                errorBox.style.display = 'block';
+                button.disabled = false;
+                button.innerHTML = '<i class="fa-solid fa-arrow-right me-1"></i> Continue to payment';
+            });
+        });
+    }());
+</script>
