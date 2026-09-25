@@ -58,6 +58,10 @@ class Packers_movers extends MX_Controller
                 "title" => "Alampur Packers and Movers | Home Shifting services",
                 "desc" => "Trusted packing and moving service in Alampur - VP Max offers safe home/office shifting, packing, loading & transport. Get free quotes today!"
             ),
+            "Gwalior" => array(//15th sept -shiwam
+                "title" => "Best Packers and Movers in Gwalior - Flat 15% ".date("M")." Discount",
+                "desc" => "Flat 15% ".date("F")." discount in  packing and moving service in Gwalior - VP Max offers safe home/office shifting, packing, loading & transport. Get free quotes today!"
+            ),
         );
         foreach ($seo as $k => $s) {
             if ($k == $city) {
