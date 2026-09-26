@@ -18,7 +18,7 @@ class From_to extends MX_Controller
             "to_city" => $to_city,
             "title" => "Best Packers and Movers from $from_city to $to_city | " . $this->comp['company3'],
             "description" => "Hire top-rated packers and movers from $from_city to $to_city. " . $this->comp['company3'] . " offers reliable household shifting and vehicle transport services at affordable rates.",
-            "keywords" => "movers and packers from $from_city to $to_city, Movers Packers $from_city to $to_city, Packers and movers from $from_city to $to_city, Moving companies $from_city to $to_city, Movers from $from_city to $to_city",
+            "keywords" => "packers and movers $from_city to $to_city, intercity shifting, home relocation, transport services",
             "module" => "from_to",
             "view_file" => "index",
         );

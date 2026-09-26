@@ -63,9 +63,10 @@
                                             <?php for ($i = 0; $i < $r->stars; $i++) { ?>
                                                 <i class="bi bi-star-fill text-warning"></i>
                                             <?php } ?>
-                                            <span class="d-none reviews-rating-value" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
-                                                <span itemprop="ratingValue"><?= $r->stars ?></span> stars
-                                            </span>
+                                            <div itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+                                                <meta itemprop="ratingValue" content="<?= (int) $r->stars ?>" />
+                                                <meta itemprop="bestRating" content="5" />
+                                            </div>
                                         </div>
                                         
                                         <p itemprop="reviewBody" class="mb-3">"<?=$r->r_desc?>"</p>

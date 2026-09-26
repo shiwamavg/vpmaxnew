@@ -372,7 +372,7 @@ class Packers_movers extends MX_Controller
             'img' => base_url('assets') . "/images/state/$statelink.webp",
             "title" => $seo['title'],
             "description" => $seo['desc'],
-            "keywords" => "movers and packers in $city, Movers Packers in $city, Movers near me $city, Packers and movers in $city, Moving companies near me $city, Movers $city, Packers and movers near me $city",
+            "keywords" => "packers and movers $city, home shifting, office relocation, safe packing, moving services",
             "module" => "packers_movers",
             "view_file" => "view_service",
         );

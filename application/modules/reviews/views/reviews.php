@@ -172,7 +172,10 @@
                                         <meta itemprop="name" content="<?= htmlspecialchars($company3) ?>" />
                                     </div>
 
-                                    <span class="d-none reviews-rating-value" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating"><span itemprop="ratingValue"><?= $r->stars ?></span> stars</span>
+                                    <div itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+                                        <meta itemprop="ratingValue" content="<?= (int) $r->stars ?>" />
+                                        <meta itemprop="bestRating" content="5" />
+                                    </div>
                                     <p itemprop="reviewBody" class="reviews-card-quote mb-3">“<a href='<?= base_url('reviews/view/' . $r->r_id) ?>' target="_blank"><?= htmlspecialchars($r->r_desc) ?></a>”</p>
 
                                     <?php if (!empty($r->r_img)) {

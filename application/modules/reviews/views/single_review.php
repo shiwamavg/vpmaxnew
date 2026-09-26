@@ -122,7 +122,10 @@ $avatar_idx = ord(mb_substr($r->name, 0, 1)) % 5;
                             <meta itemprop="name" content="<?= htmlspecialchars($company3) ?>" />
                         </div>
 
-                        <span class="d-none reviews-rating-value" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating"><span itemprop="ratingValue"><?= $r->stars ?></span> stars</span>
+                        <div itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+                            <meta itemprop="ratingValue" content="<?= (int) $r->stars ?>" />
+                            <meta itemprop="bestRating" content="5" />
+                        </div>
                         <p itemprop="reviewBody" class="reviews-card-quote mb-3 reviews-single-quote">“<?= htmlspecialchars($r->r_desc) ?>”</p>
 
                         <?php if (!empty($r->r_img)) {

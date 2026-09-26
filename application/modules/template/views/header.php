@@ -86,69 +86,11 @@ $locality_parent_slugs = [
         "addressRegion": "<?= $state ?>",
         "addressCountry": "IN"
       },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "<?= $ratingValue ?>",
-        "ratingCount": "<?= $ratingCount ?>",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "review": [{
-        "@type": "Review",
-        "datePublished": "<?= $datePublished ?>",
-        "reviewBody": "<?= $reviewBody ?>",
-        "author": {
-          "@type": "Person",
-          "name": "<?= $reviewperson ?>"
-        }
-      }],
       "paymentAccepted": ["Cash", "UPI", "Master Card", "Visa Card", "Debit Cards", "Cheques", "Credit Card"],
       "priceRange": "3500 - 150000",
       "telephone": "<?= $phone ?>",
       "email": "<?= $mail ?>"
     }
-  </script>
-  <script type="application/ld+json">
-    {
-  "@context" : "https://schema.org",
-  "@type" : "Product",
-  "sku":"VPMAX4999",
-  "mpn": "VPMAXM4999",
-  "name" : "Packers and Movers Services in <?=$city?>",
-  "image" : "<?=$img?>",
-  "description" : "<?=$description?>",
-  "url" : "https://vpmaxpackersandmovers.com/",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "<?= $ratingValue ?>",
-    "ratingCount": "<?= $ratingCount ?>"
-  },
-  "review": {
-        "@type": "Review",
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "<?= $ratingValue ?>",
-          "bestRating": "5"
-        },
-        "author": {
-          "@type": "Person",
-          "name": "<?= $reviewperson ?>"
-        }
-    },
-  "offers": {
-    "@type": "Offer",
-  "price": "4999",
-  "priceRange": "3500 - 150000",
-  "priceCurrency": "INR",
-  "priceValidUntil":"<?=date("Y-m-30")?>",
-  "availability": "https://schema.org/InStock",
-  "url": "https://vpmaxpackersandmovers.com/"
-  },
-  "brand" : {
-    "@type" : "Brand",
-    "name" : "VP Max Packers and Movers",
-    "image" : "<?=$img?>"  }
-}
   </script>
   <?php endif; ?>
   <link rel="stylesheet" href="<?= base_url("assets/css/style.css?v=2.4") ?>">
