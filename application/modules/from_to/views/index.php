@@ -196,9 +196,8 @@ $this->load->view('home/certificate');
 
             <p>
                 We have been successfully providing intercity relocation services of all shapes and sizes for years,
-                from small apartment moves to large corporate relocation projects. The one thing that separates us from
-                our competitors is not our "flashy" promises but rather our ability to provide our clients with a
-                consistent and high-quality service.
+                from small apartment moves to large corporate relocation projects. Our focus is consistent, high-quality
+                execution — not flashy promises.
             </p>
 
             <p>
@@ -216,7 +215,7 @@ $this->load->view('home/certificate');
             </ul>
 
             <p>
-                This is why they are frequently recommended as trusted packers and movers from <span><?= $from_city ?>
+                This is why we are frequently recommended as trusted packers and movers from <span><?= $from_city ?>
                     to <?= $to_city ?></span>.
             </p>
 
@@ -443,25 +442,26 @@ $this->load->view('home/certificate');
                 $faqs = [
                     [
                         "question" => "What is the cost of Packers and Movers from $from_city to $to_city?",
-                        "answer" => "The cost of moving depends on distance, volume of goods, and type of service. If there is a problem with unnecessary expenses, VP Max Packers and Movers will help you keep your costs down and transparent."
+                        "answer"   => "The cost depends on distance, volume of goods, floor access, and service type. VP Max provides a transparent, itemised quote before the move — no hidden charges. Contact us for a free estimate."
                     ],
                     [
                         "question" => "How long will it take for the relocation from $from_city to $to_city?",
-                        "answer" => "Typically, it depends on distance, and from $from_city to $to_city the goods will typically take. Before the moves we give a clear timeline."
+                        "answer"   => "Transit time depends on the route distance. Our team provides a clear delivery timeline before loading begins so you can plan your schedule at both ends."
                     ],
                     [
-                        "question" => "Do you provide insurance for your goods?",
-                        "answer" => "Yes, we provide comprehensive insurance for losses and damages while moving."
+                        "question" => "Do you provide insurance for goods during relocation?",
+                        "answer"   => "Yes, transit insurance options are available for long-distance moves and for valuable or fragile items. Our team will explain the coverage options when you book."
                     ],
                     [
                         "question" => "Can you shift vehicles along with household items?",
-                        "answer" => "Absolutely! Not only do we provide safe transport of the car/bike, we will transport the car/bike along with home shifting!"
+                        "answer"   => "Yes. VP Max provides car and bike transport alongside household shifting. Your vehicle is loaded on an enclosed carrier and delivered safely to your destination."
                     ],
                     [
                         "question" => "Why should I trust VP Max Packers and Movers?",
-                        "answer" => "Because we are trusted as the Top Packers and Movers from $from_city to $to_city, and will move you safe, cheap and on time!"
+                        "answer"   => "VP Max has been serving customers since 2003 with ISO 9001:2015 certification, IBA approval, and government authorisation. We maintain GST billing, real-time shipment updates, and a dedicated support team throughout your move."
                     ]
                 ];
+
                 ?>
 
                 <div class="accordion" id="faqAccordion">
@@ -489,14 +489,11 @@ $this->load->view('home/certificate');
             </section>
 
             <h5 class="common-heading">Conclusion</h5>
-            <p>Choosing the correct moving company during intercity relocation is essential for how an individual will
-                experience the move.</p>
+            <p>Choosing the right moving company for an intercity relocation shapes the entire experience.</p>
 
-            <p>Through experienced management, planning, and consistent execution of their business, VP Max Packers and
-                Movers have established a reputation for being reliable in the field of intercity relocation. It is
-                vital to work with an experienced professional for your intercity move to ensure that you will have the
-                best experience possible during the transition and that working with someone who is aware of what is
-                required to make a successful move will set you apart from the rest.</p>
+            <p>Through two decades of experience, careful planning, and consistent execution, VP Max Packers and
+                Movers has established a reliable reputation in intercity relocation. If you are planning a move from
+                <?= $from_city ?> to <?= $to_city ?>, our team is ready to help you plan, pack, and deliver safely.</p>
         </div>
     </div>
 </div>

@@ -1,19 +1,14 @@
 <div class="widget-items mb-40">
-	<?php
-	$city = "India";
-	$keyw = array(
-		"Movers near me $city", "Packers and movers in $city", "Moving companies near me $city", "Movers $city", "Packers and movers near me $city",
-		"Removal companies in $city", "Moving services in $city", "Cheap movers in $city", "Local movers in $city", "Local moving companies in $city",
-		"$city best moving companies", "House movers $city", "Packers movers $city", "Moving services near $city", "House removals $city", "Cheap moving companies in $city",
-		"Professional movers in $city", "House movers near $city", "Cheap movers $city", "Best packers and movers in $city", "Affordable movers $city", "International movers from $city", "International moving companies in $city"
-	);
-	?>
-	<h6>Relevant Keywords in <?= $city ?></h6>
+	<h6>Our Moving Services</h6>
 	<ul class="inline">
-		<?php
-		shuffle($keyw);
-		foreach ($keyw as $k) { ?>
-			<li class="badge badge-secondary"><?= $k ?></li>
-		<?php } ?>
+		<li><a href="<?= site_url('household-shifting') ?>">Household Shifting</a></li>
+                <li><a href="<?= site_url('office-shifting') ?>">Office Shifting</a></li>
+                <li><a href="<?= site_url('local-shifting') ?>">Local Shifting</a></li>
+                <li><a href="<?= site_url('domestic-shifting') ?>">Domestic Shifting</a></li>
+                <li><a href="<?= site_url('international-shifting') ?>">International Shifting</a></li>
+                <li><a href="<?= site_url('car-transportation-service') ?>">Car Transportation</a></li>
+                <li><a href="<?= site_url('bike-transportation-service') ?>">Bike Transportation</a></li>
+                <li><a href="<?= site_url('loading-and-unloading') ?>">Loading and Unloading</a></li>
+                <li><a href="<?= site_url('warehouse-and-storage-services') ?>">Warehouse &amp; Storage</a></li>
 	</ul>
 </div>
