@@ -158,5 +158,7 @@ $locality_parent_slugs = [
 .text-danger {color: rgb(176 5 21) !important;}
 .phone-helpline-label,.text-dark {color:#000}
 .brand-logo {max-height: 100px;} 
+.pm-cred-icon-sm{width:22px}.pm-cred-value-sm {font-size: .85rem;}
+.pm-cred-label-sm {font-size: .6rem;}
   </style>
 </head>

@@ -46,14 +46,13 @@
           </div>
           <div class="d-block d-lg-none w-100 text-center">
             <a href="<?= site_url('iso-certification') ?>"
-              class="text-decoration-none text-dark px-3 py-2 fw-bold iso-badge-main">
-              AN ISO 9001:2015 CERTIFIED COMPANY <br><span class="fw-normal text-dark iso-badge-sub">(Click to check
-                certificate)</span>
+              class="text-decoration-none text-dark px-3 py-1 fw-bold iso-badge-main">
+              AN ISO 9001:2015 CERTIFIED COMPANY
             </a>
           </div>
         </div>
 
-        <div class="top-bar-right d-none d-lg-flex align-items-center gap-2 gap-xl-4">
+        <div class="d-none d-lg-flex top-bar-right align-items-center gap-2 gap-xl-4">
           
           <nav class="top-seo-nav d-flex align-items-center gap-2 gap-xl-3 fw-medium">
             <a href="<?= site_url('iso-certification') ?>"
@@ -70,8 +69,8 @@
         </div>
       </div>
 
-      <div class="top-bar-inner d-flex justify-content-center justify-content-md-end align-items-center py-1">
-        <div class="top-bar-right d-none d-lg-flex align-items-center gap-2 text-secondary fw-medium">
+      <div class="top-bar-inner d-flex  justify-content-center justify-content-md-end align-items-center py-1">
+        <div class="top-bar-right  d-lg-flex align-items-center gap-2 text-secondary fw-medium">
           <a href="<?= site_url('avoid-fraud-packers-and-movers') ?>" class="text-decoration-none text-dark"
             title="Verified & Safe Movers">Verified & Safe Movers</a>
           <span class="divider-line text-secondary">|</span>
