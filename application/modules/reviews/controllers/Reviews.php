@@ -84,9 +84,9 @@ class Reviews extends MX_Controller
         $data['average_rating'] = $average_rating;
         $data['disable_org_schema'] = TRUE;
         $data['pagination'] = $this->pagination->create_links();
-        $data['title'] ="Customer Reviews & Ratings |" . $this->comp['company3'];
-        $data['description'] ="Detailed feedback and ratings from our satisfied clients. Read real reviews about our freight forwarding services at" . $this->comp['company3'] .".";
-        $data['module'] ="reviews";
+        $data['title'] = "Customer Reviews & Ratings | " . $this->comp['company3'];
+        $data['description'] = "Read verified reviews and ratings from real customers of " . $this->comp['company3'] . ". Honest feedback on home shifting, office relocation, and packing services across India.";
+        $data['module'] = "reviews";
         $data['view_file'] ="reviews";
         echo Modules::run('template/layout2', $data);
     }
@@ -239,9 +239,9 @@ class Reviews extends MX_Controller
                 $this->db->where('r_id', $id)->update("reviews", array("views" => $newview));
 
 
-                $data['title'] = $rev[0]->r_title;
-                $data['description'] = $rev[0]->r_desc;
-                $data['keywords'] = "Om Packers Complaints, Om Packers Reviews, Om Packers Suggestions, Om Packers feebacks";
+                $data['title'] = ucfirst($rev[0]->r_title) . " | Customer Review – " . $this->comp['company3'];
+                $data['description'] = word_limiter(strip_tags($rev[0]->r_desc), 30) . " – Verified customer review of " . $this->comp['company3'] . " packers and movers.";
+                $data['keywords'] = $this->comp['company3'] . " reviews, packers and movers reviews, customer feedback " . $this->comp['company3'];
                 $data['module'] = "reviews";
                 $data['view_file'] = "single_review";
                 $data['disable_org_schema'] = TRUE;

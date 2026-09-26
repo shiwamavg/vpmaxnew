@@ -78,7 +78,7 @@ class About extends MX_Controller
     function certificates()
     {
         $data['title'] = "Our Certificates | " . $this->comp['company3'];
-        $data['description'] = "View the certificates and accreditations of " . $this->comp['company3'] . ".";
+        $data['description'] = "View the official certificates and accreditations of " . $this->comp['company3'] . ", including ISO, IBA, GST, and other trust verifications that make us a reliable packers and movers company.";
         $data['module'] = "about";
         $data['view_file'] = "certificates";
         echo Modules::run('template/layout2', $data);
@@ -175,7 +175,7 @@ class About extends MX_Controller
             }
         }
         $data['title'] = "Payment Status - " . $this->comp['company3'];
-        $data['description'] = "Cashfree payment status";
+        $data['description'] = "Check the status of your online payment to " . $this->comp['company3'] . " via Cashfree. View your payment confirmation and transaction details for your relocation booking.";
         $data['payment'] = $payment;
         $data['module'] = "about";
         $data['view_file'] = "payment_status";
@@ -300,7 +300,7 @@ class About extends MX_Controller
     function disclaimer()
     {
         $data['title'] = "Disclaimer | " . $this->comp['company3'];
-        $data['description'] = "Disclaimer for " . $this->comp['company3'];
+        $data['description'] = "Disclaimer notice for " . $this->comp['company3'] . ". Read our usage terms, liability limitations, and conditions for using our packers and movers website and services.";
         $data['module'] = "about";
         $data['view_file'] = "disclaimer";
         echo Modules::run('template/layout2', $data);
@@ -309,7 +309,7 @@ class About extends MX_Controller
     function refund()
     {
         $data['title'] = "Refund Policy | " . $this->comp['company3'];
-        $data['description'] = "Refund Policy for " . $this->comp['company3'];
+        $data['description'] = "Read the refund and cancellation policy of " . $this->comp['company3'] . ". Understand the terms for refund eligibility, processing timelines, and cancellation procedures for shifting services.";
         $data['module'] = "about";
         $data['view_file'] = "refund";
         echo Modules::run('template/layout2', $data);

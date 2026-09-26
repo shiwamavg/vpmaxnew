@@ -62,8 +62,8 @@ class Blog extends MX_Controller {
         $data['total'] = $total_rows;
         $data['recent_posts'] = array_slice($all_blogs, 0, 5);
 
-        $data['title'] = "Official Blog of ".$this->comp['company3']." India";
-        $data['description'] = "Latest blog of ".$this->comp['company3'];
+        $data['title'] = "Packers and Movers Blog | Moving Tips, Guides & News | " . $this->comp['company3'];
+        $data['description'] = "Explore expert moving tips, relocation guides, packing advice, and industry news from " . $this->comp['company3'] . ". Plan your next move smarter with our helpful articles.";
         $data['module'] = "blog";
         $data['view_file'] = "blog"; 
 
