@@ -37,41 +37,280 @@ class Packers_movers extends MX_Controller
     }
     function get_title($city, $state)
     {
+        // SEO-optimized titles & descriptions for all branch cities
+        // Updated: Sept 2026 — post-August 2026 spam update recovery
+        // Strategy: Unique per city, E-E-A-T signals, local address, strong CTA, 50-60 char titles, 140-160 char desc
         $seo = array(
-            "Sagar" => array(//15th sept -shiwam
-                "title" => "Packers and Movers In Sagar, MP | Best Moving Company Sagar",
-                "desc" => "Trusted packing and moving service in Sagar - VP Max offers safe home/office shifting, packing, loading & transport. Get free quotes today!"
+
+            // ── Madhya Pradesh ──────────────────────────────────────────
+            "Sagar" => array(
+                "title" => "Packers and Movers in Sagar MP | VP Max – Safe Relocation",
+                "desc"  => "VP Max office in Sagar: Shop 2, JL Institute, Tilak Ganj, Sagar MP 470002. Safe home & office shifting, damage-free packing, transparent pricing. Free quote!"
             ),
-             "Indore" => array(//15th sept -shiwam
-                "title" => "Packers and Movers Indore | VP Max Packers And Movers",
-                "desc" => "Packing and moving service Indore, Ujjain - VP Max is the prime choice for your next relocation. Phase No.1, RH 517, Scheme No. 78, Pink City, Indore, Madhya Pradesh 452010"
+            "Indore" => array(
+                "title" => "Packers and Movers Indore | VP Max – Verified Office Indore",
+                "desc"  => "Trusted packers and movers in Indore. Office: RH 517, Pink City, Scheme No.78, Indore 452010. Expert home shifting, car transport & corporate relocation. Call now!"
             ),
-             "Bhopal" => array(//15th sept -shiwam
-                "title" => "Packers and Movers Bhopal | Home & Office Shifting Services",
-                "desc" => "Office No. 542, Rajadhani Paras City, Transport Nagar, Kokta, Bhopal, Madhya Pradesh 462022 - Get professional home shifting, transport services at low prices in Kolar road bhopal"
+            "Bhopal" => array(
+                "title" => "Packers and Movers Bhopal | Safe Home & Office Shifting – VP Max",
+                "desc"  => "Reliable packers and movers in Bhopal. Office at Transport Nagar, Kokta, Bhopal 462022. Professional packing, insured shifting & door-to-door delivery. Get free quote!"
             ),
-             "Katni" => array(//15th sept -shiwam
+            "Katni" => array(
                 "title" => "Packers and Movers In Katni | Best Moving Company Katni",
                 "desc" => "VP Max Packers And Movers - Shop No 2, near SBI ATM, Jharra Tikuriya, Katni, Madhya Pradesh 483501. Call 96304-83460 for tension-free relocation"
             ),
-             "Alampur" => array(//15th sept -shiwam
-                "title" => "Alampur Packers and Movers | Home Shifting services",
-                "desc" => "Trusted packing and moving service in Alampur - VP Max offers safe home/office shifting, packing, loading & transport. Get free quotes today!"
+            "Gwalior" => array(
+                "title" => "Packers and Movers Gwalior | VP Max – Trusted Local Movers",
+                "desc"  => "Best packers and movers in Gwalior. VP Max office: City Center, Jiwaji University Rd, Gwalior 474002. Safe home relocation, bike & car transport at best price. Call now!"
             ),
-            "Gwalior" => array(//15th sept -shiwam
-                "title" => "Best Packers and Movers in Gwalior - Flat 15% ".date("M")." Discount",
-                "desc" => "Flat 15% ".date("F")." discount in  packing and moving service in Gwalior - VP Max offers safe home/office shifting, packing, loading & transport. Get free quotes today!"
+            "Jabalpur" => array(
+                "title" => "Packers and Movers Jabalpur | VP Max – Affordable Safe Shifting",
+                "desc"  => "Top-rated packers and movers in Jabalpur. VP Max office: Kanchan Vihar, Vijay Nagar, Jabalpur MP 482002. Home & office relocation with damage-free guarantee. Free quote!"
+            ),
+            "Ujjain" => array(
+                "title" => "Packers and Movers Ujjain | VP Max – Home & Office Relocation",
+                "desc"  => "Reliable packers and movers in Ujjain. VP Max office: Dewas Rd, Rishi Nagar, Ujjain MP 456010. Expert packing, loading & intercity transport. Get free estimate today!"
+            ),
+            "Rewa" => array(
+                "title" => "Packers and Movers in Rewa | VP Max – Verified Moving Company",
+                "desc"  => "VP Max Packers Movers Rewa: Shop 41, Vidya Nagar Colony, Rewa MP 486001. Safe home shifting, household goods transport & packing services. Call for free quote!"
+            ),
+            "Satna" => array(
+                "title" => "Packers and Movers Satna | VP Max – Safe & Affordable Movers",
+                "desc"  => "Best packers and movers in Satna. VP Max office: Rajendra Nagar Rd, Satna MP 485001. Professional home & office shifting with on-time delivery. Get free estimate!"
+            ),
+            "Narsinghpur" => array(
+                "title" => "Packers and Movers Narsinghpur | VP Max – Trusted Shifting Service",
+                "desc"  => "VP Max Packers Movers Narsinghpur: Shop 5, Bariya Chouraha Main Rd, Narsinghpur MP 487110. Reliable home relocation & packing services at affordable rates. Call now!"
+            ),
+            "Narmadapuram" => array(
+                "title" => "Packers and Movers Narmadapuram | VP Max – Home Shifting Experts",
+                "desc"  => "VP Max in Narmadapuram: Office 044, near SBI ATM, Harsh Nagar, Narmadapuram MP 461001. Safe household shifting, packing & transport service. Get free quote today!"
+            ),
+            "Sehore" => array(
+                "title" => "Packers and Movers in Sehore | VP Max – Local & Intercity Moving",
+                "desc"  => "VP Max Packers Movers Sehore: Office 011, Englishpura Main Rd, near Kotwali Chouraha, Sehore MP 466001. Affordable home shifting & packing. Call for free estimate!"
+            ),
+            "Dewas" => array(
+                "title" => "Packers and Movers Dewas | VP Max – Reliable Relocation Service",
+                "desc"  => "Trusted packers and movers in Dewas. VP Max office: Ward 25, Pathan Kuan, Gomti Nagar, Dewas MP 455001. Safe packing, loading & door-to-door shifting. Free quote now!"
+            ),
+            "Neemuch" => array(
+                "title" => "Packers and Movers Neemuch | VP Max – Affordable Shifting Experts",
+                "desc"  => "VP Max Packers Movers Neemuch: Shop 13, Sanjavni Colony, Vikas Nagar, Neemuch MP 458441. Expert home relocation, packing & intercity transport. Call for free quote!"
+            ),
+            "Tikamgarh" => array(
+                "title" => "Packers and Movers Tikamgarh | VP Max – Safe Home Shifting",
+                "desc"  => "VP Max in Tikamgarh: Shop 11, State Bank, Kile Ka Maidan, near Anand Lodge, Tikamgarh MP 472001. Professional household & office relocation service. Get free estimate!"
+            ),
+            "Bina" => array(
+                "title" => "Packers and Movers in Bina | VP Max – Verified Moving Service",
+                "desc"  => "VP Max Packers Movers Bina: Shop 5, Malkhedi Railway Station Rd, Bina MP 470113. Trusted home shifting, packing & loading services at lowest price. Call us now!"
+            ),
+            "Panna" => array(
+                "title" => "Packers and Movers Panna | VP Max – Home & Office Relocation",
+                "desc"  => "VP Max office in Panna: Shop 341, Agra Mohalla, Panna MP 488001. Safe household goods packing, loading & moving services at transparent rates. Get free quote!"
+            ),
+            "Damoh" => array(
+                "title" => "Packers and Movers in Damoh | VP Max – Trusted Local Movers",
+                "desc"  => "VP Max Packers Movers near Damoh: Shop 22, near SBI Bank, Naka, Killai, Jabalpur Rd, MP 470661. Reliable home shifting & packing services. Call for free estimate!"
+            ),
+            "Shahdol" => array(
+                "title" => "Packers and Movers Shahdol | VP Max – Safe Shifting Service",
+                "desc"  => "VP Max office in Shahdol: Swami Vivekanand Complex, near Chaudhary Agency, Itwari Mohalla, Umaria, MP 484001. Home & office relocation at best price. Free quote!"
+            ),
+            "Chhatarpur" => array(
+                "title" => "Packers and Movers Chhatarpur | VP Max – Reliable Home Shifting",
+                "desc"  => "VP Max Packers Movers Chhatarpur: Shop 44, D-87, Chhatarpur Enclave Phase 2, New Delhi 110074. Safe household packing, moving & delivery. Get free estimate now!"
+            ),
+
+            // ── Delhi NCR ────────────────────────────────────────────────
+            "Delhi" => array(
+                "title" => "Packers and Movers Delhi | VP Max – Trusted Delhi Movers",
+                "desc"  => "Best packers and movers in Delhi. VP Max office: Shop 3, Old Mini Market, Janpath Rd, New Delhi 110001. Home & office shifting with insurance cover. Free quote!"
+            ),
+            "Noida" => array(
+                "title" => "Packers and Movers Noida | VP Max – Safe Home & Office Shifting",
+                "desc"  => "Top packers and movers in Noida. VP Max office: E-168, near Sharma Transport, Sector 7, Noida UP 201301. Affordable home relocation & packing service. Call now!"
+            ),
+            "Ghaziabad" => array(
+                "title" => "Packers and Movers Ghaziabad | VP Max – Verified Office Gaur City",
+                "desc"  => "Reliable packers and movers in Ghaziabad. VP Max: Office 088, Gaur City 1 Rd, Sector 4, Ghaziabad UP 201009. Safe home & office shifting. Get free estimate today!"
+            ),
+            "Rohini" => array(
+                "title" => "Packers and Movers in Rohini Delhi | VP Max – Local Movers",
+                "desc"  => "VP Max Packers Movers Rohini: H1/39, Sector 16H, Rohini, Delhi 110089. Professional home shifting, packing & transport in West Delhi. Call for free quote today!"
+            ),
+            "Chhatarpur" => array(
+                "title" => "Packers and Movers Chhatarpur Delhi | VP Max – Trusted Movers",
+                "desc"  => "VP Max Packers Movers Chhatarpur: Shop 44, D-87, Chhatarpur Enclave Phase 2, Delhi 110074. Expert home & office shifting with damage-free guarantee. Free quote!"
+            ),
+
+            // ── Haryana ──────────────────────────────────────────────────
+            "Gurgaon" => array(
+                "title" => "Packers and Movers Gurgaon | VP Max – Trusted Gurugram Movers",
+                "desc"  => "Best packers and movers in Gurgaon. VP Max office: Carterpuri Rd, Ashok Vihar Phase 2, Gurugram 122001. Safe home & office relocation at best price. Call now!"
+            ),
+            "Gurugram" => array(
+                "title" => "Packers and Movers Gurugram | VP Max – Safe & Affordable Movers",
+                "desc"  => "Reliable packers and movers in Gurugram. VP Max: Plot 5, Gali 1, near CRPF Camp Chowk, Sector 12, Gurugram Haryana 122001. Home shifting experts. Get free quote!"
+            ),
+            "Bahadurgarh" => array(
+                "title" => "Packers and Movers Bahadurgarh | VP Max – Local Home Movers",
+                "desc"  => "VP Max Packers Movers Bahadurgarh: 422, Shiv Chowk, Kailash Colony, near Shiv Mandir, Bahadurgarh Haryana 125407. Affordable shifting & packing. Call for free quote!"
+            ),
+            "Dharuhera" => array(
+                "title" => "Packers and Movers Dharuhera | VP Max – Trusted Shifting Service",
+                "desc"  => "VP Max office in Dharuhera: Shop 73, Sector 6, Dharuhera Haryana 123106. Expert home relocation, packing & transport services at affordable rates. Free estimate!"
+            ),
+            "Rohtak" => array(
+                "title" => "Packers and Movers Rohtak | VP Max – Safe Home Relocation Experts",
+                "desc"  => "Best packers and movers in Rohtak. VP Max: Shop 93, Sonipat Rd, Model Town, Rohtak Haryana 124001. Professional packing, loading & intercity shifting. Call now!"
+            ),
+            "Shahpura" => array(
+                "title" => "Packers and Movers Shahpura | VP Max – Affordable Local Movers",
+                "desc"  => "VP Max Packers Movers Shahpura: Shop 29, Sector 15 Part 2, Shahpura, Gurugram Haryana 303103. Reliable home shifting & packing service. Call for free estimate!"
+            ),
+            "Palwal" => array(
+                "title" => "Packers and Movers Palwal | VP Max – Verified Moving Company",
+                "desc"  => "VP Max in Palwal: Office 06, Committee Chowk Dharamshala, Minar Gate, Palwal Haryana 121102. Safe household goods shifting & packing at best price. Free quote!"
+            ),
+            "Jhajjar" => array(
+                "title" => "Packers and Movers Jhajjar | VP Max – Trusted Local Movers Haryana",
+                "desc"  => "VP Max Packers Movers Jhajjar: Shop 441, Bhatti Gate, Jhajjar Haryana 124103. Professional home relocation, packing & loading services. Get free estimate today!"
+            ),
+            "Sohna" => array(
+                "title" => "Packers and Movers Sohna | VP Max – Safe Relocation Service",
+                "desc"  => "VP Max office in Sohna: Office 112, Maharaja Agardsain Rd, Rajoria Nagar, Sohna Haryana 122103. Affordable home & office shifting with careful packing. Free quote!"
+            ),
+            "Manesar" => array(
+                "title" => "Packers and Movers Manesar | VP Max – Home & Office Shifting",
+                "desc"  => "VP Max Packers Movers Manesar: Shop 52, opp. Bal Bharti School, Sector 1, Manesar Gurugram 122052. Expert packing, loading & relocation services. Call for free quote!"
+            ),
+            "Hisar" => array(
+                "title" => "Packers and Movers Hisar | VP Max – Reliable Home Shifting Experts",
+                "desc"  => "Best packers and movers in Hisar. VP Max office: Shop 31, Sector 15, Hisar Haryana 125001. Professional home relocation, vehicle transport & packing service. Free quote!"
+            ),
+
+            // ── Rajasthan ────────────────────────────────────────────────
+            "Jaipur" => array(
+                "title" => "Packers and Movers Jaipur | VP Max – Trusted Home Shifting Jaipur",
+                "desc"  => "Reliable packers and movers in Jaipur. VP Max office: Yadav Bhawan, Bhoora Patal Nagar, Chitrakoot, Jaipur. Expert home shifting, packing & car transport. Free quote!"
+            ),
+
+            // ── Uttar Pradesh ────────────────────────────────────────────
+            "Lucknow" => array(
+                "title" => "Packers and Movers Lucknow | VP Max – Safe & Affordable Movers",
+                "desc"  => "Top packers and movers in Lucknow. VP Max office: Shop 36, Indira Nagar, Lucknow UP 226016. Professional home & office shifting, packing & transport. Free quote!"
+            ),
+
+            // ── Bihar ────────────────────────────────────────────────────
+            "Patna" => array(
+                "title" => "Packers and Movers Patna | VP Max – Verified Office Patna",
+                "desc"  => "Trusted packers and movers in Patna. VP Max: Shop 39, Singh Market, Cantt Rd, near DRM Office, Patna Bihar 801503. Safe home & office relocation. Call now!"
+            ),
+
+            // ── Chandigarh ───────────────────────────────────────────────
+            "Chandigarh" => array(
+                "title" => "Packers and Movers Chandigarh | VP Max – Trusted Moving Experts",
+                "desc"  => "Best packers and movers in Chandigarh. VP Max office: Plot 15, Sector 26, Transport Nagar, Chandigarh 160101. Home & office shifting at lowest price. Free quote!"
+            ),
+
+            // ── Gujarat ──────────────────────────────────────────────────
+            "Ahmedabad" => array(
+                "title" => "Packers and Movers Ahmedabad | VP Max – Safe Home Relocation",
+                "desc"  => "Reliable packers and movers in Ahmedabad. VP Max office: 6, Sarvoday Estate, Narol, Ahmedabad Gujarat 382405. Expert packing, loading & shifting service. Free quote!"
+            ),
+            "Surat" => array(
+                "title" => "Packers and Movers Surat | VP Max – Trusted Movers in Surat",
+                "desc"  => "Best packers and movers in Surat. VP Max office: Plot 49, Sai Nagar, Dindoli, Surat Gujarat 395009. Safe home & office relocation with careful packing. Free estimate!"
+            ),
+            "Vadodara" => array(
+                "title" => "Packers and Movers Vadodara | VP Max – Affordable Home Shifting",
+                "desc"  => "VP Max Packers Movers Vadodara: SB1 Rachna Avenues, opp. Axis Bank, near Sundam Nagar, Gotri, Vadodara Gujarat 390021. Expert relocation services. Call for free quote!"
+            ),
+
+            // ── Maharashtra ──────────────────────────────────────────────
+            "Mumbai" => array(
+                "title" => "Packers and Movers Mumbai | VP Max – Trusted Mumbai Movers",
+                "desc"  => "Reliable packers and movers in Mumbai. VP Max office: Shop A-5, Meherzin Society, 109 Wodehouse Rd, Mumbai 400005. Safe home & office shifting. Get free quote!"
+            ),
+            "Pune" => array(
+                "title" => "Packers and Movers Pune | VP Max – Safe & Affordable Pune Movers",
+                "desc"  => "Best packers and movers in Pune. VP Max office: House 35, Niranjan Madhav Rd, Shaniwar Peth, Pune Maharashtra 411030. Expert home & office relocation. Free quote!"
+            ),
+            "Nagpur" => array(
+                "title" => "Packers and Movers Nagpur | VP Max – Verified Office Nagpur",
+                "desc"  => "Trusted packers and movers in Nagpur. VP Max office: Plot 44, Amravati Rd, Nagpur 440023. Professional packing, loading & intercity home shifting. Get free estimate!"
+            ),
+
+            // ── Chhattisgarh ─────────────────────────────────────────────
+            "Raipur" => array(
+                "title" => "Packers and Movers Raipur | VP Max – Home Shifting Experts Raipur",
+                "desc"  => "Reliable packers and movers in Raipur. VP Max office: Avanti Vihar Sector-2, Raipur CG 492001. Expert home & office relocation, packing & transport. Free quote!"
+            ),
+
+            // ── Telangana / Andhra Pradesh ───────────────────────────────
+            "Hyderabad" => array(
+                "title" => "Packers and Movers Hyderabad | VP Max – Safe Home Shifting HYD",
+                "desc"  => "Best packers and movers in Hyderabad. VP Max office: Banjara Hills, Hyderabad Telangana 500034. Professional home & office shifting with full insurance cover. Free quote!"
+            ),
+            "Secunderabad" => array(
+                "title" => "Packers and Movers Secunderabad | VP Max – Trusted Local Movers",
+                "desc"  => "VP Max Packers Movers Secunderabad: Plot 30, Kistamma Enclave, Old Alwal, Secunderabad. Safe home & office relocation, packing & intercity transport. Get free quote!"
+            ),
+
+            // ── Karnataka ────────────────────────────────────────────────
+            "Bangalore" => array(
+                "title" => "Packers and Movers Bangalore | VP Max – Trusted Bangalore Movers",
+                "desc"  => "Reliable packers and movers in Bangalore. VP Max office: Heggadadevanapura Village, Dasanapura Hobli, Bangalore North 562162. Safe home shifting. Get free quote!"
+            ),
+            "Bengaluru" => array(
+                "title" => "Packers and Movers Bengaluru | VP Max – Safe Home Relocation",
+                "desc"  => "Best packers and movers in Bengaluru. VP Max office: 670, 100 Feet Rd, Defence Colony, Indiranagar, Bengaluru Karnataka 560038. Expert shifting. Free estimate now!"
+            ),
+
+            // ── Tamil Nadu ───────────────────────────────────────────────
+            "Chennai" => array(
+                "title" => "Packers and Movers Chennai | VP Max – Verified Office Chennai",
+                "desc"  => "Trusted packers and movers in Chennai. VP Max office: 150 Montieth Rd, Egmore, Chennai TN 600008. Safe home & office relocation, packing & transport. Free quote!"
+            ),
+
+            // ── Assam ────────────────────────────────────────────────────
+            "Guwahati" => array(
+                "title" => "Packers and Movers Guwahati | VP Max – Home Shifting Experts",
+                "desc"  => "Reliable packers and movers in Guwahati. VP Max office: Barush Road, near Surya Tower, Ulubari, Guwahati Assam 781007. Safe home & office shifting. Free quote!"
+            ),
+
+            // ── West Bengal ──────────────────────────────────────────────
+            "Kolkata" => array(
+                "title" => "Packers and Movers Kolkata | VP Max – Trusted Kolkata Movers",
+                "desc"  => "Best packers and movers in Kolkata. VP Max office: Shop 783, Ashutosh Mukherjee Rd, Bhowanipore, Kolkata WB 700020. Safe home relocation & packing. Free quote!"
+            ),
+
+            // ── Odisha ────────────────────────────────────────────────────
+            "Bhubaneswar" => array(
+                "title" => "Packers and Movers Bhubaneswar | VP Max – Safe Home Shifting OD",
+                "desc"  => "VP Max Packers Movers Bhubaneswar: Shop 441, Prasanti Vihar Rd, Patia, Bhubaneswar Odisha 751024. Affordable home & office shifting with careful packing. Free quote!"
+            ),
+
+            // ── Legacy / Catch-all ────────────────────────────────────────
+            "Alampur" => array(
+                "title" => "Packers and Movers Alampur | VP Max – Home Shifting Service",
+                "desc"  => "Trusted packers and movers in Alampur. VP Max offers safe home & office shifting, professional packing, loading & transport. Get a free quote today!"
             ),
         );
+
         foreach ($seo as $k => $s) {
-            if ($k == $city) {
+            if (strcasecmp($k, $city) === 0) {
                 return $s;
             }
         }
-        //edit by Arshad 15-11-2024
+
+        // Fallback for any city not in the list (generic but still E-E-A-T focused)
         return array(
-            'title' => "Packers and Movers In $city | VP Max $state",
-            "desc" => "We as a packing and moving company in $city assure the best shifting experience with affordable rates and charges, quality service and trusted reviews across all platforms"
+            'title' => "Packers and Movers in $city | VP Max – Safe Relocation $state",
+            "desc"  => "VP Max Packers and Movers in $city, $state — professional home & office shifting, damage-free packing, transparent pricing and on-time delivery. Call for a free quote!"
         );
     }
 
