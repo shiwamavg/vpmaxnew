@@ -41,8 +41,8 @@
           </a>
           <span class="divider-line text-secondary d-none d-md-inline">|</span>
           <div class="d-none d-xl-flex align-items-center gap-2 text-dark">
-            <i class="bi bi-geo-alt"></i> <a href="<?= site_url('branch-address') ?>"
-              class="text-decoration-none text-dark">Branch Address</a>
+            <i class="bi bi-credit-card"></i> <a href="<?= site_url('payment-mode#cashfree-payment-form') ?>"
+              class="text-decoration-none text-dark">Pay Online</a>
           </div>
           <div class="d-block d-lg-none w-100 text-center">
             <a href="<?= site_url('iso-certification') ?>"
@@ -69,7 +69,7 @@
         </div>
       </div>
 
-      <div class="top-bar-inner d-flex  justify-content-center justify-content-md-end align-items-center py-1">
+      <div class="top-bar-inner d-none d-sm-flex justify-content-center justify-content-md-end align-items-center py-1">
         <div class="top-bar-right  d-lg-flex align-items-center gap-2 text-secondary fw-medium">
           <a href="<?= site_url('avoid-fraud-packers-and-movers') ?>" class="text-decoration-none text-dark"
             title="Verified & Safe Movers">Verified & Safe Movers</a>
