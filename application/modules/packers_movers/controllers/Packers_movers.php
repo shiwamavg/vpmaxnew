@@ -519,7 +519,7 @@ class Packers_movers extends MX_Controller
                 ['city' => 'Panna', 'contact_person' => '', 'address' => 'Shop No. 341, Ground Floore Agra Mohalla, Panna, Madhya Pradesh 488001', 'phone' => '09993603460'],
                 ['city' => 'Sehore', 'contact_person' => '', 'address' => 'Office No. 011, Englishpura Main Rd, near Kotwali Chouraha, Sindhi Colony, Sehore, Madhya Pradesh 466001', 'phone' => '9993983460'],
                 ['city' => 'Dharuhera', 'contact_person' => '', 'address' => 'Shop No. 73, Sector 6, Dharuhera, Haryana 123106', 'phone' => '09870104515'],
-                ['city' => 'Narmadapuram', 'contact_person' => '', 'address' => 'Office No. 044, near SBI Atm, Harsh Nagar, Narayan Nagar, Narmadapuram, Madhya Pradesh 461001', 'phone' => '9685873460'],
+                ['city' => 'Narmadapuram', 'contact_person' => '', 'address' => 'Office No. 2, Main, Babai Rd, Kalika Nagar, Narmadapuram, Madhya Pradesh 461001', 'phone' => '9109083460'],
                 ['city' => 'Rohtak', 'contact_person' => '', 'address' => 'Shop No. 93 Sonipat Rd, Model Town, Rohtak, Haryana 124001', 'phone' => '09034999515'],
                 ['city' => 'Shahpura', 'contact_person' => '', 'address' => 'Shop No.29, Sector 15 Part 2, Sector 15, Shahpura, Gurugram, Haryana 303103', 'phone' => '09034999515'],
                 ['city' => 'Palwal', 'contact_person' => '', 'address' => 'Office No. 06, Committee Chowk Dharamshala, Minar Gate Area, Palwal, Haryana 121102', 'phone' => '9109063460'],
@@ -539,7 +539,8 @@ class Packers_movers extends MX_Controller
                 ['city' => 'Sagar', 'contact_person' => 'Pramod Kumar', 'address' => 'Ground Floor, Shop 2, JL Institute Of Study Center, Tilak Ganj, Ward 14, Sagar, Madhya Pradesh 470002', 'phone' => '9630263460'],
                 ['city' => 'Ujjain', 'contact_person' => 'SK Singh', 'address' => 'Office No. 066, Dewas Rd, Rishi Nagar, Ujjain, Madhya Pradesh 456010', 'phone' => '9685873460'],
                 ['city' => 'Gurugram', 'contact_person' => 'KD Singh', 'address' => 'Plot No. 5, Gali Number 1, near CRPF Camp Chowk, Shiv Vihar, Sector 12, Gurugram, Haryana 122001', 'phone' => '9870104515'],
-            ];
+                ['city' => 'khandwa', 'contact_person' => '', 'address' => 'Office No. 11, Nehru Stadium, Civil Line, Khandwa, Madhya Pradesh 450001', 'phone' => '9630483460'],
+                ];
             foreach ($branches as $branch) {
                 if (strcasecmp($branch['city'], $city) === 0) {
                     return $branch;

@@ -142,7 +142,7 @@ $cities = array(
 	array('nm' => 'Khailar', 'lat' => '25.34127000', 'lon' => '78.53133000', 'sc' => 'MP'),
 	array('nm' => 'Khajuraho Group of Monuments', 'lat' => '24.84809000', 'lon' => '79.93351000', 'sc' => 'MP'),
 	array('nm' => 'Khamaria', 'lat' => '23.22558000', 'lon' => '79.88007000', 'sc' => 'MP'),
-	// array('nm' => 'Khandwa','lat' => '21.82427000','lon' => '76.35086000','sc' => 'MP'),
+	array('nm' => 'Khandwa','lat' => '21.82427000','lon' => '76.35086000','sc' => 'MP'),
 	// array('nm' => 'Khandwa district','lat' => '21.75000000','lon' => '76.58333000','sc' => 'MP'),
 	// array('nm' => 'Khargone','lat' => '21.82306000','lon' => '75.61028000','sc' => 'MP'),
 	// array('nm' => 'Khargapur','lat' => '24.82300000','lon' => '79.14400000','sc' => 'MP'),
