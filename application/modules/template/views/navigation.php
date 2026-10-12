@@ -59,6 +59,7 @@
               class="text-decoration-none badge bg-success text-white rounded-pill px-2 py-1 ms-1 fw-bold text-center iso-badge-main"
               title="Click to check certificate">AN ISO 9001:2015 CERTIFIED COMPANY</a>
             <a href="<?= site_url('moving-guide') ?>" class="text-decoration-none text-dark">Help &amp; Guides</a>
+            <a href="<?= site_url('blog') ?>" class="text-decoration-none text-dark">Blog</a>
             <a href="<?= site_url('our-location') ?>" class="text-decoration-none text-dark">Locations</a>
             <a href="<?= site_url('contact-us') ?>" class="text-decoration-none text-dark">Contact</a>
           </nav>
@@ -272,6 +273,7 @@
               <li><a href="<?= site_url('reviews') ?>">Reviews</a></li>
               <li><a href="<?= site_url('photo-gallery') ?>">Photo Gallery</a></li>
               <li><a href="<?= site_url('video-gallery') ?>">Video Gallery</a></li>
+              <li><a href="<?= site_url('blog') ?>">Blog</a></li>
             </ul>
           </div>
         </div>

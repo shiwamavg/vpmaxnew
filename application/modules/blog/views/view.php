@@ -1,15 +1,17 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
 
+<link rel="stylesheet" href="<?= base_url("assets/css/blog_modules.css") ?>">
 <main class="main">
     <!-- Breadcrumbs Section -->
-    <?php 
-$this->load->view('about/dynamic_breadcrumbs', [
-    'bc_current' => '',
-    'bc_title_white' => 'Blog',
-    'bc_title_orange' => 'Details',
-    'bc_desc' => ''
-]); 
-?>
+    <?php $this->load->view('about/dynamic_breadcrumbs', [
+        'bc_h1' => 'Blog',
+        'bc_desc' => '',
+        'breadcrumbs' => [
+            ['name' => 'Blog', 'url' => site_url('blog')],
+            ['name' => @$query[0]->title]
+        ]
+    ]);
+    ?>
 
     <!-- Blog Single Post -->
     <section class="blog-details-section py-5 bg-light">
@@ -21,9 +23,9 @@ $this->load->view('about/dynamic_breadcrumbs', [
                         <!-- Image -->
                         <div class="mb-4 rounded-4 overflow-hidden shadow-sm position-relative">
                             <?php 
-                            $image_path = FCPATH . 'uploads/blogs/' . @$query[0]->image;
+                            $image_path = FCPATH . 'assets/uploads/blog/' . @$query[0]->image;
                             if (@$query[0]->image && file_exists($image_path)): ?>
-                                <img loading="lazy" src="<?= base_url('uploads/blogs/' . @$query[0]->image) ?>" alt="<?= htmlspecialchars(@$query[0]->title) ?>" class="img-fluid w-100 blog-details-img">
+                                <img loading="lazy" src="<?= base_url('assets/uploads/blog/' . @$query[0]->image) ?>" alt="<?= htmlspecialchars(@$query[0]->title) ?>" class="img-fluid w-100 blog-details-img">
                             <?php else: ?>
                                 <img loading="lazy" src="<?= base_url('assets/images/about/packers_movers.webp') ?>" alt="Default Image" class="img-fluid w-100 blog-details-img">
                             <?php endif; ?>
@@ -45,7 +47,11 @@ $this->load->view('about/dynamic_breadcrumbs', [
                         <!-- Blog Details -->
                         <h2 class="fw-bold mb-4 blog-details-title"><?= @$query[0]->title ?></h2>
                         <div class="blog-content-wrapper text-muted">
-                            <?= nl2br(@$query[0]->content) ?>
+                            <?php
+                            // Admin may save plain text or HTML from the editor
+                            $content = (string) @$query[0]->description;
+                            echo $content === strip_tags($content) ? nl2br(htmlspecialchars($content)) : $content;
+                            ?>
                         </div>
                     </div>
                 </div>
@@ -60,8 +66,8 @@ $this->load->view('about/dynamic_breadcrumbs', [
                                     <?php foreach ($recent_posts as $post_arr): $post = (object)$post_arr; ?>
                                         <?php
                                         $image_file = $post->image;
-                                        $full_path = FCPATH . 'uploads/blogs/' . $image_file;
-                                        $imagePath = ($image_file && file_exists($full_path)) ? base_url('uploads/blogs/' . $image_file) : base_url('assets/images/about/packers_movers.webp');
+                                        $full_path = FCPATH . 'assets/uploads/blog/' . $image_file;
+                                        $imagePath = ($image_file && file_exists($full_path)) ? base_url('assets/uploads/blog/' . $image_file) : base_url('assets/images/about/packers_movers.webp');
                                         $custom_slug = !empty($post->slug) ? $post->slug : rtrim(str_replace("--", "-", urlencode(str_replace(" ", "-", str_replace(",", " ", $post->title)))), "-");
                                         ?>
                                         <a href="<?= site_url('blog/'.$custom_slug) ?>" class="d-flex align-items-center gap-3 mb-3 text-decoration-none post-link-item blog-post-link-item">
@@ -139,7 +145,7 @@ $this->load->view('about/dynamic_breadcrumbs', [
     "@type": "BlogPosting",
     "headline": "<?= addslashes(@$query[0]->title) ?>",
     "image": [
-        "<?= @$query[0]->image ? base_url('uploads/blogs/' . @$query[0]->image) : base_url('assets/images/about/packers_movers.webp') ?>"
+        "<?= @$query[0]->image ? base_url('assets/uploads/blog/' . @$query[0]->image) : base_url('assets/images/about/packers_movers.webp') ?>"
     ],
     "datePublished": "<?= date('c', strtotime(@$query[0]->created_at)) ?>",
     "author": {
