@@ -53,7 +53,7 @@
             <div class="col-lg-5 order-1 order-lg-2 mb-5 mb-lg-0">
                 <div class="card border-0 shadow-lg certificate-card overflow-hidden rounded-4">
                     <div class="card-body p-3 bg-white text-center">
-                        <a href="<?= base_url('assets/images/certificate/iso-9001-certification.webp') ?>" data-lightbox="image" data-caption="ISO 9001:2015 Quality Management Certification - VP Max Packers and Movers">
+                        <a href="<?= base_url('assets/images/certificate/iso-certificate-of-vpmaxpackersandmovers.webp') ?>" data-lightbox="image" data-caption="ISO 9001:2015 Quality Management Certification - VP Max Packers and Movers">
                             <img loading="lazy" src="<?= base_url('assets/images/certificate/iso-9001-certification.webp') ?>" 
                                  alt="ISO 9001:2015 Certified Packers and Movers Company" 
                                  title="VP Max Packers and Movers ISO Certification"

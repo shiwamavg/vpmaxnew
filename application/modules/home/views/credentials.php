@@ -3,7 +3,7 @@
 $credentials = [
     [
         'title' => 'ISO 9001:2015',
-        'desc' => 'Certificate No: E21421615228, for Courier Services, Packers & Movers, Transportation and Storage of Goods.',
+        'desc' => 'Certificate No: QSRQV2610569515A, for Courier Services, Packers & Movers, Transportation and Storage of Goods.',
         'image' => 'iso.png',
         'icon' => 'bi-file-earmark-text',
         'highlight' => true
