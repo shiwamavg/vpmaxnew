@@ -14,7 +14,7 @@
 
     
     <div class="d-flex flex-nowrap align-items-center gap-2 mt-2 mt-md-0 quote-cert-wrapper">
-      <a href="<?= base_url('assets/images/certificate/iso-9001-certification.webp') ?>" data-lightbox="image"
+      <a href="<?= base_url('assets/images/certificate/iso-certificate-of-vpmaxpackersandmovers.webp') ?>" data-lightbox="image"
         class="text-decoration-none quote-cert-link" title="ISO 9001 Certificate">
         <div class="quote-cert-icon"><i class="bi bi-patch-check-fill"></i></div>
         <div class="quote-cert-text">

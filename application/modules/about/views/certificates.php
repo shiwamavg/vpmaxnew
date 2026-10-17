@@ -28,7 +28,8 @@
                         <?php
                         $certificates = [
                             ['file' => 'udyam-registration-certificate.webp', 'alt' => 'UDYAM Registration Certificate for VP Max Packers and Movers'],
-                            ['file' => 'iso-9001-certification.webp', 'alt' => 'ISO 9001:2015 Quality Management Certification'],
+                            ['file' => 'gumasta-certificate.webp', 'alt' => 'ISO 9001:2015 Quality Management Certification'],
+                            ['file' => 'iso-certificate-of-vpmaxpackersandmovers.webp', 'alt' => 'ISO 9001:2015 Quality Management Certification'],
                             ['file' => 'company-quotation-format.webp', 'alt' => 'Official Company Quotation Format'],
                             ['file' => 'packers-and-movers-terms-conditions.webp', 'alt' => 'Standard Terms and Conditions Document'],
                             ['file' => 'gst.png', 'alt' => 'GST-IN Certificate for VP Max Packers and Movers - REG-06'],
