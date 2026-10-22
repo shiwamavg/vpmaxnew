@@ -281,7 +281,7 @@ $this->load->view('home/city_list');
                     </div>
                     <div>
                         <span class="pm-cred-label-sm">ISO CERTIFICATION</span>
-                        <p class="pm-cred-value-sm mb-0">ISO 9001:2015 | E21421615228</p>
+                        <p class="pm-cred-value-sm mb-0">ISO 9001:2015 | QSRQV2610569515A</p>
                     </div>
                 </div>
             </div>
