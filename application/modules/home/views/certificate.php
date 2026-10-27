@@ -189,7 +189,7 @@ $features = [
                 <i class="bi bi-patch-check-fill"></i>
               </div>
               <div>
-                <h5 class="modal-title fw-bold text-dark mb-0" id="<?= $modalId ?>Label"><?= $certTitleSafe ?></h5>
+                <h3 class="modal-title fw-bold text-dark mb-0 " id="<?= $modalId ?>Label"><?= $certTitleSafe ?></h3>
                 <small class="text-muted"><?= $certDescSafe ?></small>
               </div>
             </div>

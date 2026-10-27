@@ -17,6 +17,7 @@
 <?php
 include 'company_details.php';
 include 'city_map.php';
+
 //$this->load->view('home/working_process');
 $this->load->view('home/chart_table');
 $states_28 = [
@@ -55,6 +56,7 @@ if (in_array($st, $states_28)) {
     include 'city_service.php';
 }
 ?>
+<?php include 'news.php'; ?>
 
 <div class="container">
     <div class="row">
@@ -90,6 +92,8 @@ if (in_array($st, $states_28)) {
 <style>
 .video-wrapper{position:relative;width:100%;max-width:500px;height:520px;margin:0 auto;overflow:hidden;border-radius:12px}.video-wrapper iframe{width:100%;height:100%;border:0}@media (max-width:991px){.video-wrapper{max-width:450px;height:500px}}@media (max-width:575px){.video-wrapper{max-width:100%;height:480px}}
 </style>
+
+
 <?php endif; ?>
         <?php if(@$htmlcontent4): ?>
         <div class="col-lg-12 mt-4">

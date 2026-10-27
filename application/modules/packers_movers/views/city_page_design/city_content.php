@@ -792,7 +792,7 @@ if (strtolower($city) == "indore") {
               <div class='col-12 col-md-5'>
                 <div class='p-4 bg-light rounded-3 border border-light-subtle text-center text-md-start'>
                   <span class='d-block text-uppercase fw-bold small mb-2 tracking-wider' style='color: #0a4ebd;'>Instant Booking</span>
-                  <h6 class='fw-bold text-dark mb-3'>Talk to Our Expert Now</h6>
+                  <span class='fw-bold text-dark mb-3'>Talk to Our Expert Now</span>
                   <a href='$phonehtml' class='btn btn-danger btn-lg w-100 rounded-3 d-inline-flex align-items-center justify-content-center gap-2 fw-bold shadow-sm py-2.5'>
                     <i class='bi bi-telephone-fill'></i>
                     Call: $phone
@@ -988,7 +988,7 @@ if (strtolower($city) == "indore") {
               <div class='col-12 col-md-5'>
                 <div class='p-4 bg-light rounded-3 border border-light-subtle text-center text-md-start'>
                   <span class='d-block text-uppercase fw-bold small mb-2 tracking-wider' style='color: #0a4ebd;'>Instant Booking</span>
-                  <h6 class='fw-bold text-dark mb-3'>Talk to Our Expert Now</h6>
+                  <span class='fw-bold text-dark mb-3'>Talk to Our Expert Now</span>
                   <a href='$phonehtml' class='btn btn-danger btn-lg w-100 rounded-3 d-inline-flex align-items-center justify-content-center gap-2 fw-bold shadow-sm py-2.5'>
                     <i class='bi bi-telephone-fill'></i>
                     Call: $phone
@@ -1203,7 +1203,7 @@ elseif (strtolower($state) == "delhi") {
               <div class='col-12 col-md-5'>
                 <div class='p-4 bg-light rounded-3 border border-light-subtle text-center text-md-start'>
                   <span class='d-block text-uppercase fw-bold small mb-2 tracking-wider' style='color: #0a4ebd;'>Instant Booking</span>
-                  <h6 class='fw-bold text-dark mb-3'>Talk to Our Expert Now</h6>
+                  <span class='fw-bold text-dark mb-3'>Talk to Our Expert Now</span>
                   <a href='$phonehtml' class='btn btn-danger btn-lg w-100 rounded-3 d-inline-flex align-items-center justify-content-center gap-2 fw-bold shadow-sm py-2.5'>
                     <i class='bi bi-telephone-fill'></i>
                     Call: $phone
@@ -1841,7 +1841,7 @@ $htmlcontent1 = "
               <div class='col-12 col-md-5'>
                 <div class='p-4 bg-light rounded-3 border border-light-subtle text-center text-md-start'>
                   <span class='d-block text-uppercase fw-bold small mb-2 tracking-wider' style='color: #0a4ebd;'>Instant Booking</span>
-                  <h6 class='fw-bold text-dark mb-3'>Talk to Our Expert Now</h6>
+                  <span class='fw-bold text-dark mb-3'>Talk to Our Expert Now</span>
                   <a href='$phonehtml' class='btn btn-danger btn-lg w-100 rounded-3 d-inline-flex align-items-center justify-content-center gap-2 fw-bold shadow-sm py-2.5'>
                     <i class='bi bi-telephone-fill'></i>
                     Call: $phone

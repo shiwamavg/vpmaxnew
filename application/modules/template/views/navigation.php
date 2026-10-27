@@ -176,9 +176,9 @@
               alt="<?= $company3 ?>" class="mega-brand-img">
 
             <div class="mb-4">
-              <h5 class="mega-contact-heading">Contact</h5>
+              <p class="mega-contact-heading">Contact</p>
               <p class="mega-contact-sub mb-1">Contact Your Local branch</p>
-              <h3 class="mega-contact-phone"><?= $phone ?></h3>
+              <p class="mega-contact-phone"><?= $phone ?></p>
             </div>
           </div>
 
@@ -186,7 +186,7 @@
 
           <div class="my-4">
             <i class="bi bi-award mega-globe-icon"></i>
-            <h5 class="mega-presence-heading">ISO-CERTIFIED 9001:2015</h5>
+            <p class="mega-presence-heading">ISO-CERTIFIED 9001:2015</p>
             <p class="mega-presence-bold mb-1">Quality Management System</p>
             <p class="mega-presence-text mx-auto">We adhere to international quality standards, ensuring a seamless,
               safe, and secure relocation experience for all our customers.</p>
@@ -196,7 +196,7 @@
           <hr class="w-75 mx-auto opacity-25">
 
           <div class="mt-4">
-            <h5 class="mega-connect-heading">Connect</h5>
+            <p class="mega-connect-heading">Connect</p>
             <div class="d-flex justify-content-center gap-2">
               <a href="<?= $facebookhtml ?? '#' ?>" target="_blank" class="mega-social-icon" aria-label="Facebook"><i
                   class="bi bi-facebook"></i></a>
