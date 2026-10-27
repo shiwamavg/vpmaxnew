@@ -220,7 +220,7 @@
                         <div id="calcResult" class="mt-3 text-center d-none chart-result-box">
                             <div class="p-3 rounded-4 chart-result-inner">
                                 <p class="text-muted small mb-1 fw-medium">Estimated Cost</p>
-                                <h3 class="fw-bolder mb-0 chart-result-price" id="calcPriceRange">Rs 0 - 0</h3>
+                                <span class="fw-bolder span mb-0 chart-result-price" id="calcPriceRange">Rs 0 - 0</span>
                                 <p class="text-muted mt-1 mb-2 chart-result-note">*Actual price
                                     may vary based on distance and exact volume.</p>
 
