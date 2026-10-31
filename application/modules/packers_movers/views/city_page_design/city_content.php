@@ -181,29 +181,27 @@ if (strtolower($city) == "indore") {
 ";
 } elseif (strtolower($city) == "gwalior") {
   $htmlcontent = "
-<p><strong>VP Max Packers and Movers in Gwalior</strong> charges <strong>Rs.7,000-Rs.11,000</strong> for <strong>1BHK local shifting</strong>, <strong>Rs.9,000-Rs.15,000</strong> for <strong>2BHK shifting</strong> inside the city, <strong>Rs.15,000-Rs.18,000</strong> for <strong>3BHK moving</strong> and <strong>Rs.25,000-Rs.30,000</strong> for <strong>4 or 5BHK shifting</strong> respectively. For <strong>Villa or Bungalow moves</strong> across <strong>Madhya Pradesh from Gwalior</strong>, our costs start at <strong>Rs.25,000-Rs.40,000+</strong>.</p>
+<p><strong>VP Max Packers and Movers in Gwalior</strong> charges <em>Rs.7,000–Rs.11,000 for 1BHK local shifting, Rs.9,000–Rs.15,000</em> for 2BHK shifting inside the city, <em>Rs.15,000–Rs.18,000 and   Rs.25,000–Rs.30,000</em> for 3BHK moving and 4 or 5BHK’s shifting respectively. For Villa or Bungalow moves across Madhya Pradesh from Gwalior, our costs start at Rs.25,000–Rs.40,000+.</p>
 
-<p>With <strong>23+ years of experience</strong>, we are <strong>ISO 9001:2015 certified</strong> with <strong>GSTIN 23JINPP1499G1ZN</strong> and <strong>UDYAM MP-23-0231128 certificate</strong>, along with a <strong>4.8-star overall rating</strong>. We provide <strong>house shifting, office relocation, car transportation, bike transportation</strong> and complete <strong>relocation services in Gwalior</strong>.</p>
+<p>With 23 plus years of experience, we are <b>ISO 9001:2015 certified with GSTIN 23JINPP1499G1ZN, UDYAM MP-23-0231128 certificate, and a 4.8-star overall rating</b>, serving you with house, office, car, bike and complete relocation services.</p>
 
 <h2>Packing and Moving Services in Gwalior</h2>
 
-<p>We use <strong>14 ft, 17 ft and 22 ft closed-body vehicles</strong> with premium <strong>corrugated cartons, bubble wrap, foam sheets, stretch film</strong> and <strong>custom wooden crates</strong> for safely <strong>packing and moving fragile belongings in Gwalior</strong>.</p>
+<p>We use <b>14 ft, 17 ft, 22 ft</b> closed-body vehicles with premium corrugated cartons, bubble wrap, foam sheets, stretch film, custom wooden crates for packing and moving your fragile belongings in Gwalior. </p>
 
 <h2>Areas We Serve in Gwalior</h2>
 
-<p>We help singles, families and businesses move around <strong>City Centre, Mahalgaon, Thatipur, Govindpuri, Morar, Lashkar, Satna and Maihar</strong>. We also serve <strong>Phool Bagh, Gola Ka Mandir, Vinay Nagar, DD Nagar, Sirol, University Road, Hazira and Kampoo</strong> inside and around <strong>Gwalior</strong>.</p>
+<p>We help singles, families and businesses move around City Centre, Mahalgaon, Thatipur, Govindpuri, Morar, Lashkar, <a href='satna-packers-movers-madhya-pradesh'>Satna</a>, <a href='maihar-packers-movers-madhya-pradesh'>Maihar</a>. And Phool Bagh, Gola Ka Mandir, Vinay Nagar, DD Nagar, Sirol, University Road, Hazira, Kampoo are also our serving points inside and around Gwalior. Then <a href='morena-packers-movers-madhya-pradesh'>Morena</a>, <a href='dabra-packers-movers-madhya-pradesh'>Dabra</a>, <a href='datia-packers-movers-madhya-pradesh'>Datia</a>, <a href='bhind-packers-movers-madhya-pradesh'>Bhind</a>, <a href='shivpuri-packers-movers-madhya-pradesh'>Shivpuri</a> are our nearby packers and movers serving places.</p>
 
-<p>Our nearby service areas include <strong>Morena, Dabra, Datia, Bhind and Shivpuri</strong>, where we provide reliable <strong>packers and movers services</strong>.</p>
+<p>We have dealt with busy commercial movement iņ <b>Maharaj Bada</b>, educational institutions near Jiwaji University and peak-hour traffic congestion on AG Office Road all of which influence loading and delivery timings. We plan according to these challenges and serve you with better schedule. </p>
 
 <h2>Local Moving Challenges in Gwalior</h2>
 
-<p>We have handled busy commercial movements in <strong>Maharaj Bada</strong>, educational institutions near <strong>Jiwaji University</strong> and peak-hour traffic congestion on <strong>AG Office Road</strong>. These local conditions can influence loading and delivery timings, so we plan each move according to the specific challenges of <strong>Gwalior</strong> to provide better scheduling and smoother relocation.</p>
+<p>We have dealt with busy commercial movement iņ <b>Maharaj Bada</b>, educational institutions near Jiwaji University and peak-hour traffic congestion on AG Office Road all of which influence loading and delivery timings. We plan according to these challenges and serve you with better schedule. </p>
 
 <h2>Long-Distance Moving from Gwalior</h2>
 
-<p>We also help customers with <strong>long-distance relocations from Gwalior</strong> to major cities including <strong>Indore, Mumbai, Bengaluru and Hyderabad</strong>, as well as other locations across <strong>India</strong>.</p>
-
-<p>Call <strong>9752383460</strong> for a <strong>free moving quote</strong> for your relocation across <strong>Gwalior</strong> and <strong>Madhya Pradesh</strong>.</p>
+<p>We help you with long-distance relocations as well, to <a href='indore-packers-movers-madhya-pradesh'>Indore</a>, <a href='mumbai-packers-movers-maharashtra'>Mumbai</a>, <a href='bengaluru-packers-movers-karnataka'>Bengaluru</a>, <a href='hyderabad-packers-movers-telangana'>Hyderabad</a>, and all India locations from Gwalior. Call 9752383460 for a free moving quote to move across Gwalior and Madhya Pradesh.</p>
 ";
 /*
   $htmlcontent1 = "
