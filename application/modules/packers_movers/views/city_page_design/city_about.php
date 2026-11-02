@@ -57,6 +57,7 @@ if (in_array($st, $states_28)) {
 }
 ?>
 <?php include 'news.php'; ?>
+<?php $this->load->view('reviews/review_widget'); ?>
 
 <div class="container">
     <div class="row">
@@ -89,9 +90,11 @@ if (in_array($st, $states_28)) {
         </div>
     </div>
 </div>
+
 <style>
 .video-wrapper{position:relative;width:100%;max-width:500px;height:520px;margin:0 auto;overflow:hidden;border-radius:12px}.video-wrapper iframe{width:100%;height:100%;border:0}@media (max-width:991px){.video-wrapper{max-width:450px;height:500px}}@media (max-width:575px){.video-wrapper{max-width:100%;height:480px}}
 </style>
+
 
 
 <?php endif; ?>
@@ -114,7 +117,7 @@ if (in_array($st, $states_28)) {
 
     
 <?php $this->load->view('template/important_link');
-//$this->load->view('reviews/review_widget');
+
 $this->load->view('home/credentials');
 $this->load->view('home/certificate');?>
 <?php 
