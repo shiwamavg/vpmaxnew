@@ -121,7 +121,6 @@ if (in_array($st, $states_28)) {
 $this->load->view('home/credentials');
 $this->load->view('home/certificate');?>
 <?php 
-// indore removed from this local array by shiwam
 if ( strtolower($city) == "ujjain" || strtolower($city) == "dewas" || strtolower($city) == "sagar" || strtolower($city) == "jabalpur" || strtolower($city) == "pune" || strtolower($city) == "nagpur" || strtolower($city) == "wardha") {
     include 'localcities.php';
 } ?>
