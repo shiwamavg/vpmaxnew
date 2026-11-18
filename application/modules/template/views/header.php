@@ -66,7 +66,7 @@ $locality_parent_slugs = [
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "<?= $company3 ?>",
-      "url": "https://vpmaxpackersandmovers.com/",
+      "url": "<?= $url ?>",
       "logo": "https://vpmaxpackersandmovers.com/assets/images/logo/logo.webp"
     }
   </script>
