@@ -181,7 +181,7 @@ if (strtolower($city) == "indore") {
 ";
 } elseif (strtolower($city) == "gwalior") {
   $htmlcontent = "
-<p><strong>VP Max Packers and Movers in Gwalior</strong> charges <em>Rs.7,000-Rs.11,000 for 1BHK local shifting, Rs.9,000-Rs.15,000</em> for 2BHK shifting inside the city, <em>Rs.15,000-Rs.18,000 and   Rs.25,000-Rs.30,000</em> for 3BHK moving and 4 or 5BHK’s shifting respectively. For Villa or Bungalow moves across Madhya Pradesh from Gwalior, our costs start at Rs.25,000-Rs.40,000+.</p>
+<p><strong>VP Max Packers and Movers in Gwalior</strong> charges <em>Rs.7,000-Rs.11,000 for 1BHK local shifting, Rs.9,000-Rs.15,000</em> for 2BHK shifting inside the city, <em>Rs.15,000-Rs.18,000 and   Rs.25,000-Rs.30,000</em> for 3BHK moving and 4 or 5BHK's shifting respectively. For Villa or Bungalow moves across Madhya Pradesh from Gwalior, our costs start at Rs.25,000-Rs.40,000+.</p>
 
 <p>With 23 plus years of experience, we are <b>ISO 9001:2015 certified with GSTIN 23JINPP1499G1ZN, UDYAM MP-23-0231128 certificate, and a 4.8-star overall rating</b>, serving you with house, office, car, bike and complete relocation services.</p>
 
@@ -361,7 +361,7 @@ if (strtolower($city) == "indore") {
   $htmlcontent5 = "
 <h2 class='text-primary'>Long Distance Packers and Movers Across India</h2>
 <h3 class='mb-0'>Gwalior to Delhi: Approx. 360 km</h3>
-<p>Delhi’s busy relocation corridor requires organized packing and timely highway movement.</p>
+<p>Delhi's busy relocation corridor requires organized packing and timely highway movement.</p>
 <h3 class='mb-0'>Gwalior to Indore: Approx. 500 km</h3>
 <p>Ideal for house and commercial relocation with GPS-enabled transportation.</p>
 <h3 class='mb-0'> Gwalior to Mumbai: Approx. 980 km</h3>
@@ -1479,7 +1479,7 @@ elseif (strtolower($state) == "delhi") {
       
 
         <h2 class='fs-4 fw-bold'>Bhopal Local Experience: Metro Work and Traffic Diversions</h2>
-        <p>Moving dates need attention in Bhopal while several road projects are underway. <b>The IETI Crossing–Piplani Petrol Pump road</b> is scheduled to remain closed from 27 October to 17 November 2026 for Metro construction. Diversions affect travel towards Piplani, Ayodhya Nagar, Minal, Govindpura and nearby residential areas. Narrow alternative roads may add time to truck movement, so we check the route before confirming pickup.</p>
+        <p>Moving dates need attention in Bhopal while several road projects are underway. <b>The IETI Crossing-Piplani Petrol Pump road</b> is scheduled to remain closed from 27 October to 17 November 2026 for Metro construction. Diversions affect travel towards Piplani, Ayodhya Nagar, Minal, Govindpura and nearby residential areas. Narrow alternative roads may add time to truck movement, so we check the route before confirming pickup.</p>
 <p>A Bhopal Traffic Police notice also records a closure of railway bridge 835/1 near Bag Umrao Doolha from 8 October to 6 December 2026. It also describes restrictions for larger vehicles near Bogda Pul during Metro work.</p>
 <p>For a move scheduled between 4 and 9 November, traffic pressure is also expected around Atal Path, Jawahar Chowk, Roshanpura, MP Nagar and nearby market roads due to event arrangements and shopping traffic. Check the latest advisory on moving day.</p>
         
@@ -1638,6 +1638,187 @@ elseif (strtolower($state) == "delhi") {
             <div class='alert border-danger-subtle d-flex align-items-center gap-3 p-3 mb-0 rounded-3'>
             <i class='bi bi-telephone-fill text-primary fs-5 flex-shrink-0'></i>  
             <p class='fw-bold text-dark m-0 fs-6'>Call <a href='$phonehtml' class='text-primary text-decoration-underline'>$phone</a> to book your Bhopal move today, also get a free moving quote as per your requirement.</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+";
+
+} elseif (strtolower($city) == "jabalpur") {
+  $htmlcontent = "
+   <h2 class='fw-bold mb-3 text-primary'>Relocating your homes, offices and vehicles in Jabalpur</h2>
+      <p><a href='https://en.wikipedia.org/wiki/Jabalpur' target='_blank' rel='noopener noreferrer'>Jabalpur </a> is a major city located in the state of Madhya Pradesh and serves as the administrative headquarters of the Jabalpur district. Some famous landmarks in Jabalpur are the Marble Rocks in Bhedaghat.</p>
+        <p>When relocating in Jabalpur, it is important to make sure that you have planned correctly. If you are relocating from an older residential lane or to an occupied apartment complex, you should ensure that your moving plan includes your vehicle and delivery to fit your route. If you are moving within Wright Town, towards Vijay Nagar, Napier Town or a short distance to Sihora, Katni, Mandla, Narsinghpur or Seoni, plan your moving route to fit the vehicle you are using and delivery. Longer distance relocations can be planned to Bhopal, Indore, Nagpur, Raipur, Delhi, Mumbai, Pune or Bengaluru and other destinations across India.</p>
+        <p><strong>VP Max Packers and Movers</strong> offer a range of services including residential and office relocations, local or domestic relocations, car and bike transportation, loading/unloading, warehousing, and international relocations. Contact us now on <a href='$phonehtml'>$phone</a> to arrange your move and receive a quotation.</p>
+       "
+  ;
+  $htmlcontent1 = "
+        <h2 class='fs-4 fw-bold mt-4'> Why Choose Our Relocation Services in Jabalpur?</h2>
+       <p>We have:</p>
+       
+        <ul class='fs-6 ps-5 mb-3'>
+            <li><span class='fw-bold'>23+ Years' Experience</span> - We have been providing relocation services since 2003.</li>
+<li><span class='fw-bold'>Certified ISO 9001:2015</span> - Certificate Number QSRQV2610569515A.</li>
+<li><span class='fw-bold'>Registered Company</span> - We are registered with GST (GSTIN: 23IJNPP1499G1ZN), and MSME (UDYAM-MP-23-0231128).</li>
+<li><span class='fw-bold'>4.9/5 Customer Rating</span> - On our website we have a customer rating of 4.9/5 based on 4,864+ reviews.</li>
+<li><span class='fw-bold'>GPS Tracking</span> - Ensure your goods are being tracked.</li>
+<li><span class='fw-bold'>Packing & Insurance</span> - We offer multiple layers of packing and insurance whilst your goods are in transit. You can confirm what is covered.</li>
+
+
+        </ul>
+
+      
+
+        <h2 class='fs-4 fw-bold'>Local Moving Conditions & Updates of Jabalpur</h2>
+        <p>As Jabalpur has older market areas extra consideration will need to be made when loading/unloading goods. There was a traffic ban in place on 2 November 2026 which included the closure of the route from Gole Bazar to Malviya Chowk between 12pm and 6pm for a public event. This included the prohibition of small goods vehicles from Baldevbagh, Pandey Chowk and Rani Tal between the same times. Whilst this has now finished it shows that you should look out for any traffic notices in the area before your team moves into the older city market area.</p>
+<p>The city is also undergoing changes to the overall road network. The Jabalpur Outer Ring Road development aims to reduce congestion on busy roads through the city. The Outer Ring Road is described by the Ministry of Road Transport and Highways as a 114km corridor connecting key locations around the city. As the project develops and opens, the best route for residential/commercial vehicles may change. We will ensure we confirm the correct route.</p>
+        
+    ";
+
+  $htmlcontent2 = "
+<h3>Our Customer Reviews</h3>
+<p>Our relocation services have some great customer reviews.</p>
+<p><span class='fw-bold'>Puja Kumari</span> has reviewed our residential relocation service. She moved from Indore to Rohini, Delhi and commented on how carefully her items were packed and delivered on time. If you are looking to move a large distance from Jabalpur, you will want to ensure your items are well packed and delivered efficiently.</p>
+<p><span class='fw-bold'>Shantanu Kumar</span> has given us a review for our SUV transportation. He commented on how quickly his items were handled and everything went smoothly. When moving your car in Jabalpur, you should make sure you know the condition of the vehicle when collected, what carrier will be used and when it will be delivered.</p>
+<p><span class='fw-bold'>Ruchi Saha</span> reviewed our car transportation service. She mentioned that she was provided with information on how her items would be received and updates on their delivery. </p>
+
+<h4>Home Shifting Services in $city</h4>
+<p>Moving homes naturally brings emotion, urgency, and the need for careful handling.</p>
+
+<p class='fs-6 fw-bold mb-0'>VP Max provides:</p>
+<ul class='mb-2 ms-4'>
+  <li>Systematic inspection and planning</li>
+  <li>Safe packing of furniture, kitchen items, electronics</li>
+  <li>Secure loading and unloading</li>
+  <li>Re-arrangement support after delivery</li>
+</ul>
+
+<p>VP Max Packers and Movers handles household shifting across $city with safe packing, timely loading, and careful delivery to your new home.</p>
+
+<h4>Office Shifting Services in $city</h4>
+<p class='fs-6 fw-bold mb-0'>Corporate relocation demands precision. Our team specialises in:</p>
+
+<ul class='mb-2 ms-4'>
+  <li>Packing workstations, computers, servers</li>
+  <li>Handling confidential files carefully</li>
+  <li>Minimal downtime for your operations</li>
+  <li>Timely and organised shifting</li>
+</ul>
+
+<p>This is why businesses prefer VP Max, residential and commercial movers for relocating within or outside $city.</p>
+
+
+<section class='py-5 bg-white'>
+  <div class='container'>
+    <div class='row align-items-center'>
+      
+      
+      <div class='col-lg-6'>
+        <h4>Vehicle Transport - Car and Bike Moving</h4>
+        <p>For customers who need car or bike transportation along with household shifting,</p>
+
+        <p class='fs-6 fw-bold mb-0'>We provide:</p>
+        <ul class='mb-2 ms-4'>
+          <li>Enclosed carriers</li>
+          <li>Tyre locks and wheel braces</li>
+          <li>Anti-scratch packaging</li>
+          <li>GPS-enabled tracking</li>
+        </ul>
+
+        <p>Our transport crew ensures your vehicle reaches its destination without damage.</p>
+      </div>
+
+      
+      <div class='col-lg-6 text-center mt-4 mt-lg-0'>
+        <img src='" . base_url('assets/images/city_page/truck-vp-max.webp') . "' alt='Car and Bike Transport Service in $city' loading='lazy' class='img-fluid rounded shadow'>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<h4>International Relocation from $city</h4>
+<p class='fs-6 fw-bold mb-0'>If you are planning an international move, VP Max handles international moves from $city with:</p>
+
+<ul class='mb-3 ms-4'>
+  <li>Export-quality packing</li>
+  <li>Customs documentation support</li>
+  <li>Air and sea cargo arrangements</li>
+  <li>Coordinator assistance till delivery</li>
+</ul>
+
+<h4>Local Shifting in $city</h4>
+<p class='fs-6 fw-bold mb-0'>Shifting within the same locality or nearby area? we offer Local shifting experts, ideal for:</p>
+
+<ul class='mb-2 ms-4'>
+  <li>Apartments</li>
+  <li>Independent houses</li>
+  <li>PGs</li>
+  <li>Shops or micro-offices</li>
+</ul>
+
+<p>We provide local shifting services across $city for apartments, independent homes, and small offices.</p>
+<h4>Domestic Relocation Services in $city</h4>
+<p>Long-distance relocation requires stronger packaging, vehicle stability, and trained manpower.</p>
+<p class='fw-bold mb-0'>We ensure:</p>
+<ul class='ms-4'>
+  <li>Full protection packaging</li>
+  <li>Independent houses</li>
+  <li>Damage-free loading</li>
+  <li>Timely delivery across India</li>
+</ul>
+
+";
+  $htmlcontent3 = "
+<h4 class='fs-4 fw-bold'>Packing Standards That Set VP Max Apart</h4>
+
+<p>One reason we are often called the best moving company for home shifting in $city is the quality of their packing materials.</p>
+
+<p class='fw-bold mb-0'>Our packing process uses:</p>
+
+<ul class='ms-4 mb-3'>
+  <li>Multi-layer protection</li>
+  <li>Bubble wrap + foam sheets</li>
+  <li>Waterproof wrapping</li>
+  <li>Heavy-duty cartons</li>
+  <li>Custom wooden crates for fragile items</li>
+</ul>
+
+<p>This professional approach makes customers trust VP Max Packers and Movers home shifting for everything from kitchen glass to premium furniture.</p>
+";
+  $htmlcontent4 = "
+<h4 class='fs-4 fw-bold'>Areas Covered Across $city</h4>
+
+<p>VP Max serves all major localities, outskirts, industrial areas, residential colonies, and rural pockets around $city. We cover all major localities, outskirts, residential colonies, and commercial zones including:</p>
+
+<ul class='ms-4 mb-3'>
+  <li>City centre areas</li>
+  <li>Suburban neighbourhoods</li>
+  <li>Newly developed townships</li>
+  <li>Commercial zones</li>
+  <li>Industrial hubs</li>
+  <li>Gated societies</li>
+  <li>Apartment clusters</li>
+  <li>Old city regions</li>
+</ul>
+
+<p>Our reach is one reason we are listed among top-rated packers and movers in $city.</p>
+";
+  $htmlcontent5 = "
+
+";
+  $htmlcontent6 = "
+<section class='py-4'>
+    <div class='container'>
+      <div class='col-12 row'>
+            <div class='card border-light-subtle shadow-sm p-4 p-md-5 rounded-4'>
+            <h5 class='fs-4 fw-bold mt-0 mb-4 border-start border-4 border-danger ps-3 text-dark'>Arrange Your Relocation in Jabalpur</h5>
+            <p class='text-secondary mb-3 fs-6 lh-lg'>If you are looking to relocate within Jabalpur or to another state please let us know your pick up/delivery addresses, moving date and approximate items to move. We can then provide you with a suitable estimate. We can then talk through what packing you require, vehicle and insurance.</p>
+            <p class='text-secondary mb-4 fs-6 lh-lg'>For any relocation queries please contact us on 9630153460 or email us on info@vpmaxpackersandmovers.com. You can also contact our Jabalpur branch directly on 9993603460.</p>
+            <div class='alert border-danger-subtle d-flex align-items-center gap-3 p-3 mb-0 rounded-3'>
+            <i class='bi bi-telephone-fill text-primary fs-5 flex-shrink-0'></i>  
+            <p class='fw-bold text-dark m-0 fs-6'>Call <a href='$phonehtml' class='text-primary text-decoration-underline'>$phone</a> to book your Jabalpur move today, also get a free moving quote as per your requirement.</p>
             </div>
         </div>
       </div>
